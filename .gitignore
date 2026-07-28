@@ -1,0 +1,44 @@
+# --- Vendored reference code (see DECISIONS.md D-001) ---
+# HASTE is a read-only reference clone. Reproduce with:
+#   git clone --depth 1 https://github.com/microsoft/haste vendor/haste
+/vendor/
+
+# --- Secrets. Never commit an API key. ---
+.env
+.env.*
+!.env.example
+*.pem
+
+# --- Data: raw is gitignored, processed is committed ---
+/data/raw/
+# Large intermediates that are regenerable from raw + pipeline
+/data/processed/*.pmtiles
+/data/processed/*.gpkg
+/data/processed/*.tif
+
+# --- Node / Next.js ---
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+yarn-error.log*
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json

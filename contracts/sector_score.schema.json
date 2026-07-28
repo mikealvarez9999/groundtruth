@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://groundtruth.local/contracts/sector_score.schema.json",
+  "title": "GroundTruth sector scores",
+  "description": "Output of the fusion engine: one ranked score per grid cell, combining the damage layer (Channel 1), VLM findings (Channel 2), and verification-weighted citizen signals (Channel 3). Drives the Triage Queue and the map heat layer, and is the input the brief agent summarises. Recomputed client-side (or in-route) whenever a new signal arrives, so this file is both a committed baseline artifact AND the live in-memory shape.",
+  "type": "object",
+  "required": ["contract_version", "event_id", "generated_at", "grid", "weights", "cells"],
+  "additionalProperties": false,
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+    "event_id": { "type": "string", "examples": ["bangladesh-flooding22"] },
+    "generated_at": { "type": "string", "format": "date-time" },
+
+    "grid": {
+      "type": "object",
+      "required": ["cell_size_m", "scheme"],
+      "additionalProperties": false,
+      "properties": {
+        "cell_size_m": {
+          "description": "Edge length of a square cell in metres. One number for the whole grid; changing it invalidates every cell_id.",
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "scheme": {
+          "description": "How cell_id is derived. 'lonlat_floor' means id = f(floor(lon/step), floor(lat/step)) — trivially reproducible in both Python and JS, which matters because the pipeline writes cells and the browser recomputes them.",
+          "enum": ["lonlat_floor"]
+        },
+        "origin": {
+          "description": "Optional grid anchor, if the scheme needs one.",
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    },
+
+    "weights": {
+      "description": "The fusion weights used to produce THIS file. Embedded rather than hardcoded in the reader so a score is reproducible and auditable after the fact — a ranked list nobody can recompute is not evidence. Components should be documented in DECISIONS.md whenever changed.",
+      "type": "object",
+      "required": ["damage", "vlm", "citizen"],
+      "additionalProperties": false,
+      "properties": {
+        "damage": { "type": "number", "minimum": 0, "maximum": 1 },
+        "vlm": { "type": "number", "minimum": 0, "maximum": 1 },
+        "citizen": { "type": "number", "minimum": 0, "maximum": 1 },
+        "tier_multipliers": {
+          "description": "Per-verification-tier multipliers applied to citizen/VLM signals before they contribute.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "corroborated": { "type": "number", "minimum": 0, "maximum": 1 },
+            "plausible_unverified": { "type": "number", "minimum": 0, "maximum": 1 },
+            "suspect": { "type": "number", "minimum": 0, "maximum": 1 }
+          }
+        },
+        "urgency_multipliers": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "critical": { "type": "number", "minimum": 0 },
+            "high": { "type": "number", "minimum": 0 },
+            "medium": { "type": "number", "minimum": 0 },
+            "low": { "type": "number", "minimum": 0 }
+          }
+        }
+      }
+    },
+
+    "cells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["cell_id", "centroid", "score", "components", "evidence"],
+        "additionalProperties": false,
+        "properties": {
+          "cell_id": { "type": "string", "minLength": 1 },
+
+          "centroid": {
+            "type": "object",
+            "required": ["lon", "lat"],
+            "additionalProperties": false,
+            "properties": {
+              "lon": { "type": "number", "minimum": -180, "maximum": 180 },
+              "lat": { "type": "number", "minimum": -90, "maximum": 90 }
+            }
+          },
+
+          "bbox": {
+            "description": "[west, south, east, north]. Lets the map draw the cell without recomputing the grid.",
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 4,
+            "maxItems": 4
+          },
+
+          "rank": {
+            "description": "1-based position in the Triage Queue, 1 = go here first. Recomputed on every re-score.",
+            "type": "integer",
+            "minimum": 1
+          },
+
+          "score": {
+            "description": "Fused priority, 0..1. Normalised across cells in this file — a score is only meaningful relative to its siblings, so never compare across events or runs.",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+
+          "components": {
+            "description": "The score broken out per channel, each 0..1, BEFORE weighting. Kept so the UI can say why a cell ranks where it does, and so a responder can disagree with our weighting rather than with a black box.",
+            "type": "object",
+            "required": ["damage", "vlm", "citizen"],
+            "additionalProperties": false,
+            "properties": {
+              "damage": {
+                "description": "Derived from the damage layer by AGGREGATION — damaged_fraction, optionally area-weighted. HASTE gives a hard 0/1 per building, so this fraction is the only honest continuous damage measure we have. Null when the cell has no assessed buildings.",
+                "type": ["number", "null"],
+                "minimum": 0,
+                "maximum": 1
+              },
+              "vlm": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+              "citizen": { "type": ["number", "null"], "minimum": 0, "maximum": 1 }
+            }
+          },
+
+          "coverage": {
+            "description": "What we could actually see here. A cell with no imagery coverage and no signals is UNKNOWN, not safe — the UI must render those two states differently or the map lies by omission.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "in_valid_area": {
+                "description": "Cell intersects HASTE's exported imagery valid-area mask.",
+                "type": "boolean"
+              },
+              "buildings_obscured": { "type": "integer", "minimum": 0 },
+              "status": { "enum": ["assessed", "partial", "unassessed"] }
+            }
+          },
+
+          "evidence": {
+            "description": "Traceability. Every id here must resolve to a real feature or signal, so a click on the Triage Queue can open the exact underlying evidence.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "buildings_total": { "type": "integer", "minimum": 0 },
+              "buildings_damaged": { "type": "integer", "minimum": 0 },
+              "damaged_fraction": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+              "damaged_area_m2": { "type": ["number", "null"], "minimum": 0 },
+              "signal_ids": {
+                "description": "All signals scored into this cell, any tier. Suspect signals are listed but contribute ~0 weight.",
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "corroborated_count": { "type": "integer", "minimum": 0 },
+              "plausible_unverified_count": { "type": "integer", "minimum": 0 },
+              "suspect_count": { "type": "integer", "minimum": 0 },
+              "distinct_source_count": { "type": "integer", "minimum": 0 },
+              "vlm_finding_ids": {
+                "description": "signal_ids whose channel is vlm_imagery or vlm_photo. Redundant with signal_ids by design — the UI shows imagery findings in their own card.",
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          },
+
+          "urgency_max": {
+            "description": "Highest urgency among the cell's non-suspect signals. Null when the cell has only damage-layer evidence.",
+            "enum": ["critical", "high", "medium", "low", null]
+          },
+
+          "persons_at_risk_est": {
+            "description": "Sum of stated persons_at_risk across non-suspect signals in this cell. A floor, not an estimate of the true population — signals that did not state a number contribute nothing. Label it as such in the UI.",
+            "type": ["integer", "null"],
+            "minimum": 0
+          },
+
+          "top_reasons": {
+            "description": "Short human-readable strings the Triage Queue renders as the cell's justification, e.g. '61% of 340 assessed buildings damaged' or '3 independent reports of stranded persons'. Generated by the fusion engine, not the LLM, so the ranking explanation cannot hallucinate.",
+            "type": "array",
+            "items": { "type": "string" },
+            "maxItems": 4
+          },
+
+          "place_label": {
+            "description": "Best-effort human place name for the cell, from the gazetteer. Responders navigate by name, not by cell_id.",
+            "type": ["string", "null"]
+          },
+
+          "updated_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  }
+}

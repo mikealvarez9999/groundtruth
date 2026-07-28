@@ -1,0 +1,94 @@
+{
+  "type": "FeatureCollection",
+  "groundtruth": {
+    "contract_version": "1.0.0",
+    "event_id": "bangladesh-flooding22",
+    "generated_at": "2026-07-26T09:14:00Z",
+    "crs": "EPSG:4326",
+    "source": {
+      "tool": "haste",
+      "haste_commit": "7d80be7",
+      "workflow": "building",
+      "backbone": "mosaiks",
+      "num_features": 1024,
+      "resize_factor": 4,
+      "footprint_source": "overture",
+      "imagery_note": "PLACEHOLDER - replace with the real Maxar Open Data collection id and capture date once the scene is loaded"
+    },
+    "accuracy": {
+      "labels_total": 47,
+      "labels_damaged": 19,
+      "validation_sample_n": 200,
+      "damaged_precision": 0.81,
+      "damaged_recall": 0.74,
+      "damaged_f1": 0.77,
+      "overall_accuracy": 0.88,
+      "estimated_damaged_total": 1840,
+      "estimated_damaged_ci95": [1610, 2070]
+    },
+    "counts": {
+      "buildings_total": 4,
+      "buildings_damaged": 2,
+      "buildings_obscured": 1
+    },
+    "notes": "ILLUSTRATIVE FIXTURE, NOT REAL DATA. Four hand-written buildings near Sylhet used to validate the schema shape before the real HASTE export exists. The accuracy numbers are invented placeholders and must never be shown in the demo."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[91.8712, 24.8942], [91.8715, 24.8942], [91.8715, 24.8944], [91.8712, 24.8944], [91.8712, 24.8942]]]
+      },
+      "properties": {
+        "building_id": 0,
+        "damage_class": "damaged",
+        "obscured": false,
+        "area_m2": 612.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[91.8721, 24.8938], [91.8724, 24.8938], [91.8724, 24.8940], [91.8721, 24.8940], [91.8721, 24.8938]]]
+      },
+      "properties": {
+        "building_id": 1,
+        "damage_class": "damaged",
+        "obscured": false,
+        "area_m2": 448.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[91.8702, 24.8951], [91.8705, 24.8951], [91.8705, 24.8953], [91.8702, 24.8953], [91.8702, 24.8951]]]
+      },
+      "properties": {
+        "building_id": 2,
+        "damage_class": "intact",
+        "obscured": false,
+        "area_m2": 301.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[91.8690, 24.8960], [91.8693, 24.8960], [91.8693, 24.8962], [91.8690, 24.8962], [91.8690, 24.8960]]]
+      },
+      "properties": {
+        "building_id": 3,
+        "damage_class": "intact",
+        "obscured": true,
+        "area_m2": null
+      }
+    }
+  ]
+}

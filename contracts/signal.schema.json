@@ -1,0 +1,311 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://groundtruth.local/contracts/signal.schema.json",
+  "title": "GroundTruth signal",
+  "description": "One piece of evidence about one place, after LLM extraction, gazetteer geocoding, and verification. Deliberately covers BOTH Channel 2 (VLM findings from imagery crops and citizen photos) and Channel 3 (citizen text reports, seeded or live from Telegram), because the fusion engine consumes them through one code path and a second near-identical schema would drift. The 'channel' field is what distinguishes them.",
+  "type": "object",
+  "required": ["signal_id", "channel", "source", "claim", "verification"],
+  "additionalProperties": false,
+  "properties": {
+    "contract_version": { "const": "1.0.0" },
+
+    "signal_id": {
+      "description": "Stable id for this signal. Deterministic (content hash) for seeded data so re-running the pipeline does not churn the committed JSON; uuid for live Telegram arrivals.",
+      "type": "string",
+      "minLength": 1
+    },
+
+    "channel": {
+      "description": "Where this evidence came from. Drives the fusion weight class and the map icon.",
+      "enum": ["citizen_seed", "citizen_telegram", "vlm_imagery", "vlm_photo"]
+    },
+
+    "source": {
+      "description": "Independence bookkeeping. Corroboration counts DISTINCT source_id values — that is the whole reason this block exists. Two reposts of one original are one source.",
+      "type": "object",
+      "required": ["source_id", "received_at"],
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "description": "Stable identifier for the ORIGINATOR, not the message. Pseudonymous. Two messages sharing a source_id are never independent corroboration of each other.",
+          "type": "string",
+          "minLength": 1
+        },
+        "platform": {
+          "description": "'imagery' and 'photo_upload' are the VLM channels' platforms.",
+          "enum": ["telegram", "archived_post", "imagery", "photo_upload", "other"]
+        },
+        "author_ref": {
+          "description": "Pseudonymous handle for display in the Audit Drawer. Never a real name, phone number, or Telegram user id.",
+          "type": ["string", "null"]
+        },
+        "url": { "type": ["string", "null"] },
+        "received_at": {
+          "description": "When WE received it. Distinct from claim.claimed_time, which is when the reporter says the thing happened.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "replay_offset_s": {
+          "description": "Seeded data only. Seconds from the start of the demo timeline at which the replay timer should surface this signal.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        }
+      }
+    },
+
+    "raw": {
+      "description": "The unprocessed input, kept so the Audit Drawer can show a reviewer what the LLM actually read.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "text": { "type": ["string", "null"] },
+        "lang": {
+          "description": "'bn' Bangla script, 'bn-latn' Banglish (Bangla romanised), 'mixed' both in one message.",
+          "enum": ["bn", "en", "bn-latn", "mixed", "unknown"]
+        },
+        "media_refs": {
+          "description": "Repo-relative paths to cached images, or per-signal Telegram photo uploads. Never remote URLs we would fetch at request time.",
+          "type": "array",
+          "items": {
+            "oneOf": [
+              { "type": "string" },
+              {
+                "type": "object",
+                "required": ["photo_path"],
+                "additionalProperties": false,
+                "properties": {
+                  "photo_path": {
+                    "description": "Public-relative path inside console/public/, used for the Audit Drawer thumbnail. Layout is fixed so the console can serve it without re-validation.",
+                    "type": "string",
+                    "pattern": "^tips/[A-Za-z0-9_\\-]+\\.jpg$"
+                  },
+                  "received_at": { "type": "string", "format": "date-time" }
+                }
+              }
+            ]
+          }
+        },
+        "imagery_ref": {
+          "description": "VLM imagery channel: which crop was analysed.",
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "claim": {
+      "description": "The structured assertion extracted from raw input. One claim per signal; a message asserting three things becomes three signals.",
+      "type": "object",
+      "required": ["location_ref", "event_type", "urgency"],
+      "additionalProperties": false,
+      "properties": {
+        "location_ref": {
+          "description": "The place string VERBATIM as the reporter wrote it, before geocoding. Kept for audit: a bad geocode is only debuggable against the original string.",
+          "type": "string"
+        },
+        "event_type": {
+          "enum": [
+            "flood_inundation",
+            "structural_damage",
+            "road_blocked",
+            "people_stranded",
+            "medical_need",
+            "water_food_need",
+            "power_outage",
+            "shelter_status",
+            "missing_person",
+            "other"
+          ]
+        },
+        "urgency": { "enum": ["critical", "high", "medium", "low"] },
+        "persons_at_risk": {
+          "description": "Null when not stated. Null is NOT zero, and the fusion engine must not treat it as zero.",
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "claimed_time": {
+          "description": "When the reporter says it happened. Null when unstated. Used for the corroboration time window.",
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "needs": {
+          "type": "array",
+          "items": { "enum": ["rescue", "boat", "medical", "water", "food", "shelter", "power", "assessment"] }
+        },
+        "summary_en": {
+          "description": "One-line English gloss for the UI card. For Bangla/Banglish input this is a translation, which means it is the LLM's reading, not the reporter's words — show it as such.",
+          "type": "string"
+        }
+      }
+    },
+
+    "geo": {
+      "description": "Result of gazetteer geocoding. Null when the location string could not be resolved — such signals are kept (they still count toward volume and appear in the Audit Drawer) but cannot be placed on the map or scored into a cell.",
+      "type": ["object", "null"],
+      "required": ["lon", "lat", "geocode"],
+      "additionalProperties": false,
+      "properties": {
+        "lon": { "type": "number", "minimum": -180, "maximum": 180 },
+        "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+        "grid_cell_id": { "type": "string" },
+        "geocode": {
+          "type": "object",
+          "required": ["method", "matched_name", "score"],
+          "additionalProperties": false,
+          "properties": {
+            "method": {
+              "description": "Local GeoNames Bangladesh gazetteer, fuzzy-matched. No paid geocoding APIs — a hard project constraint. 'gps_shared' is the Telegram attachment-menu shared location, which bypasses the gazetteer: trust the lat/lon, matched_name is the empty string, score is 1.0.",
+              "enum": ["geonames_fuzzy", "geonames_exact", "manual", "gps_shared"]
+            },
+            "matched_name": { "type": "string" },
+            "admin": {
+              "description": "Administrative context of the match, for disambiguating same-named places.",
+              "type": "string"
+            },
+            "score": {
+              "description": "Fuzzy match confidence 0..1. Low scores must reduce the fusion weight — a confident claim about a place we probably misidentified is not confident evidence.",
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "ambiguous": {
+              "description": "True when several gazetteer entries scored comparably. Surfaced in the Audit Drawer.",
+              "type": "boolean"
+            },
+            "candidates": {
+              "description": "Runner-up matches, for the audit trail.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "name": { "type": "string" },
+                  "admin": { "type": "string" },
+                  "score": { "type": "number", "minimum": 0, "maximum": 1 },
+                  "lon": { "type": "number" },
+                  "lat": { "type": "number" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "verification": {
+      "description": "Tiering. Corroboration plus spatial consistency ONLY. No media forensics, no deepfake detection, no trained credibility classifier — those are out of scope and would be dishonest at this scale.",
+      "type": "object",
+      "required": ["tier", "reason", "fusion_weight"],
+      "additionalProperties": false,
+      "properties": {
+        "tier": {
+          "description": "corroborated: 2+ distinct sources agree within the same grid cell, event type, and time window. plausible_unverified: single source, nothing contradicts it. suspect: contradicted by our own physical layers.",
+          "enum": ["corroborated", "plausible_unverified", "suspect"]
+        },
+        "reason": {
+          "description": "Human-readable justification, REQUIRED for every tier and not only for suspects. If we cannot state why in a sentence a responder would accept, we have not verified anything. This string is rendered verbatim in the Audit Drawer.",
+          "type": "string",
+          "minLength": 1
+        },
+        "corroborating_signal_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "distinct_source_count": {
+          "description": "Count of distinct source.source_id values supporting this claim, INCLUDING this signal, after dedupe.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "spatial_check": {
+          "description": "Point-in-polygon consistency against our own physical layers.",
+          "type": "object",
+          "required": ["status"],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "description": "consistent: physical evidence agrees. contradicted: the claim asserts damage/flooding where our imagery-derived layer shows an assessed, undamaged area — the only thing that earns 'suspect'. no_coverage: outside the imagery valid-area mask, so we CANNOT contradict it; this must never produce 'suspect'.",
+              "enum": ["consistent", "contradicted", "no_coverage", "not_applicable"]
+            },
+            "inside_valid_area": {
+              "description": "Whether the point falls inside HASTE's exported valid-area mask (the AOI actually covered by imagery). Absence of damage outside this polygon is meaningless.",
+              "type": "boolean"
+            },
+            "buildings_in_radius": { "type": "integer", "minimum": 0 },
+            "damaged_in_radius": { "type": "integer", "minimum": 0 },
+            "radius_m": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        },
+        "fusion_weight": {
+          "description": "0..1 multiplier the fusion engine applies to this signal. Suspect signals should weight at or near 0 but are never silently deleted — they go to the Audit Drawer with their reason.",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "recon_priority": {
+          "description": "True for plausible-unverified signals worth sending a scout to. This is the operationally useful output of admitting we do not know.",
+          "type": "boolean"
+        },
+        "verified_at": { "type": "string", "format": "date-time" },
+        "vlm_assessment": {
+          "description": "Photo-channel VLM result for this signal, when present. Modulates but does NOT override spatial tiering (D-029): 'contradicts' demotes one tier at most; 'supports' can promote plausible_unverified -> corroborated only when spatial != no_coverage. NO_COVERAGE never becomes suspect on VLM strength alone. Null/missing when no photo was supplied or no model was callable.",
+          "type": "object",
+          "required": ["status", "model", "description", "assessed_at"],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": ["supports", "contradicts", "inconclusive"],
+              "description": "model's three-way verdict; inconclusive is the safe default when no key is set, the call times out, or the photo is unreadable"
+            },
+            "model": {
+              "description": "model id ('gemini-2.5-flash', 'llama-3.2-11b-vision-preview', ...) or null when no provider was callable",
+              "type": ["string", "null"]
+            },
+            "description": {
+              "description": "one sentence a reviewer can read in the Audit Drawer",
+              "type": "string",
+              "maxLength": 500
+            },
+            "assessed_at": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        }
+      }
+    },
+
+    "extraction": {
+      "description": "How the structured claim was produced, so a bad batch can be identified and re-run.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "model": { "type": "string", "examples": ["gemini-2.5-flash"] },
+        "prompt_version": { "type": "string" },
+        "extracted_at": { "type": "string", "format": "date-time" },
+        "confidence": {
+          "description": "The extractor's self-reported confidence. Treat as a weak hint only — LLM self-scores are not calibrated.",
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "cached": { "type": "boolean" }
+      }
+    },
+
+    "eval": {
+      "description": "Present ONLY in the seeded evaluation dataset. This is ground truth for measuring whether our verifier catches the planted fakes. It MUST NOT be read by the extraction, geocoding, verification, or fusion code — doing so would make our catch-rate a lie. Loader strips it before the pipeline sees the signal.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "planted_fake": { "type": "boolean" },
+        "fake_kind": {
+          "enum": ["contradicts_imagery", "impossible_location", "duplicate_astroturf", "exaggerated_scale", "wrong_event_time"]
+        },
+        "expected_tier": { "enum": ["corroborated", "plausible_unverified", "suspect"] },
+        "provenance_note": {
+          "description": "For real archived posts: where the text came from, so we can honestly say the dataset is real.",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

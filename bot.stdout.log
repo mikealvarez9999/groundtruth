@@ -1,0 +1,11 @@
+[run_bot] launching F:\HackaDhon Project\groundtruth\bot\tipline.py  (cwd=F:\HackaDhon Project\groundtruth, PYTHONPATH=pipeline\src)
+[run_bot] VLM providers: GEMINI=MISSING GROQ=set
+[run_bot] forwarded 2 key(s) from .env: GROQ_API_KEY, NEXT_PUBLIC_EVENT_ID
+[run_bot] Ctrl+C to stop. Diagnostic lines stream to stderr; tail this window if tips don't appear.
+GroundTruth tip-line running (long-polling). Text your bot on Telegram. Ctrl+C to stop.
+  seed reports loaded : 50
+  writing live tips  -> F:\HackaDhon Project\groundtruth\console\public\data\live_signals.json
+  photos -> F:\HackaDhon Project\groundtruth\console\public\data\tips  pending TTL = 600s
+  tip [tg_a96042]: other @  -> plausible_unverified  photos=1
+  tip [tg_9ff78a]: flood_inundation @  -> plausible_unverified  photos=1
+  tip [tg_9ff78a]: other @  -> plausible_unverified  photos=1

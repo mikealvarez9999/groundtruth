@@ -1,0 +1,622 @@
+[
+ {
+  "source_id": "src_arch_0091",
+  "author_ref": "reporter_91",
+  "platform": "archived_post",
+  "text": "Kanaighat er dike pani onek beshi, 3 ta ghor er chal porjonto dube gese. Nouka lagbe.",
+  "received_at": "2022-06-18T06:12:00Z",
+  "replay_offset_s": 720,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0104",
+  "author_ref": "reporter_104",
+  "platform": "archived_post",
+  "text": "কানাইঘাটে ৭ জন মানুষ ছাদে আটকে আছে, জরুরি উদ্ধার দরকার।",
+  "received_at": "2022-06-18T06:26:00Z",
+  "replay_offset_s": 1560,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0117",
+  "author_ref": "reporter_117",
+  "platform": "archived_post",
+  "text": "Konaighat bazar area te rasta puro bondho, jogajog bichchinno hoye geche.",
+  "received_at": "2022-06-18T06:41:00Z",
+  "replay_offset_s": 2460,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0122",
+  "author_ref": "reporter_122",
+  "platform": "archived_post",
+  "text": "kanighat e nouka pathan, manush atke ache, taratari please.",
+  "received_at": "2022-06-18T06:58:00Z",
+  "replay_offset_s": 3480,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0140",
+  "author_ref": "reporter_140",
+  "platform": "archived_post",
+  "text": "Kanaighat e khabar ar khaowar pani shesh, tran dorkar.",
+  "received_at": "2022-06-18T07:35:00Z",
+  "replay_offset_s": 5700,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0098",
+  "author_ref": "reporter_98",
+  "platform": "archived_post",
+  "text": "Companiganj e ghor bhenge poresi, bonna pani barche druto.",
+  "received_at": "2022-06-18T06:19:00Z",
+  "replay_offset_s": 1140,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0109",
+  "author_ref": "reporter_109",
+  "platform": "archived_post",
+  "text": "কোম্পানীগঞ্জে অনেক ঘর ডুবে গেছে, পানি বাড়ছে।",
+  "received_at": "2022-06-18T06:34:00Z",
+  "replay_offset_s": 2040,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0129",
+  "author_ref": "reporter_129",
+  "platform": "archived_post",
+  "text": "Kompaniganj e 15 jon atke ache, bachao, ekhuni help lagbe.",
+  "received_at": "2022-06-18T07:07:00Z",
+  "replay_offset_s": 4020,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0101",
+  "author_ref": "reporter_101",
+  "platform": "archived_post",
+  "text": "Gowainghat e pani tolie geche, khabar nai amader.",
+  "received_at": "2022-06-18T06:23:00Z",
+  "replay_offset_s": 1380,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0119",
+  "author_ref": "reporter_119",
+  "platform": "archived_post",
+  "text": "গোয়াইনঘাটে সড়ক যোগাযোগ বিচ্ছিন্ন, দ্রুত ব্যবস্থা নিন।",
+  "received_at": "2022-06-18T06:52:00Z",
+  "replay_offset_s": 3120,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0136",
+  "author_ref": "reporter_136",
+  "platform": "archived_post",
+  "text": "Goainghat e bidyut nai, current nai 2 din.",
+  "received_at": "2022-06-18T07:28:00Z",
+  "replay_offset_s": 5280,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0107",
+  "author_ref": "reporter_107",
+  "platform": "archived_post",
+  "text": "Jaintiapur e pani dube geche onek ghor.",
+  "received_at": "2022-06-18T06:31:00Z",
+  "replay_offset_s": 1860,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0132",
+  "author_ref": "reporter_132",
+  "platform": "archived_post",
+  "text": "জৈন্তাপুরে ১২ জন আশ্রয়কেন্দ্রে উঠেছে, খাবার দরকার।",
+  "received_at": "2022-06-18T07:17:00Z",
+  "replay_offset_s": 4620,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0113",
+  "author_ref": "reporter_113",
+  "platform": "archived_post",
+  "text": "Jaflong zero point e pani onek, rasta bondho.",
+  "received_at": "2022-06-18T06:44:00Z",
+  "replay_offset_s": 2640,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0145",
+  "author_ref": "reporter_145",
+  "platform": "archived_post",
+  "text": "তামাবিলে বন্যার পানি ঢুকেছে।",
+  "received_at": "2022-06-18T07:42:00Z",
+  "replay_offset_s": 6120,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0111",
+  "author_ref": "reporter_111",
+  "platform": "archived_post",
+  "text": "Zakiganj e ghor dhose poresi, ahoto manush ache, doctor lagbe.",
+  "received_at": "2022-06-18T06:37:00Z",
+  "replay_offset_s": 2220,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0138",
+  "author_ref": "reporter_138",
+  "platform": "archived_post",
+  "text": "জকিগঞ্জে পানি কমে নামছে এখন।",
+  "received_at": "2022-06-18T07:31:00Z",
+  "replay_offset_s": 5460,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0115",
+  "author_ref": "reporter_115",
+  "platform": "archived_post",
+  "text": "Beani Bazar e pani dhukche ghor e, poribar 6 jon.",
+  "received_at": "2022-06-18T06:48:00Z",
+  "replay_offset_s": 2880,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0149",
+  "author_ref": "reporter_149",
+  "platform": "archived_post",
+  "text": "বিয়ানীবাজারে ত্রাণ পৌঁছায়নি এখনো।",
+  "received_at": "2022-06-18T07:50:00Z",
+  "replay_offset_s": 6600,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0121",
+  "author_ref": "reporter_121",
+  "platform": "archived_post",
+  "text": "Golapganj e rasta bondho hoye ache gari jaite pare na.",
+  "received_at": "2022-06-18T06:55:00Z",
+  "replay_offset_s": 3300,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0126",
+  "author_ref": "reporter_126",
+  "platform": "archived_post",
+  "text": "Fenchugonj e pani barche, nodi er pani upore.",
+  "received_at": "2022-06-18T07:03:00Z",
+  "replay_offset_s": 3780,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0130",
+  "author_ref": "reporter_130",
+  "platform": "archived_post",
+  "text": "Balagonj e ghor e pani, osud shesh hoye gese.",
+  "received_at": "2022-06-18T07:11:00Z",
+  "replay_offset_s": 4260,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0134",
+  "author_ref": "reporter_134",
+  "platform": "archived_post",
+  "text": "ওসমানীনগরে বিদ্যুৎ নেই, পানি বাড়ছে।",
+  "received_at": "2022-06-18T07:24:00Z",
+  "replay_offset_s": 5040,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0142",
+  "author_ref": "reporter_142",
+  "platform": "archived_post",
+  "text": "Sarighat e nouka lagbe, 9 jon atke ache chal e.",
+  "received_at": "2022-06-18T07:39:00Z",
+  "replay_offset_s": 5940,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0151",
+  "author_ref": "reporter_151",
+  "platform": "archived_post",
+  "text": "Dakshin Surma te rasta te pani, jogajog somossa.",
+  "received_at": "2022-06-18T07:56:00Z",
+  "replay_offset_s": 6960,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0153",
+  "author_ref": "reporter_153",
+  "platform": "archived_post",
+  "text": "Chatak e pani onek barche, ghor dube jacche.",
+  "received_at": "2022-06-18T08:01:00Z",
+  "replay_offset_s": 7260,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0156",
+  "author_ref": "reporter_156",
+  "platform": "archived_post",
+  "text": "ছাতকে ১৮ জন আটকে আছে, নৌকা পাঠান জরুরি।",
+  "received_at": "2022-06-18T08:08:00Z",
+  "replay_offset_s": 7680,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0158",
+  "author_ref": "reporter_158",
+  "platform": "archived_post",
+  "text": "Surma nodi er pani bipod shimar upore.",
+  "received_at": "2022-06-18T08:14:00Z",
+  "replay_offset_s": 8040,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0105",
+  "author_ref": "reporter_105",
+  "platform": "archived_post",
+  "text": "Derai te puro elaka plabito, ghor bari sob pani te.",
+  "received_at": "2022-06-18T06:29:00Z",
+  "replay_offset_s": 1740,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0131",
+  "author_ref": "reporter_131",
+  "platform": "archived_post",
+  "text": "দিরাইয়ে ২২ জন মানুষ আটকে আছে, সাহায্য দরকার।",
+  "received_at": "2022-06-18T07:13:00Z",
+  "replay_offset_s": 4380,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0124",
+  "author_ref": "reporter_124",
+  "platform": "archived_post",
+  "text": "Sunamganj sadar e pani onek, khabar nai.",
+  "received_at": "2022-06-18T06:59:00Z",
+  "replay_offset_s": 3540,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0147",
+  "author_ref": "reporter_147",
+  "platform": "archived_post",
+  "text": "সুনামগঞ্জে রাস্তা ভেঙে গেছে, যোগাযোগ বিচ্ছিন্ন।",
+  "received_at": "2022-06-18T07:47:00Z",
+  "replay_offset_s": 6420,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0152",
+  "author_ref": "reporter_152",
+  "platform": "archived_post",
+  "text": "Doarabazar e bonna, manush ashroy kendro te.",
+  "received_at": "2022-06-18T07:58:00Z",
+  "replay_offset_s": 7080,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0155",
+  "author_ref": "reporter_155",
+  "platform": "archived_post",
+  "text": "Jagannathpur e pani barche druto, nouka dorkar.",
+  "received_at": "2022-06-18T08:05:00Z",
+  "replay_offset_s": 7500,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0094",
+  "author_ref": "reporter_94",
+  "platform": "archived_post",
+  "text": "Sylhet e bonna pani rasta te uthe geche kotha kotha.",
+  "received_at": "2022-06-18T06:15:00Z",
+  "replay_offset_s": 900,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0133",
+  "author_ref": "reporter_133",
+  "platform": "archived_post",
+  "text": "Jaintapur e school e ashroy niyeche onek poribar.",
+  "received_at": "2022-06-18T07:21:00Z",
+  "replay_offset_s": 4860,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0139",
+  "author_ref": "reporter_139",
+  "platform": "archived_post",
+  "text": "Kompaniganj e setu er kaj kora rasta bhenge geche.",
+  "received_at": "2022-06-18T07:33:00Z",
+  "replay_offset_s": 5580,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0146",
+  "author_ref": "reporter_146",
+  "platform": "archived_post",
+  "text": "কানাইঘাটে ঔষধ আর ডাক্তার দরকার, অনেক আহত।",
+  "received_at": "2022-06-18T07:44:00Z",
+  "replay_offset_s": 6240,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0150",
+  "author_ref": "reporter_150",
+  "platform": "archived_post",
+  "text": "Zakiganj e khaowar pani nai, tran lagbe.",
+  "received_at": "2022-06-18T07:52:00Z",
+  "replay_offset_s": 6720,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_arch_0157",
+  "author_ref": "reporter_157",
+  "platform": "archived_post",
+  "text": "Gowainghat e 4 ti baccha atke ache, urgent.",
+  "received_at": "2022-06-18T08:11:00Z",
+  "replay_offset_s": 7860,
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "source_id": "src_fake_301",
+  "author_ref": "reporter_301",
+  "platform": "archived_post",
+  "text": "Zindabazar puro dube gese, sob building er chal porjonto pani. Bachao!",
+  "received_at": "2022-06-18T06:46:00Z",
+  "replay_offset_s": 2760,
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "contradicts_imagery",
+   "expected_tier": "suspect",
+   "provenance_note": "SYNTHETIC planted fake. Claims total inundation in an assessed, undamaged cell."
+  }
+ },
+ {
+  "source_id": "src_fake_302",
+  "author_ref": "reporter_302",
+  "platform": "archived_post",
+  "text": "জিন্দাবাজারে সব ঘর ডুবে গেছে, কেউ বাঁচেনি।",
+  "received_at": "2022-06-18T07:01:00Z",
+  "replay_offset_s": 3660,
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "contradicts_imagery",
+   "expected_tier": "suspect",
+   "provenance_note": "SYNTHETIC. Second DISTINCT source making the same false claim -- tests that spatial contradiction overrides corroboration."
+  }
+ },
+ {
+  "source_id": "src_fake_303",
+  "author_ref": "reporter_303",
+  "platform": "archived_post",
+  "text": "Ambarkhana e pani chal porjonto uthe gese, 200 jon atke.",
+  "received_at": "2022-06-18T07:09:00Z",
+  "replay_offset_s": 4140,
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "contradicts_imagery",
+   "expected_tier": "suspect",
+   "provenance_note": "SYNTHETIC. Assessed cell with zero damaged buildings."
+  }
+ },
+ {
+  "source_id": "src_fake_304",
+  "author_ref": "reporter_304",
+  "platform": "archived_post",
+  "text": "Puro Sylhet sadar dube gese, kono building nai ar.",
+  "received_at": "2022-06-18T07:26:00Z",
+  "replay_offset_s": 5160,
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "contradicts_imagery",
+   "expected_tier": "suspect",
+   "provenance_note": "SYNTHETIC. Assessed urban cell, ~1% damage."
+  }
+ },
+ {
+  "source_id": "src_fake_777",
+  "author_ref": "reporter_777",
+  "platform": "archived_post",
+  "text": "Bishwanath e voyonkor bonna, sob ghor bhenge gese, urgent help!",
+  "received_at": "2022-06-18T06:50:00Z",
+  "replay_offset_s": 3000,
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "duplicate_astroturf",
+   "expected_tier": "plausible_unverified",
+   "provenance_note": "SYNTHETIC astroturf 1/3 from one source. Must NOT be promoted to corroborated."
+  }
+ },
+ {
+  "source_id": "src_fake_777",
+  "author_ref": "reporter_777",
+  "platform": "archived_post",
+  "text": "Bishwanath e voyonkor bonna, sob ghor bhenge gelo, urgent help lagbe!",
+  "received_at": "2022-06-18T06:53:00Z",
+  "replay_offset_s": 3180,
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "duplicate_astroturf",
+   "expected_tier": "plausible_unverified",
+   "provenance_note": "SYNTHETIC astroturf 2/3 from the same source_id."
+  }
+ },
+ {
+  "source_id": "src_fake_777",
+  "author_ref": "reporter_777",
+  "platform": "archived_post",
+  "text": "Bishwanath e bonna voyonkor, ghor sob bhenge gese, help urgent!",
+  "received_at": "2022-06-18T06:57:00Z",
+  "replay_offset_s": 3420,
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "duplicate_astroturf",
+   "expected_tier": "plausible_unverified",
+   "provenance_note": "SYNTHETIC astroturf 3/3 from the same source_id."
+  }
+ },
+ {
+  "source_id": "src_fake_401",
+  "author_ref": "reporter_401",
+  "platform": "archived_post",
+  "text": "Golapganj e 50000 jon manush atke ache ekhuni bachao.",
+  "received_at": "2022-06-18T07:15:00Z",
+  "replay_offset_s": 4500,
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "exaggerated_scale",
+   "expected_tier": "plausible_unverified",
+   "provenance_note": "SYNTHETIC. Implausible count. Our verifier does NOT detect scale exaggeration; the number is dropped only by a sanity ceiling in extract.py."
+  }
+ },
+ {
+  "source_id": "src_fake_402",
+  "author_ref": "reporter_402",
+  "platform": "archived_post",
+  "text": "Beanibazar e 90000 manush pani te atke, sob mara jacche.",
+  "received_at": "2022-06-18T07:37:00Z",
+  "replay_offset_s": 5820,
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "exaggerated_scale",
+   "expected_tier": "corroborated",
+   "provenance_note": "SYNTHETIC. A WORSE outcome than fake_401 and the expectation is set to 'corroborated' because that is genuinely what our method produces, not because we are matching the test to the code. Beanibazar has an independent genuine report of flooding, so this claim's location and event group ARE corroborated -- and the exaggerated casualty count rides along and inherits full fusion weight. Corroboration cannot detect scale exaggeration; we have no population model. This is the most important known weakness in the verifier: a wildly inflated claim in a genuinely affected area is indistinguishable from a truthful one."
+  }
+ },
+ {
+  "source_id": "src_fake_501",
+  "author_ref": "reporter_501",
+  "platform": "archived_post",
+  "text": "Dhaka Mirpur e bonna pani, sob dube gese, nouka lagbe.",
+  "received_at": "2022-06-18T07:54:00Z",
+  "replay_offset_s": 6840,
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "impossible_location",
+   "expected_tier": "plausible_unverified",
+   "provenance_note": "SYNTHETIC. Outside the Sylhet gazetteer, so geo resolves to null and the signal cannot be placed on the map."
+  }
+ }
+]

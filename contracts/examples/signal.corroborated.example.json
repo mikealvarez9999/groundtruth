@@ -1,0 +1,72 @@
+{
+  "contract_version": "1.0.0",
+  "signal_id": "sig_seed_0142",
+  "channel": "citizen_seed",
+  "source": {
+    "source_id": "src_archived_0091",
+    "platform": "archived_post",
+    "author_ref": "reporter_91",
+    "url": null,
+    "received_at": "2026-07-26T08:02:00Z",
+    "replay_offset_s": 420
+  },
+  "raw": {
+    "text": "ILLUSTRATIVE FIXTURE - not a real post. Kanaighat er dike pani onek beshi, 3 ta ghor er chal porjonto dube gese. Nouka lagbe.",
+    "lang": "bn-latn",
+    "media_refs": [],
+    "imagery_ref": null
+  },
+  "claim": {
+    "location_ref": "Kanaighat",
+    "event_type": "people_stranded",
+    "urgency": "critical",
+    "persons_at_risk": 11,
+    "claimed_time": "2026-07-26T07:40:00Z",
+    "needs": ["rescue", "boat"],
+    "summary_en": "Water up to rooflines around Kanaighat; three houses submerged, boat needed."
+  },
+  "geo": {
+    "lon": 92.2597,
+    "lat": 25.0158,
+    "grid_cell_id": "c_9226_2502",
+    "geocode": {
+      "method": "geonames_fuzzy",
+      "matched_name": "Kanaighat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 0.94,
+      "ambiguous": false,
+      "candidates": [
+        { "name": "Kanaighat", "admin": "Sylhet", "score": 0.94, "lon": 92.2597, "lat": 25.0158 },
+        { "name": "Kanaipur", "admin": "Faridpur", "score": 0.51, "lon": 89.8342, "lat": 23.5981 }
+      ]
+    }
+  },
+  "verification": {
+    "tier": "corroborated",
+    "reason": "3 distinct sources reported stranded persons in cell c_9226_2502 within a 90-minute window, and the damage layer shows 58% of 210 assessed buildings damaged in the same cell.",
+    "corroborating_signal_ids": ["sig_seed_0107", "sig_tg_0003"],
+    "distinct_source_count": 3,
+    "spatial_check": {
+      "status": "consistent",
+      "inside_valid_area": true,
+      "buildings_in_radius": 210,
+      "damaged_in_radius": 122,
+      "radius_m": 500
+    },
+    "fusion_weight": 1.0,
+    "recon_priority": false,
+    "verified_at": "2026-07-26T08:03:12Z"
+  },
+  "extraction": {
+    "model": "gemini-2.5-flash",
+    "prompt_version": "extract-v1",
+    "extracted_at": "2026-07-26T08:02:40Z",
+    "confidence": 0.86,
+    "cached": true
+  },
+  "eval": {
+    "planted_fake": false,
+    "expected_tier": "corroborated",
+    "provenance_note": "FIXTURE. Real seeded rows must cite the archive they were drawn from."
+  }
+}

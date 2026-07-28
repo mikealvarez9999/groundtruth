@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://groundtruth.local/contracts/damage_layer.schema.json",
+  "title": "GroundTruth damage layer",
+  "description": "Channel 1. A GeoJSON FeatureCollection of building footprints carrying a per-building damage assessment, plus a provenance block so every number on our map can be traced back to a specific sensor run and (when available) an accuracy measurement. The assessment may come from HASTE (optical) or from Sentinel-1 SAR flood analysis; see groundtruth.source. Committed as a static artifact; never generated at request time.",
+  "type": "object",
+  "required": ["type", "groundtruth", "features"],
+  "additionalProperties": false,
+  "properties": {
+    "type": { "const": "FeatureCollection" },
+
+    "groundtruth": {
+      "description": "Provenance. Non-standard GeoJSON member, deliberately: any tool that ignores it still reads the FeatureCollection fine, and we refuse to ship a damage layer whose origin is unknown.",
+      "type": "object",
+      "required": ["contract_version", "event_id", "generated_at", "crs", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "contract_version": { "const": "1.0.0" },
+        "event_id": {
+          "description": "Disaster event slug. Our demo scenario only.",
+          "type": "string",
+          "examples": ["bangladesh-flooding22"]
+        },
+        "generated_at": { "type": "string", "format": "date-time" },
+        "crs": {
+          "description": "Always WGS84. HASTE reprojects footprints to EPSG:4326 before use, so the converter asserts rather than transforms.",
+          "const": "EPSG:4326"
+        },
+        "source": {
+          "description": "Sensor-agnostic provenance. The damage layer is the same contract whether a building's damage class came from HASTE (optical) or from Sentinel-1 SAR flood analysis, so the fusion engine downstream never has to care which satellite saw the disaster. Read `tool` first: it selects which of the shapes below applies.",
+          "type": "object",
+          "oneOf": [
+            {
+              "title": "HASTE (optical)",
+              "description": "Microsoft HASTE Rapid Building Assessment: embedding backbone + in-browser logistic regression on optical imagery (e.g. Maxar Open Data).",
+              "required": ["tool", "haste_commit", "backbone"],
+              "additionalProperties": false,
+              "properties": {
+                "tool": { "const": "haste" },
+                "haste_commit": {
+                  "description": "Short commit of the microsoft/haste checkout that produced this. HASTE moves fast; without this the export is unreproducible.",
+                  "type": "string"
+                },
+                "workflow": {
+                  "description": "Which HASTE path was used. 'building' is Rapid Building Assessment (embedding + in-browser logistic regression).",
+                  "enum": ["building", "standard"],
+                  "default": "building"
+                },
+                "backbone": { "enum": ["mosaiks", "dinov2_vits14", "dinov2_vitb14", "dinov2_vitl14"] },
+                "num_features": { "type": "integer", "minimum": 1 },
+                "resize_factor": { "type": "number", "exclusiveMinimum": 0 },
+                "footprint_source": {
+                  "description": "HASTE defaults to Overture Maps; 'custom_gpkg' if we supplied our own.",
+                  "enum": ["overture", "custom_gpkg"],
+                  "default": "overture"
+                },
+                "imagery_note": {
+                  "description": "Free text identifying the scene(s), e.g. Maxar Open Data collection and capture date.",
+                  "type": "string"
+                }
+              }
+            },
+            {
+              "title": "Sentinel-1 SAR",
+              "description": "Copernicus Sentinel-1 C-band SAR flood analysis. A building is 'damaged' when a threshold fraction of its footprint falls inside the detected flood extent. SAR penetrates cloud and works at night, so `obscured` is always false for this source -- there is no cloud to hide behind.",
+              "required": ["tool", "sensor", "classifier", "footprint_source"],
+              "additionalProperties": false,
+              "properties": {
+                "tool": { "const": "sentinel1_sar" },
+                "sensor": {
+                  "description": "The SAR instrument and product used.",
+                  "type": "string",
+                  "examples": ["Sentinel-1 C-band SAR (GRD, IW mode, VV+VH)"]
+                },
+                "classifier": {
+                  "description": "Flood-classification method used to turn backscatter into a flood mask.",
+                  "type": "string",
+                  "examples": ["VV+VH z-score anomaly vs seasonal baseline + raw-VH threshold, spatially smoothed"]
+                },
+                "classifier_ref": {
+                  "description": "Where the classifier came from -- repo + short commit -- so the flood mask is reproducible.",
+                  "type": "string",
+                  "examples": ["mitchellthomas1/S1-Flood-Bangladesh @ <commit>"]
+                },
+                "baseline_window": {
+                  "description": "[start, end) ISO dates of the SAR baseline period the anomaly is measured against.",
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "target_window": {
+                  "description": "[start, end) ISO dates of the flood (post-event) period assessed.",
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "flood_fraction_threshold": {
+                  "description": "A footprint is classed 'damaged' when at least this fraction of it lies inside the flood mask.",
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "footprint_source": {
+                  "description": "Where building outlines came from. Google Open Buildings v3 covers Bangladesh.",
+                  "type": "string",
+                  "examples": ["google_open_buildings_v3", "overture", "custom_gpkg"]
+                },
+                "footprint_confidence_min": {
+                  "description": "Minimum footprint confidence kept from the building source (Open Buildings ships a per-building confidence).",
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "imagery_note": {
+                  "description": "Free text identifying the scene(s) and area, e.g. event slug + acquisition dates + AOI.",
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        },
+        "accuracy": {
+          "description": "Measured quality of this layer, taken from HASTE's Validation and Assessment Reports. Optional in the schema so an early export is not blocked, but REQUIRED before any of these numbers appear in the demo or the brief. An unvalidated damage layer is a guess with good styling.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "labels_total": { "type": "integer", "minimum": 0 },
+            "labels_damaged": { "type": "integer", "minimum": 0 },
+            "validation_sample_n": {
+              "description": "Human-validated footprints. HASTE's Building Validation tool samples ~200 by default.",
+              "type": "integer",
+              "minimum": 0
+            },
+            "damaged_precision": { "type": "number", "minimum": 0, "maximum": 1 },
+            "damaged_recall": { "type": "number", "minimum": 0, "maximum": 1 },
+            "damaged_f1": { "type": "number", "minimum": 0, "maximum": 1 },
+            "overall_accuracy": { "type": "number", "minimum": 0, "maximum": 1 },
+            "estimated_damaged_total": { "type": "integer", "minimum": 0 },
+            "estimated_damaged_ci95": {
+              "description": "[low, high] from HASTE's Assessment Report.",
+              "type": "array",
+              "items": { "type": "integer", "minimum": 0 },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          }
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "buildings_total": { "type": "integer", "minimum": 0 },
+            "buildings_damaged": { "type": "integer", "minimum": 0 },
+            "buildings_obscured": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "geometry", "properties"],
+        "additionalProperties": false,
+        "properties": {
+          "type": { "const": "Feature" },
+          "id": { "type": ["integer", "string"] },
+          "geometry": {
+            "type": "object",
+            "required": ["type", "coordinates"],
+            "properties": {
+              "type": { "enum": ["Polygon", "MultiPolygon"] },
+              "coordinates": { "type": "array" }
+            }
+          },
+          "properties": {
+            "type": "object",
+            "required": ["building_id", "damage_class", "obscured"],
+            "additionalProperties": false,
+            "properties": {
+              "building_id": {
+                "description": "Row index into the source footprints for this run (HASTE's 'id' column, or the enumeration index of the building source for SAR). Stable only for a given run; re-running the source renumbers.",
+                "type": "integer",
+                "minimum": 0
+              },
+              "damage_class": {
+                "description": "Binary by necessity, not by choice. HASTE persists a hard 0/1 class per building — the in-browser logistic regression computes a probability but the predict-all path thresholds it before saving. There is no per-building confidence to carry here. Continuous damage intensity is derived by AGGREGATION in sector_score.schema.json (damaged_fraction), never invented per building.",
+                "enum": ["intact", "damaged"]
+              },
+              "obscured": {
+                "description": "True when the sensor could not see the building. For HASTE this is a 'Cloudy' prediction (unknown_pct == 1.0). For Sentinel-1 SAR it is always false — radar penetrates cloud and works at night, which is precisely why SAR is the right sensor for a monsoon flood. Obscured buildings are excluded from damage scoring — absence of damage there means 'could not see', not 'undamaged'.",
+                "type": "boolean"
+              },
+              "area_m2": {
+                "description": "Footprint area in m^2 on an equal-area projection (HASTE uses EPSG:6933; the SAR path carries Open Buildings' area_in_meters). Null when it could not be computed.",
+                "type": ["number", "null"],
+                "minimum": 0
+              },
+              "grid_cell_id": {
+                "description": "Assigned by our fusion step, not by HASTE. Absent in a freshly converted layer.",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

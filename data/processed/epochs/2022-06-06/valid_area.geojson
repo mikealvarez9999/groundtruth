@@ -1,0 +1,39 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "event_id": "bangladesh-flooding22",
+    "note": "Sentinel-1 SAR assessment footprint (AOI). Claims outside this polygon are NO_COVERAGE and must never be tiered suspect."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       91.9,
+       25.02
+      ],
+      [
+       92.12,
+       25.02
+      ],
+      [
+       92.12,
+       25.17
+      ],
+      [
+       91.9,
+       25.17
+      ],
+      [
+       91.9,
+       25.02
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

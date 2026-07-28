@@ -1,0 +1,116 @@
+{
+  "contract_version": "1.0.0",
+  "event_id": "bangladesh-flooding22",
+  "generated_at": "2026-07-26T09:20:00Z",
+  "grid": {
+    "cell_size_m": 500,
+    "scheme": "lonlat_floor"
+  },
+  "weights": {
+    "damage": 0.45,
+    "vlm": 0.2,
+    "citizen": 0.35,
+    "tier_multipliers": {
+      "corroborated": 1.0,
+      "plausible_unverified": 0.35,
+      "suspect": 0.0
+    },
+    "urgency_multipliers": {
+      "critical": 1.0,
+      "high": 0.75,
+      "medium": 0.5,
+      "low": 0.25
+    }
+  },
+  "cells": [
+    {
+      "cell_id": "c_9226_2502",
+      "centroid": { "lon": 92.2597, "lat": 25.0158 },
+      "bbox": [92.2573, 25.0135, 92.2622, 25.0180],
+      "rank": 1,
+      "score": 0.91,
+      "components": { "damage": 0.58, "vlm": 0.72, "citizen": 0.88 },
+      "coverage": { "in_valid_area": true, "buildings_obscured": 4, "status": "assessed" },
+      "evidence": {
+        "buildings_total": 210,
+        "buildings_damaged": 122,
+        "damaged_fraction": 0.581,
+        "damaged_area_m2": 48210.5,
+        "signal_ids": ["sig_seed_0142", "sig_seed_0107", "sig_tg_0003", "sig_vlm_0021"],
+        "corroborated_count": 3,
+        "plausible_unverified_count": 1,
+        "suspect_count": 0,
+        "distinct_source_count": 4,
+        "vlm_finding_ids": ["sig_vlm_0021"]
+      },
+      "urgency_max": "critical",
+      "persons_at_risk_est": 11,
+      "top_reasons": [
+        "58% of 210 assessed buildings damaged",
+        "3 independent reports of stranded persons within 90 minutes",
+        "Imagery finding: structures inundated to roofline, eastern road access severed"
+      ],
+      "place_label": "Kanaighat",
+      "updated_at": "2026-07-26T09:20:00Z"
+    },
+    {
+      "cell_id": "c_9191_2493",
+      "centroid": { "lon": 91.9124, "lat": 24.9331 },
+      "bbox": [91.9100, 24.9308, 91.9149, 24.9353],
+      "rank": 2,
+      "score": 0.54,
+      "components": { "damage": 0.31, "vlm": null, "citizen": 0.4 },
+      "coverage": { "in_valid_area": true, "buildings_obscured": 22, "status": "partial" },
+      "evidence": {
+        "buildings_total": 96,
+        "buildings_damaged": 30,
+        "damaged_fraction": 0.3125,
+        "damaged_area_m2": 9880.0,
+        "signal_ids": ["sig_seed_0155"],
+        "corroborated_count": 0,
+        "plausible_unverified_count": 1,
+        "suspect_count": 0,
+        "distinct_source_count": 1,
+        "vlm_finding_ids": []
+      },
+      "urgency_max": "high",
+      "persons_at_risk_est": null,
+      "top_reasons": [
+        "31% of 96 assessed buildings damaged",
+        "Single unverified report of blocked road - recon priority",
+        "22 buildings cloud-obscured; damage here is likely undercounted"
+      ],
+      "place_label": "Gowainghat",
+      "updated_at": "2026-07-26T09:20:00Z"
+    },
+    {
+      "cell_id": "c_9187_2489",
+      "centroid": { "lon": 91.8687, "lat": 24.8949 },
+      "bbox": [91.8663, 24.8926, 91.8712, 24.8971],
+      "rank": 3,
+      "score": 0.04,
+      "components": { "damage": 0.0, "vlm": null, "citizen": 0.0 },
+      "coverage": { "in_valid_area": true, "buildings_obscured": 0, "status": "assessed" },
+      "evidence": {
+        "buildings_total": 148,
+        "buildings_damaged": 0,
+        "damaged_fraction": 0.0,
+        "damaged_area_m2": 0.0,
+        "signal_ids": ["sig_seed_0188"],
+        "corroborated_count": 0,
+        "plausible_unverified_count": 0,
+        "suspect_count": 1,
+        "distinct_source_count": 1,
+        "vlm_finding_ids": []
+      },
+      "urgency_max": null,
+      "persons_at_risk_est": null,
+      "top_reasons": [
+        "0 of 148 assessed buildings damaged",
+        "1 suspect report withheld from scoring - see Audit Drawer"
+      ],
+      "place_label": "Zindabazar",
+      "updated_at": "2026-07-26T09:20:00Z"
+    }
+  ]
+}

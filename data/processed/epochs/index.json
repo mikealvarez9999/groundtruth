@@ -1,0 +1,13 @@
+{
+ "default": "2022-06-19",
+ "epochs": [
+  {
+   "slug": "2022-06-06",
+   "label": "PRE-PEAK (1-10 JUN)"
+  },
+  {
+   "slug": "2022-06-19",
+   "label": "PEAK (16-22 JUN)"
+  }
+ ]
+}

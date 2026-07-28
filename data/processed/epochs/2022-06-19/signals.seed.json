@@ -1,0 +1,3924 @@
+[
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_963718950b2d",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0091",
+   "platform": "archived_post",
+   "author_ref": "reporter_91",
+   "url": null,
+   "received_at": "2022-06-18T06:12:00Z",
+   "replay_offset_s": 720
+  },
+  "raw": {
+   "text": "Kanaighat er dike pani onek beshi, 3 ta ghor er chal porjonto dube gese. Nouka lagbe.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Kanaighat er",
+   "event_type": "flood_inundation",
+   "urgency": "critical",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "boat"
+   ],
+   "summary_en": "Reports flooding / rising water at Kanaighat er."
+  },
+  "geo": {
+   "lon": 92.2597,
+   "lat": 25.0158,
+   "grid_cell_id": "c_18631_5569",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Kanaighat",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Kanaighat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.2597,
+      "lat": 25.0158
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:12:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "3 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18631_5569 (Kanaighat) within 3h; this report specifically describes flood inundation (corroborating sources: src_arch_0104, src_arch_0122). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_089d122e93bf",
+    "sig_73fd4c46708a"
+   ],
+   "distinct_source_count": 3,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_089d122e93bf",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0104",
+   "platform": "archived_post",
+   "author_ref": "reporter_104",
+   "url": null,
+   "received_at": "2022-06-18T06:26:00Z",
+   "replay_offset_s": 1560
+  },
+  "raw": {
+   "text": "কানাইঘাটে ৭ জন মানুষ ছাদে আটকে আছে, জরুরি উদ্ধার দরকার।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "কানাইঘাট",
+   "event_type": "people_stranded",
+   "urgency": "critical",
+   "persons_at_risk": 7,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports people stranded at কানাইঘাট."
+  },
+  "geo": {
+   "lon": 92.2597,
+   "lat": 25.0158,
+   "grid_cell_id": "c_18631_5569",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Kanaighat",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Kanaighat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.2597,
+      "lat": 25.0158
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:26:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "3 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18631_5569 (Kanaighat) within 3h; this report specifically describes people stranded (corroborating sources: src_arch_0091, src_arch_0122). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_73fd4c46708a",
+    "sig_963718950b2d"
+   ],
+   "distinct_source_count": 3,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_42fccc6a7151",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0117",
+   "platform": "archived_post",
+   "author_ref": "reporter_117",
+   "url": null,
+   "received_at": "2022-06-18T06:41:00Z",
+   "replay_offset_s": 2460
+  },
+  "raw": {
+   "text": "Konaighat bazar area te rasta puro bondho, jogajog bichchinno hoye geche.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Konaighat",
+   "event_type": "road_blocked",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports road or link access blocked at Konaighat."
+  },
+  "geo": {
+   "lon": 92.2597,
+   "lat": 25.0158,
+   "grid_cell_id": "c_18631_5569",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Kanaighat",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Kanaighat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.2597,
+      "lat": 25.0158
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:41:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports road blocked at Kanaighat (cell c_18631_5569). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_73fd4c46708a",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0122",
+   "platform": "archived_post",
+   "author_ref": "reporter_122",
+   "url": null,
+   "received_at": "2022-06-18T06:58:00Z",
+   "replay_offset_s": 3480
+  },
+  "raw": {
+   "text": "kanighat e nouka pathan, manush atke ache, taratari please.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "kanighat",
+   "event_type": "people_stranded",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "boat",
+    "rescue"
+   ],
+   "summary_en": "Reports people stranded at kanighat."
+  },
+  "geo": {
+   "lon": 92.2597,
+   "lat": 25.0158,
+   "grid_cell_id": "c_18631_5569",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Kanaighat",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Kanaighat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.2597,
+      "lat": 25.0158
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:58:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "3 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18631_5569 (Kanaighat) within 3h; this report specifically describes people stranded (corroborating sources: src_arch_0091, src_arch_0104). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_089d122e93bf",
+    "sig_963718950b2d"
+   ],
+   "distinct_source_count": 3,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_7d9672998ad7",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0140",
+   "platform": "archived_post",
+   "author_ref": "reporter_140",
+   "url": null,
+   "received_at": "2022-06-18T07:35:00Z",
+   "replay_offset_s": 5700
+  },
+  "raw": {
+   "text": "Kanaighat e khabar ar khaowar pani shesh, tran dorkar.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Kanaighat",
+   "event_type": "water_food_need",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "water",
+    "food"
+   ],
+   "summary_en": "Reports need for food or drinking water at Kanaighat."
+  },
+  "geo": {
+   "lon": 92.2597,
+   "lat": 25.0158,
+   "grid_cell_id": "c_18631_5569",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Kanaighat",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Kanaighat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.2597,
+      "lat": 25.0158
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:35:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report relief need (food, water, medical, shelter) in cell c_18631_5569 (Kanaighat) within 3h; this report specifically describes water food need (corroborating sources: src_arch_0146). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_d7f35b9bb433"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_2d86d75420a5",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0098",
+   "platform": "archived_post",
+   "author_ref": "reporter_98",
+   "url": null,
+   "received_at": "2022-06-18T06:19:00Z",
+   "replay_offset_s": 1140
+  },
+  "raw": {
+   "text": "Companiganj e ghor bhenge poresi, bonna pani barche druto.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Companiganj",
+   "event_type": "structural_damage",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports structural damage at Companiganj."
+  },
+  "geo": {
+   "lon": 91.65,
+   "lat": 25.05,
+   "grid_cell_id": "c_18508_5577",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Companiganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Companiganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.65,
+      "lat": 25.05
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:19:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "3 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18508_5577 (Companiganj) within 3h; this report specifically describes structural damage (corroborating sources: src_arch_0109, src_arch_0129). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_55c242b8efbc",
+    "sig_7d8e92abd637"
+   ],
+   "distinct_source_count": 3,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_7d8e92abd637",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0109",
+   "platform": "archived_post",
+   "author_ref": "reporter_109",
+   "url": null,
+   "received_at": "2022-06-18T06:34:00Z",
+   "replay_offset_s": 2040
+  },
+  "raw": {
+   "text": "কোম্পানীগঞ্জে অনেক ঘর ডুবে গেছে, পানি বাড়ছে।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "কোম্পানীগঞ্জ",
+   "event_type": "flood_inundation",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at কোম্পানীগঞ্জ."
+  },
+  "geo": {
+   "lon": 91.65,
+   "lat": 25.05,
+   "grid_cell_id": "c_18508_5577",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Companiganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Companiganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.65,
+      "lat": 25.05
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:34:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "3 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18508_5577 (Companiganj) within 3h; this report specifically describes flood inundation (corroborating sources: src_arch_0098, src_arch_0129). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_2d86d75420a5",
+    "sig_55c242b8efbc"
+   ],
+   "distinct_source_count": 3,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_55c242b8efbc",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0129",
+   "platform": "archived_post",
+   "author_ref": "reporter_129",
+   "url": null,
+   "received_at": "2022-06-18T07:07:00Z",
+   "replay_offset_s": 4020
+  },
+  "raw": {
+   "text": "Kompaniganj e 15 jon atke ache, bachao, ekhuni help lagbe.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Kompaniganj",
+   "event_type": "people_stranded",
+   "urgency": "critical",
+   "persons_at_risk": 15,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports people stranded at Kompaniganj."
+  },
+  "geo": {
+   "lon": 91.65,
+   "lat": 25.05,
+   "grid_cell_id": "c_18508_5577",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Companiganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Companiganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.65,
+      "lat": 25.05
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:07:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "3 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18508_5577 (Companiganj) within 3h; this report specifically describes people stranded (corroborating sources: src_arch_0098, src_arch_0109). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_2d86d75420a5",
+    "sig_7d8e92abd637"
+   ],
+   "distinct_source_count": 3,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_dbe81fc4edc2",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0101",
+   "platform": "archived_post",
+   "author_ref": "reporter_101",
+   "url": null,
+   "received_at": "2022-06-18T06:23:00Z",
+   "replay_offset_s": 1380
+  },
+  "raw": {
+   "text": "Gowainghat e pani tolie geche, khabar nai amader.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Gowainghat",
+   "event_type": "water_food_need",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "food"
+   ],
+   "summary_en": "Reports need for food or drinking water at Gowainghat."
+  },
+  "geo": {
+   "lon": 91.7333,
+   "lat": 25.0833,
+   "grid_cell_id": "c_18525_5584",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Gowainghat",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Gowainghat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.7333,
+      "lat": 25.0833
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:23:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports water food need at Gowainghat (cell c_18525_5584). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_1da11ce8b512",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0119",
+   "platform": "archived_post",
+   "author_ref": "reporter_119",
+   "url": null,
+   "received_at": "2022-06-18T06:52:00Z",
+   "replay_offset_s": 3120
+  },
+  "raw": {
+   "text": "গোয়াইনঘাটে সড়ক যোগাযোগ বিচ্ছিন্ন, দ্রুত ব্যবস্থা নিন।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "গোয়াইনঘাট",
+   "event_type": "road_blocked",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports road or link access blocked at গোয়াইনঘাট."
+  },
+  "geo": {
+   "lon": 91.7333,
+   "lat": 25.0833,
+   "grid_cell_id": "c_18525_5584",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Gowainghat",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Gowainghat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.7333,
+      "lat": 25.0833
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:52:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports road blocked at Gowainghat (cell c_18525_5584). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_915823157c31",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0136",
+   "platform": "archived_post",
+   "author_ref": "reporter_136",
+   "url": null,
+   "received_at": "2022-06-18T07:28:00Z",
+   "replay_offset_s": 5280
+  },
+  "raw": {
+   "text": "Goainghat e bidyut nai, current nai 2 din.",
+   "lang": "en",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Goainghat",
+   "event_type": "power_outage",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "power"
+   ],
+   "summary_en": "Reports power outage at Goainghat."
+  },
+  "geo": {
+   "lon": 91.7333,
+   "lat": 25.0833,
+   "grid_cell_id": "c_18525_5584",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Gowainghat",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Gowainghat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.7333,
+      "lat": 25.0833
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:28:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports power outage at Gowainghat (cell c_18525_5584). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_da9fb19dd787",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0107",
+   "platform": "archived_post",
+   "author_ref": "reporter_107",
+   "url": null,
+   "received_at": "2022-06-18T06:31:00Z",
+   "replay_offset_s": 1860
+  },
+  "raw": {
+   "text": "Jaintiapur e pani dube geche onek ghor.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Jaintiapur",
+   "event_type": "flood_inundation",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at Jaintiapur."
+  },
+  "geo": {
+   "lon": 92.1167,
+   "lat": 25.1333,
+   "grid_cell_id": "c_18602_5595",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Jaintiapur",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Jaintiapur",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.1167,
+      "lat": 25.1333
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:31:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports flood inundation at Jaintiapur (cell c_18602_5595). Imagery is consistent (16/80 assessed buildings damaged nearby) but no second independent source has reported it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": true,
+    "buildings_in_radius": 80,
+    "damaged_in_radius": 16,
+    "radius_m": 600.0,
+    "status": "consistent"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_584ca07b3500",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0132",
+   "platform": "archived_post",
+   "author_ref": "reporter_132",
+   "url": null,
+   "received_at": "2022-06-18T07:17:00Z",
+   "replay_offset_s": 4620
+  },
+  "raw": {
+   "text": "জৈন্তাপুরে ১২ জন আশ্রয়কেন্দ্রে উঠেছে, খাবার দরকার।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "জৈন্তাপুর",
+   "event_type": "water_food_need",
+   "urgency": "medium",
+   "persons_at_risk": 12,
+   "claimed_time": null,
+   "needs": [
+    "food",
+    "shelter"
+   ],
+   "summary_en": "Reports need for food or drinking water at জৈন্তাপুর."
+  },
+  "geo": {
+   "lon": 92.1167,
+   "lat": 25.1333,
+   "grid_cell_id": "c_18602_5595",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Jaintiapur",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Jaintiapur",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.1167,
+      "lat": 25.1333
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:17:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report relief need (food, water, medical, shelter) in cell c_18602_5595 (Jaintiapur) within 3h; this report specifically describes water food need (corroborating sources: src_arch_0133). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_4f02a2422c36"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": true,
+    "buildings_in_radius": 80,
+    "damaged_in_radius": 16,
+    "radius_m": 600.0,
+    "status": "not_applicable"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_dcdc39d21962",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0113",
+   "platform": "archived_post",
+   "author_ref": "reporter_113",
+   "url": null,
+   "received_at": "2022-06-18T06:44:00Z",
+   "replay_offset_s": 2640
+  },
+  "raw": {
+   "text": "Jaflong zero point e pani onek, rasta bondho.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Jaflong",
+   "event_type": "road_blocked",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports road or link access blocked at Jaflong."
+  },
+  "geo": {
+   "lon": 92.0167,
+   "lat": 25.1667,
+   "grid_cell_id": "c_18582_5603",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Jaflong",
+    "admin": "Sylhet Division / Gowainghat",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Jaflong",
+      "admin": "Sylhet Division / Gowainghat",
+      "score": 1.0,
+      "lon": 92.0167,
+      "lat": 25.1667
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:44:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports road blocked at Jaflong (cell c_18582_5603). Claim type cannot be checked against imagery. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": true,
+    "buildings_in_radius": 424,
+    "damaged_in_radius": 8,
+    "radius_m": 600.0,
+    "status": "not_applicable"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_8093a5bd7972",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0145",
+   "platform": "archived_post",
+   "author_ref": "reporter_145",
+   "url": null,
+   "received_at": "2022-06-18T07:42:00Z",
+   "replay_offset_s": 6120
+  },
+  "raw": {
+   "text": "তামাবিলে বন্যার পানি ঢুকেছে।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "তামাবিল",
+   "event_type": "flood_inundation",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at তামাবিল."
+  },
+  "geo": {
+   "lon": 92.0,
+   "lat": 25.1833,
+   "grid_cell_id": "c_18578_5606",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Tamabil",
+    "admin": "Sylhet Division / Gowainghat",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Tamabil",
+      "admin": "Sylhet Division / Gowainghat",
+      "score": 1.0,
+      "lon": 92.0,
+      "lat": 25.1833
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:42:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports flood inundation at Tamabil (cell c_18578_5606). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_e85b005893ce",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0111",
+   "platform": "archived_post",
+   "author_ref": "reporter_111",
+   "url": null,
+   "received_at": "2022-06-18T06:37:00Z",
+   "replay_offset_s": 2220
+  },
+  "raw": {
+   "text": "Zakiganj e ghor dhose poresi, ahoto manush ache, doctor lagbe.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Zakiganj",
+   "event_type": "medical_need",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "medical"
+   ],
+   "summary_en": "Reports a medical need at Zakiganj."
+  },
+  "geo": {
+   "lon": 92.3667,
+   "lat": 24.9167,
+   "grid_cell_id": "c_18652_5547",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Zakiganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Zakiganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.3667,
+      "lat": 24.9167
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:37:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report relief need (food, water, medical, shelter) in cell c_18652_5547 (Zakiganj) within 3h; this report specifically describes medical need (corroborating sources: src_arch_0150). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_c7e12c6d9e5c"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_2a15d1082fb5",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0138",
+   "platform": "archived_post",
+   "author_ref": "reporter_138",
+   "url": null,
+   "received_at": "2022-06-18T07:31:00Z",
+   "replay_offset_s": 5460
+  },
+  "raw": {
+   "text": "জকিগঞ্জে পানি কমে নামছে এখন।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "জকিগঞ্জ",
+   "event_type": "flood_inundation",
+   "urgency": "low",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at জকিগঞ্জ."
+  },
+  "geo": {
+   "lon": 92.3667,
+   "lat": 24.9167,
+   "grid_cell_id": "c_18652_5547",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Zakiganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Zakiganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.3667,
+      "lat": 24.9167
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:31:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports flood inundation at Zakiganj (cell c_18652_5547). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_6e1cb874b538",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0115",
+   "platform": "archived_post",
+   "author_ref": "reporter_115",
+   "url": null,
+   "received_at": "2022-06-18T06:48:00Z",
+   "replay_offset_s": 2880
+  },
+  "raw": {
+   "text": "Beani Bazar e pani dhukche ghor e, poribar 6 jon.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Beani Bazar",
+   "event_type": "flood_inundation",
+   "urgency": "medium",
+   "persons_at_risk": 6,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at Beani Bazar."
+  },
+  "geo": {
+   "lon": 92.1667,
+   "lat": 24.8167,
+   "grid_cell_id": "c_18612_5525",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Beanibazar",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Beanibazar",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.1667,
+      "lat": 24.8167
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:48:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18612_5525 (Beanibazar) within 3h; this report specifically describes flood inundation (corroborating sources: src_fake_402). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_e5a5b4159c25"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_8775a848d536",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0149",
+   "platform": "archived_post",
+   "author_ref": "reporter_149",
+   "url": null,
+   "received_at": "2022-06-18T07:50:00Z",
+   "replay_offset_s": 6600
+  },
+  "raw": {
+   "text": "বিয়ানীবাজারে ত্রাণ পৌঁছায়নি এখনো।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "বিয়ানীবাজার",
+   "event_type": "water_food_need",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "food"
+   ],
+   "summary_en": "Reports need for food or drinking water at বিয়ানীবাজার."
+  },
+  "geo": {
+   "lon": 92.1667,
+   "lat": 24.8167,
+   "grid_cell_id": "c_18612_5525",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Beanibazar",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Beanibazar",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.1667,
+      "lat": 24.8167
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:50:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports water food need at Beanibazar (cell c_18612_5525). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_24a998e06ce2",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0121",
+   "platform": "archived_post",
+   "author_ref": "reporter_121",
+   "url": null,
+   "received_at": "2022-06-18T06:55:00Z",
+   "replay_offset_s": 3300
+  },
+  "raw": {
+   "text": "Golapganj e rasta bondho hoye ache gari jaite pare na.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Golapganj",
+   "event_type": "road_blocked",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports road or link access blocked at Golapganj."
+  },
+  "geo": {
+   "lon": 92.0,
+   "lat": 24.8333,
+   "grid_cell_id": "c_18578_5528",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Golapganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Golapganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.0,
+      "lat": 24.8333
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:55:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports road blocked at Golapganj (cell c_18578_5528). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_d6cfda580ebe",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0126",
+   "platform": "archived_post",
+   "author_ref": "reporter_126",
+   "url": null,
+   "received_at": "2022-06-18T07:03:00Z",
+   "replay_offset_s": 3780
+  },
+  "raw": {
+   "text": "Fenchugonj e pani barche, nodi er pani upore.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Fenchugonj",
+   "event_type": "flood_inundation",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at Fenchugonj."
+  },
+  "geo": {
+   "lon": 91.9333,
+   "lat": 24.6833,
+   "grid_cell_id": "c_18565_5495",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Fenchuganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Fenchuganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.9333,
+      "lat": 24.6833
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:03:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports flood inundation at Fenchuganj (cell c_18565_5495). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_69c723cfa6aa",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0130",
+   "platform": "archived_post",
+   "author_ref": "reporter_130",
+   "url": null,
+   "received_at": "2022-06-18T07:11:00Z",
+   "replay_offset_s": 4260
+  },
+  "raw": {
+   "text": "Balagonj e ghor e pani, osud shesh hoye gese.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Balagonj",
+   "event_type": "medical_need",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "medical"
+   ],
+   "summary_en": "Reports a medical need at Balagonj."
+  },
+  "geo": {
+   "lon": 91.8,
+   "lat": 24.7167,
+   "grid_cell_id": "c_18538_5502",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Balaganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Balaganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.8,
+      "lat": 24.7167
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:11:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports medical need at Balaganj (cell c_18538_5502). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_8c238c4a91f4",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0134",
+   "platform": "archived_post",
+   "author_ref": "reporter_134",
+   "url": null,
+   "received_at": "2022-06-18T07:24:00Z",
+   "replay_offset_s": 5040
+  },
+  "raw": {
+   "text": "ওসমানীনগরে বিদ্যুৎ নেই, পানি বাড়ছে।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "ওসমানীনগর",
+   "event_type": "power_outage",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "power"
+   ],
+   "summary_en": "Reports power outage at ওসমানীনগর."
+  },
+  "geo": {
+   "lon": 91.85,
+   "lat": 24.75,
+   "grid_cell_id": "c_18548_5510",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Osmani Nagar",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Osmani Nagar",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.85,
+      "lat": 24.75
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:24:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports power outage at Osmani Nagar (cell c_18548_5510). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_6b28a190cea0",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0142",
+   "platform": "archived_post",
+   "author_ref": "reporter_142",
+   "url": null,
+   "received_at": "2022-06-18T07:39:00Z",
+   "replay_offset_s": 5940
+  },
+  "raw": {
+   "text": "Sarighat e nouka lagbe, 9 jon atke ache chal e.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Sarighat",
+   "event_type": "people_stranded",
+   "urgency": "medium",
+   "persons_at_risk": 9,
+   "claimed_time": null,
+   "needs": [
+    "boat",
+    "rescue"
+   ],
+   "summary_en": "Reports people stranded at Sarighat."
+  },
+  "geo": {
+   "lon": 91.89,
+   "lat": 25.02,
+   "grid_cell_id": "c_18556_5570",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Sarighat",
+    "admin": "Sylhet Division / Gowainghat",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Sarighat",
+      "admin": "Sylhet Division / Gowainghat",
+      "score": 1.0,
+      "lon": 91.89,
+      "lat": 25.02
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:39:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports people stranded at Sarighat (cell c_18556_5570). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_406d4b793477",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0151",
+   "platform": "archived_post",
+   "author_ref": "reporter_151",
+   "url": null,
+   "received_at": "2022-06-18T07:56:00Z",
+   "replay_offset_s": 6960
+  },
+  "raw": {
+   "text": "Dakshin Surma te rasta te pani, jogajog somossa.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Dakshin Surma",
+   "event_type": "road_blocked",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports road or link access blocked at Dakshin Surma."
+  },
+  "geo": {
+   "lon": 91.872,
+   "lat": 24.8611,
+   "grid_cell_id": "c_18553_5535",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Dakshin Surma",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Dakshin Surma",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.872,
+      "lat": 24.8611
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:56:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports road blocked at Dakshin Surma (cell c_18553_5535). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_243162f18cab",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0153",
+   "platform": "archived_post",
+   "author_ref": "reporter_153",
+   "url": null,
+   "received_at": "2022-06-18T08:01:00Z",
+   "replay_offset_s": 7260
+  },
+  "raw": {
+   "text": "Chatak e pani onek barche, ghor dube jacche.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Chatak",
+   "event_type": "flood_inundation",
+   "urgency": "critical",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at Chatak."
+  },
+  "geo": {
+   "lon": 91.6667,
+   "lat": 25.0333,
+   "grid_cell_id": "c_18511_5573",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Chhatak",
+    "admin": "Sylhet Division / Sunamganj District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Chhatak",
+      "admin": "Sylhet Division / Sunamganj District",
+      "score": 1.0,
+      "lon": 91.6667,
+      "lat": 25.0333
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T08:01:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18511_5573 (Chhatak) within 3h; this report specifically describes flood inundation (corroborating sources: src_arch_0156). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_03d696a0fbfa"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_03d696a0fbfa",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0156",
+   "platform": "archived_post",
+   "author_ref": "reporter_156",
+   "url": null,
+   "received_at": "2022-06-18T08:08:00Z",
+   "replay_offset_s": 7680
+  },
+  "raw": {
+   "text": "ছাতকে ১৮ জন আটকে আছে, নৌকা পাঠান জরুরি।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "ছাতক",
+   "event_type": "people_stranded",
+   "urgency": "critical",
+   "persons_at_risk": 18,
+   "claimed_time": null,
+   "needs": [
+    "boat",
+    "rescue"
+   ],
+   "summary_en": "Reports people stranded at ছাতক."
+  },
+  "geo": {
+   "lon": 91.6667,
+   "lat": 25.0333,
+   "grid_cell_id": "c_18511_5573",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Chhatak",
+    "admin": "Sylhet Division / Sunamganj District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Chhatak",
+      "admin": "Sylhet Division / Sunamganj District",
+      "score": 1.0,
+      "lon": 91.6667,
+      "lat": 25.0333
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T08:08:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18511_5573 (Chhatak) within 3h; this report specifically describes people stranded (corroborating sources: src_arch_0153). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_243162f18cab"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_16cb56c839d1",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0158",
+   "platform": "archived_post",
+   "author_ref": "reporter_158",
+   "url": null,
+   "received_at": "2022-06-18T08:14:00Z",
+   "replay_offset_s": 8040
+  },
+  "raw": {
+   "text": "Surma nodi er pani bipod shimar upore.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Surma nodi",
+   "event_type": "flood_inundation",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at Surma nodi."
+  },
+  "geo": {
+   "lon": 91.88,
+   "lat": 24.91,
+   "grid_cell_id": "c_18554_5545",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Surma River",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Surma River",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.88,
+      "lat": 24.91
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T08:14:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports flood inundation at Surma River (cell c_18554_5545). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_b6155d2dadea",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0105",
+   "platform": "archived_post",
+   "author_ref": "reporter_105",
+   "url": null,
+   "received_at": "2022-06-18T06:29:00Z",
+   "replay_offset_s": 1740
+  },
+  "raw": {
+   "text": "Derai te puro elaka plabito, ghor bari sob pani te.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Derai",
+   "event_type": "flood_inundation",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at Derai."
+  },
+  "geo": {
+   "lon": 91.3167,
+   "lat": 24.7167,
+   "grid_cell_id": "c_18440_5502",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Derai",
+    "admin": "Sylhet Division / Sunamganj District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Derai",
+      "admin": "Sylhet Division / Sunamganj District",
+      "score": 1.0,
+      "lon": 91.3167,
+      "lat": 24.7167
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:29:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18440_5502 (Derai) within 3h; this report specifically describes flood inundation (corroborating sources: src_arch_0131). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_b4a836940e50"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_b4a836940e50",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0131",
+   "platform": "archived_post",
+   "author_ref": "reporter_131",
+   "url": null,
+   "received_at": "2022-06-18T07:13:00Z",
+   "replay_offset_s": 4380
+  },
+  "raw": {
+   "text": "দিরাইয়ে ২২ জন মানুষ আটকে আছে, সাহায্য দরকার।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "দিরাই",
+   "event_type": "people_stranded",
+   "urgency": "critical",
+   "persons_at_risk": 22,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports people stranded at দিরাই."
+  },
+  "geo": {
+   "lon": 91.3167,
+   "lat": 24.7167,
+   "grid_cell_id": "c_18440_5502",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Derai",
+    "admin": "Sylhet Division / Sunamganj District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Derai",
+      "admin": "Sylhet Division / Sunamganj District",
+      "score": 1.0,
+      "lon": 91.3167,
+      "lat": 24.7167
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:13:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18440_5502 (Derai) within 3h; this report specifically describes people stranded (corroborating sources: src_arch_0105). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_b6155d2dadea"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_8533a2c9752d",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0124",
+   "platform": "archived_post",
+   "author_ref": "reporter_124",
+   "url": null,
+   "received_at": "2022-06-18T06:59:00Z",
+   "replay_offset_s": 3540
+  },
+  "raw": {
+   "text": "Sunamganj sadar e pani onek, khabar nai.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Sunamganj sadar",
+   "event_type": "water_food_need",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "food"
+   ],
+   "summary_en": "Reports need for food or drinking water at Sunamganj sadar."
+  },
+  "geo": {
+   "lon": 91.4,
+   "lat": 25.0667,
+   "grid_cell_id": "c_18457_5580",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Sunamganj Sadar",
+    "admin": "Sylhet Division / Sunamganj District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Sunamganj Sadar",
+      "admin": "Sylhet Division / Sunamganj District",
+      "score": 1.0,
+      "lon": 91.4,
+      "lat": 25.0667
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:59:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports water food need at Sunamganj Sadar (cell c_18457_5580). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_c6e6232e1430",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0147",
+   "platform": "archived_post",
+   "author_ref": "reporter_147",
+   "url": null,
+   "received_at": "2022-06-18T07:47:00Z",
+   "replay_offset_s": 6420
+  },
+  "raw": {
+   "text": "সুনামগঞ্জে রাস্তা ভেঙে গেছে, যোগাযোগ বিচ্ছিন্ন।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "সুনামগঞ্জ",
+   "event_type": "road_blocked",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports road or link access blocked at সুনামগঞ্জ."
+  },
+  "geo": {
+   "lon": 91.4,
+   "lat": 25.0667,
+   "grid_cell_id": "c_18457_5580",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Sunamganj Sadar",
+    "admin": "Sylhet Division / Sunamganj District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Sunamganj Sadar",
+      "admin": "Sylhet Division / Sunamganj District",
+      "score": 1.0,
+      "lon": 91.4,
+      "lat": 25.0667
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:47:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports road blocked at Sunamganj Sadar (cell c_18457_5580). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_ae6907d82884",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0152",
+   "platform": "archived_post",
+   "author_ref": "reporter_152",
+   "url": null,
+   "received_at": "2022-06-18T07:58:00Z",
+   "replay_offset_s": 7080
+  },
+  "raw": {
+   "text": "Doarabazar e bonna, manush ashroy kendro te.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Doarabazar",
+   "event_type": "shelter_status",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "shelter"
+   ],
+   "summary_en": "Reports shelter conditions at Doarabazar."
+  },
+  "geo": {
+   "lon": 91.5,
+   "lat": 25.1,
+   "grid_cell_id": "c_18477_5588",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Dowarabazar",
+    "admin": "Sylhet Division / Sunamganj District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Dowarabazar",
+      "admin": "Sylhet Division / Sunamganj District",
+      "score": 1.0,
+      "lon": 91.5,
+      "lat": 25.1
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:58:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports shelter status at Dowarabazar (cell c_18477_5588). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_be3608d95351",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0155",
+   "platform": "archived_post",
+   "author_ref": "reporter_155",
+   "url": null,
+   "received_at": "2022-06-18T08:05:00Z",
+   "replay_offset_s": 7500
+  },
+  "raw": {
+   "text": "Jagannathpur e pani barche druto, nouka dorkar.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Jagannathpur",
+   "event_type": "flood_inundation",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "boat"
+   ],
+   "summary_en": "Reports flooding / rising water at Jagannathpur."
+  },
+  "geo": {
+   "lon": 91.5333,
+   "lat": 24.7833,
+   "grid_cell_id": "c_18484_5517",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Jagannathpur",
+    "admin": "Sylhet Division / Sunamganj District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Jagannathpur",
+      "admin": "Sylhet Division / Sunamganj District",
+      "score": 1.0,
+      "lon": 91.5333,
+      "lat": 24.7833
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T08:05:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports flood inundation at Jagannathpur (cell c_18484_5517). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_cf86d775049d",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0094",
+   "platform": "archived_post",
+   "author_ref": "reporter_94",
+   "url": null,
+   "received_at": "2022-06-18T06:15:00Z",
+   "replay_offset_s": 900
+  },
+  "raw": {
+   "text": "Sylhet e bonna pani rasta te uthe geche kotha kotha.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Sylhet",
+   "event_type": "road_blocked",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports road or link access blocked at Sylhet."
+  },
+  "geo": {
+   "lon": 91.8687,
+   "lat": 24.8949,
+   "grid_cell_id": "c_18552_5542",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Sylhet Sadar",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Sylhet Sadar",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.8687,
+      "lat": 24.8949
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:15:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports road blocked at Sylhet Sadar (cell c_18552_5542). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_4f02a2422c36",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0133",
+   "platform": "archived_post",
+   "author_ref": "reporter_133",
+   "url": null,
+   "received_at": "2022-06-18T07:21:00Z",
+   "replay_offset_s": 4860
+  },
+  "raw": {
+   "text": "Jaintapur e school e ashroy niyeche onek poribar.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Jaintapur",
+   "event_type": "shelter_status",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "shelter"
+   ],
+   "summary_en": "Reports shelter conditions at Jaintapur."
+  },
+  "geo": {
+   "lon": 92.1167,
+   "lat": 25.1333,
+   "grid_cell_id": "c_18602_5595",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Jaintiapur",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Jaintiapur",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.1167,
+      "lat": 25.1333
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:21:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report relief need (food, water, medical, shelter) in cell c_18602_5595 (Jaintiapur) within 3h; this report specifically describes shelter status (corroborating sources: src_arch_0132). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_584ca07b3500"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": true,
+    "buildings_in_radius": 80,
+    "damaged_in_radius": 16,
+    "radius_m": 600.0,
+    "status": "not_applicable"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_e1a4680e60d3",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0139",
+   "platform": "archived_post",
+   "author_ref": "reporter_139",
+   "url": null,
+   "received_at": "2022-06-18T07:33:00Z",
+   "replay_offset_s": 5580
+  },
+  "raw": {
+   "text": "Kompaniganj e setu er kaj kora rasta bhenge geche.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Kompaniganj",
+   "event_type": "road_blocked",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports road or link access blocked at Kompaniganj."
+  },
+  "geo": {
+   "lon": 91.65,
+   "lat": 25.05,
+   "grid_cell_id": "c_18508_5577",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Companiganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Companiganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.65,
+      "lat": 25.05
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:33:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports road blocked at Companiganj (cell c_18508_5577). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_d7f35b9bb433",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0146",
+   "platform": "archived_post",
+   "author_ref": "reporter_146",
+   "url": null,
+   "received_at": "2022-06-18T07:44:00Z",
+   "replay_offset_s": 6240
+  },
+  "raw": {
+   "text": "কানাইঘাটে ঔষধ আর ডাক্তার দরকার, অনেক আহত।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "কানাইঘাট",
+   "event_type": "medical_need",
+   "urgency": "high",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "medical"
+   ],
+   "summary_en": "Reports a medical need at কানাইঘাট."
+  },
+  "geo": {
+   "lon": 92.2597,
+   "lat": 25.0158,
+   "grid_cell_id": "c_18631_5569",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Kanaighat",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Kanaighat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.2597,
+      "lat": 25.0158
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:44:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report relief need (food, water, medical, shelter) in cell c_18631_5569 (Kanaighat) within 3h; this report specifically describes medical need (corroborating sources: src_arch_0140). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_7d9672998ad7"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_c7e12c6d9e5c",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0150",
+   "platform": "archived_post",
+   "author_ref": "reporter_150",
+   "url": null,
+   "received_at": "2022-06-18T07:52:00Z",
+   "replay_offset_s": 6720
+  },
+  "raw": {
+   "text": "Zakiganj e khaowar pani nai, tran lagbe.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Zakiganj",
+   "event_type": "water_food_need",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "water",
+    "food"
+   ],
+   "summary_en": "Reports need for food or drinking water at Zakiganj."
+  },
+  "geo": {
+   "lon": 92.3667,
+   "lat": 24.9167,
+   "grid_cell_id": "c_18652_5547",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Zakiganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Zakiganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.3667,
+      "lat": 24.9167
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:52:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report relief need (food, water, medical, shelter) in cell c_18652_5547 (Zakiganj) within 3h; this report specifically describes water food need (corroborating sources: src_arch_0111). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_e85b005893ce"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_7b405913dee3",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_arch_0157",
+   "platform": "archived_post",
+   "author_ref": "reporter_157",
+   "url": null,
+   "received_at": "2022-06-18T08:11:00Z",
+   "replay_offset_s": 7860
+  },
+  "raw": {
+   "text": "Gowainghat e 4 ti baccha atke ache, urgent.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Gowainghat",
+   "event_type": "people_stranded",
+   "urgency": "critical",
+   "persons_at_risk": 4,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports people stranded at Gowainghat."
+  },
+  "geo": {
+   "lon": 91.7333,
+   "lat": 25.0833,
+   "grid_cell_id": "c_18525_5584",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Gowainghat",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Gowainghat",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.7333,
+      "lat": 25.0833
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T08:11:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports people stranded at Gowainghat (cell c_18525_5584). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": false,
+   "provenance_note": "SYNTHETIC report written for the demo. Not a real archived post."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_d166a99ef4dc",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_fake_301",
+   "platform": "archived_post",
+   "author_ref": "reporter_301",
+   "url": null,
+   "received_at": "2022-06-18T06:46:00Z",
+   "replay_offset_s": 2760
+  },
+  "raw": {
+   "text": "Zindabazar puro dube gese, sob building er chal porjonto pani. Bachao!",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Zindabazar",
+   "event_type": "flood_inundation",
+   "urgency": "critical",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports flooding / rising water at Zindabazar."
+  },
+  "geo": {
+   "lon": 91.8681,
+   "lat": 24.8955,
+   "grid_cell_id": "c_18552_5542",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Zindabazar",
+    "admin": "Sylhet Division / Sylhet City",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Zindabazar",
+      "admin": "Sylhet Division / Sylhet City",
+      "score": 1.0,
+      "lon": 91.8681,
+      "lat": 24.8955
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:46:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "3 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18552_5542 (Zindabazar) within 3h; this report specifically describes flood inundation (corroborating sources: src_fake_302, src_fake_304). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_34001ca6e95e",
+    "sig_7b2b9642e9e4"
+   ],
+   "distinct_source_count": 3,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "contradicts_imagery",
+   "expected_tier": "suspect",
+   "provenance_note": "SYNTHETIC planted fake. Claims total inundation in an assessed, undamaged cell."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_34001ca6e95e",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_fake_302",
+   "platform": "archived_post",
+   "author_ref": "reporter_302",
+   "url": null,
+   "received_at": "2022-06-18T07:01:00Z",
+   "replay_offset_s": 3660
+  },
+  "raw": {
+   "text": "জিন্দাবাজারে সব ঘর ডুবে গেছে, কেউ বাঁচেনি।",
+   "lang": "bn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "জিন্দাবাজার",
+   "event_type": "flood_inundation",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at জিন্দাবাজার."
+  },
+  "geo": {
+   "lon": 91.8681,
+   "lat": 24.8955,
+   "grid_cell_id": "c_18552_5542",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Zindabazar",
+    "admin": "Sylhet Division / Sylhet City",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Zindabazar",
+      "admin": "Sylhet Division / Sylhet City",
+      "score": 1.0,
+      "lon": 91.8681,
+      "lat": 24.8955
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:01:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "3 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18552_5542 (Zindabazar) within 3h; this report specifically describes flood inundation (corroborating sources: src_fake_301, src_fake_304). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_7b2b9642e9e4",
+    "sig_d166a99ef4dc"
+   ],
+   "distinct_source_count": 3,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "contradicts_imagery",
+   "expected_tier": "suspect",
+   "provenance_note": "SYNTHETIC. Second DISTINCT source making the same false claim -- tests that spatial contradiction overrides corroboration."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_b63cd66afd63",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_fake_303",
+   "platform": "archived_post",
+   "author_ref": "reporter_303",
+   "url": null,
+   "received_at": "2022-06-18T07:09:00Z",
+   "replay_offset_s": 4140
+  },
+  "raw": {
+   "text": "Ambarkhana e pani chal porjonto uthe gese, 200 jon atke.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Ambarkhana",
+   "event_type": "people_stranded",
+   "urgency": "critical",
+   "persons_at_risk": 200,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports people stranded at Ambarkhana."
+  },
+  "geo": {
+   "lon": 91.8712,
+   "lat": 24.9042,
+   "grid_cell_id": "c_18552_5544",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Ambarkhana",
+    "admin": "Sylhet Division / Sylhet City",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Ambarkhana",
+      "admin": "Sylhet Division / Sylhet City",
+      "score": 1.0,
+      "lon": 91.8712,
+      "lat": 24.9042
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:09:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports people stranded at Ambarkhana (cell c_18552_5544). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "contradicts_imagery",
+   "expected_tier": "suspect",
+   "provenance_note": "SYNTHETIC. Assessed cell with zero damaged buildings."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_7b2b9642e9e4",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_fake_304",
+   "platform": "archived_post",
+   "author_ref": "reporter_304",
+   "url": null,
+   "received_at": "2022-06-18T07:26:00Z",
+   "replay_offset_s": 5160
+  },
+  "raw": {
+   "text": "Puro Sylhet sadar dube gese, kono building nai ar.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Sylhet sadar",
+   "event_type": "flood_inundation",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [],
+   "summary_en": "Reports flooding / rising water at Sylhet sadar."
+  },
+  "geo": {
+   "lon": 91.8687,
+   "lat": 24.8949,
+   "grid_cell_id": "c_18552_5542",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Sylhet Sadar",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Sylhet Sadar",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.8687,
+      "lat": 24.8949
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:26:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "3 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18552_5542 (Sylhet Sadar) within 3h; this report specifically describes flood inundation (corroborating sources: src_fake_301, src_fake_302). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_34001ca6e95e",
+    "sig_d166a99ef4dc"
+   ],
+   "distinct_source_count": 3,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "contradicts_imagery",
+   "expected_tier": "suspect",
+   "provenance_note": "SYNTHETIC. Assessed urban cell, ~1% damage."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_ebb90f419141",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_fake_777",
+   "platform": "archived_post",
+   "author_ref": "reporter_777",
+   "url": null,
+   "received_at": "2022-06-18T06:50:00Z",
+   "replay_offset_s": 3000
+  },
+  "raw": {
+   "text": "Bishwanath e voyonkor bonna, sob ghor bhenge gese, urgent help!",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Bishwanath",
+   "event_type": "structural_damage",
+   "urgency": "critical",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports structural damage at Bishwanath."
+  },
+  "geo": {
+   "lon": 91.75,
+   "lat": 24.75,
+   "grid_cell_id": "c_18528_5510",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Bishwanath",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Bishwanath",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.75,
+      "lat": 24.75
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:50:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports structural damage at Bishwanath (cell c_18528_5510). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [
+    "sig_7d446dff167a",
+    "sig_b79a8a91743d"
+   ],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "duplicate_astroturf",
+   "expected_tier": "plausible_unverified",
+   "provenance_note": "SYNTHETIC astroturf 1/3 from one source. Must NOT be promoted to corroborated."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_7d446dff167a",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_fake_777",
+   "platform": "archived_post",
+   "author_ref": "reporter_777",
+   "url": null,
+   "received_at": "2022-06-18T06:53:00Z",
+   "replay_offset_s": 3180
+  },
+  "raw": {
+   "text": "Bishwanath e voyonkor bonna, sob ghor bhenge gelo, urgent help lagbe!",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Bishwanath",
+   "event_type": "structural_damage",
+   "urgency": "critical",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports structural damage at Bishwanath."
+  },
+  "geo": {
+   "lon": 91.75,
+   "lat": 24.75,
+   "grid_cell_id": "c_18528_5510",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Bishwanath",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Bishwanath",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.75,
+      "lat": 24.75
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:53:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports structural damage at Bishwanath (cell c_18528_5510). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [
+    "sig_b79a8a91743d",
+    "sig_ebb90f419141"
+   ],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "duplicate_astroturf",
+   "expected_tier": "plausible_unverified",
+   "provenance_note": "SYNTHETIC astroturf 2/3 from the same source_id."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_b79a8a91743d",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_fake_777",
+   "platform": "archived_post",
+   "author_ref": "reporter_777",
+   "url": null,
+   "received_at": "2022-06-18T06:57:00Z",
+   "replay_offset_s": 3420
+  },
+  "raw": {
+   "text": "Bishwanath e bonna voyonkor, ghor sob bhenge gese, help urgent!",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Bishwanath",
+   "event_type": "structural_damage",
+   "urgency": "critical",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports structural damage at Bishwanath."
+  },
+  "geo": {
+   "lon": 91.75,
+   "lat": 24.75,
+   "grid_cell_id": "c_18528_5510",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Bishwanath",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Bishwanath",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 91.75,
+      "lat": 24.75
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T06:57:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports structural damage at Bishwanath (cell c_18528_5510). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [
+    "sig_7d446dff167a",
+    "sig_ebb90f419141"
+   ],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "duplicate_astroturf",
+   "expected_tier": "plausible_unverified",
+   "provenance_note": "SYNTHETIC astroturf 3/3 from the same source_id."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_3cb40e78d1e4",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_fake_401",
+   "platform": "archived_post",
+   "author_ref": "reporter_401",
+   "url": null,
+   "received_at": "2022-06-18T07:15:00Z",
+   "replay_offset_s": 4500
+  },
+  "raw": {
+   "text": "Golapganj e 50000 jon manush atke ache ekhuni bachao.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Golapganj",
+   "event_type": "people_stranded",
+   "urgency": "critical",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports people stranded at Golapganj."
+  },
+  "geo": {
+   "lon": 92.0,
+   "lat": 24.8333,
+   "grid_cell_id": "c_18578_5528",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Golapganj",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Golapganj",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.0,
+      "lat": 24.8333
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:15:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Single source reports people stranded at Golapganj (cell c_18578_5528). This location is outside the assessed imagery footprint, so we can neither confirm nor refute it. Recon priority.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 0.45,
+   "recon_priority": true,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "exaggerated_scale",
+   "expected_tier": "plausible_unverified",
+   "provenance_note": "SYNTHETIC. Implausible count. Our verifier does NOT detect scale exaggeration; the number is dropped only by a sanity ceiling in extract.py."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_e5a5b4159c25",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_fake_402",
+   "platform": "archived_post",
+   "author_ref": "reporter_402",
+   "url": null,
+   "received_at": "2022-06-18T07:37:00Z",
+   "replay_offset_s": 5820
+  },
+  "raw": {
+   "text": "Beanibazar e 90000 manush pani te atke, sob mara jacche.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "Beanibazar",
+   "event_type": "people_stranded",
+   "urgency": "critical",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "rescue"
+   ],
+   "summary_en": "Reports people stranded at Beanibazar."
+  },
+  "geo": {
+   "lon": 92.1667,
+   "lat": 24.8167,
+   "grid_cell_id": "c_18612_5525",
+   "geocode": {
+    "method": "geonames_exact",
+    "matched_name": "Beanibazar",
+    "admin": "Sylhet Division / Sylhet District",
+    "score": 1.0,
+    "ambiguous": false,
+    "candidates": [
+     {
+      "name": "Beanibazar",
+      "admin": "Sylhet Division / Sylhet District",
+      "score": 1.0,
+      "lon": 92.1667,
+      "lat": 24.8167
+     }
+    ]
+   }
+  },
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:37:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "corroborated",
+   "reason": "2 independent sources report flood impact (inundation / damage / stranded persons) in cell c_18612_5525 (Beanibazar) within 3h; this report specifically describes people stranded (corroborating sources: src_arch_0115). Imagery cannot confirm or refute this claim type.",
+   "corroborating_signal_ids": [
+    "sig_6e1cb874b538"
+   ],
+   "distinct_source_count": 2,
+   "spatial_check": {
+    "inside_valid_area": false,
+    "buildings_in_radius": 0,
+    "damaged_in_radius": 0,
+    "radius_m": 600.0,
+    "status": "no_coverage"
+   },
+   "fusion_weight": 1.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "exaggerated_scale",
+   "expected_tier": "corroborated",
+   "provenance_note": "SYNTHETIC. A WORSE outcome than fake_401 and the expectation is set to 'corroborated' because that is genuinely what our method produces, not because we are matching the test to the code. Beanibazar has an independent genuine report of flooding, so this claim's location and event group ARE corroborated -- and the exaggerated casualty count rides along and inherits full fusion weight. Corroboration cannot detect scale exaggeration; we have no population model. This is the most important known weakness in the verifier: a wildly inflated claim in a genuinely affected area is indistinguishable from a truthful one."
+  }
+ },
+ {
+  "contract_version": "1.0.0",
+  "signal_id": "sig_6a881fc1f4ab",
+  "channel": "citizen_seed",
+  "source": {
+   "source_id": "src_fake_501",
+   "platform": "archived_post",
+   "author_ref": "reporter_501",
+   "url": null,
+   "received_at": "2022-06-18T07:54:00Z",
+   "replay_offset_s": 6840
+  },
+  "raw": {
+   "text": "Dhaka Mirpur e bonna pani, sob dube gese, nouka lagbe.",
+   "lang": "bn-latn",
+   "media_refs": [],
+   "imagery_ref": null
+  },
+  "claim": {
+   "location_ref": "",
+   "event_type": "flood_inundation",
+   "urgency": "medium",
+   "persons_at_risk": null,
+   "claimed_time": null,
+   "needs": [
+    "boat"
+   ],
+   "summary_en": "Reports flooding / rising water at an unspecified location."
+  },
+  "geo": null,
+  "extraction": {
+   "model": "rules",
+   "prompt_version": "rules-v1",
+   "extracted_at": "2022-06-18T07:54:00Z",
+   "confidence": null,
+   "cached": false
+  },
+  "verification": {
+   "tier": "plausible_unverified",
+   "reason": "Location '(none stated)' could not be resolved against the gazetteer, so this report cannot be placed on the map or scored. Retained for review.",
+   "corroborating_signal_ids": [],
+   "distinct_source_count": 1,
+   "spatial_check": {
+    "status": "not_applicable"
+   },
+   "fusion_weight": 0.0,
+   "recon_priority": false,
+   "verified_at": "2026-07-28T16:00:43+06:00"
+  },
+  "eval": {
+   "planted_fake": true,
+   "fake_kind": "impossible_location",
+   "expected_tier": "plausible_unverified",
+   "provenance_note": "SYNTHETIC. Outside the Sylhet gazetteer, so geo resolves to null and the signal cannot be placed on the map."
+  }
+ }
+]
