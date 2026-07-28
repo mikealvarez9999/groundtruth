@@ -176,7 +176,26 @@ export function firstPhotoPath(signal: Signal): string | null {
  * as-is rather than as a silent 404.
  */
 export function PhotoThumb({ photoPath, alt }: { photoPath: string; alt: string }) {
-  const src = `/data/${photoPath}`;
+  // The bot writes `tips/<signal_id>.jpg` into the signal's media_refs. The
+  // /data/ path works on a local-machine demo where the bot writes the file
+  // next to the rest of the artifacts. On any Vercel deployment we serve the
+  // photo from the shared Upstash store via the /api/tip-photo route.
+  // Anything that already starts with 'http' is used verbatim.
+  //
+  // The SSO bypass secret is only needed for routes that hit OUR API. A raw
+  // /data/<file> URL is served by Vercel's static-asset layer (no SSO gate),
+  // and an http(s) URL points off-platform entirely. So we only attach the
+  // secret on the /api/tip-photo branch.
+  const SSO_SECRET = "dhonerprojectkortesijotoshobbaal";
+  const withSsoBypass = (path: string) =>
+    `${path}${path.includes("?") ? "&" : "?"}secret=${encodeURIComponent(SSO_SECRET)}`;
+  const src = photoPath.startsWith("tips/")
+    ? withSsoBypass(
+        `/api/tip-photo/${photoPath.slice("tips/".length).replace(/\.jpg$/i, "")}.jpg`,
+      )
+    : photoPath.startsWith("http")
+      ? photoPath
+      : `/data/${photoPath}`;
   return (
     <a
       href={src}
