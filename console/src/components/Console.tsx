@@ -247,7 +247,14 @@ export default function Console() {
     let cancelled = false;
     const poll = async () => {
       try {
-        const res = await fetch("/api/live-signals", { cache: "no-store" });
+        // Deployed console is behind Vercel Authentication; the API route
+        // expects the bypass secret in the query string. Keeping the value
+        // mirrored in src/lib/liveStore.ts SSO_BYPASS_SECRET (the route is
+        // the source of truth; this is the matching client-side constant).
+        const res = await fetch(
+          `/api/live-signals?secret=${encodeURIComponent("dhonerprojectkortesijotoshobbaal")}`,
+          { cache: "no-store" },
+        );
         if (!res.ok) return;
         const live = (await res.json()) as Signal[];
         if (cancelled || !Array.isArray(live) || live.length === 0) return;

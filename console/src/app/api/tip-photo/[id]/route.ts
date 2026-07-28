@@ -20,6 +20,7 @@ import { NextResponse } from "next/server";
 import {
   REDIS_PHOTO_PREFIX,
   getRedis,
+  hasValidSsoBypass,
   redisConfigured,
 } from "@/lib/liveStore";
 
@@ -29,9 +30,20 @@ export const dynamic = "force-dynamic";
 const SAFE_ID = /^[A-Za-z0-9_\-]{4,64}$/;
 
 export async function GET(
-  _request: Request,
+  request: Request,
   ctx: { params: Promise<{ id: string }> },
 ) {
+  // Same SSO bypass as /api/live-signals. Without it, the deployed console
+  // can't fetch JPEG thumbnails either.
+  const bypassUrl = new URL(request.url);
+  if (!hasValidSsoBypass(bypassUrl, request.headers)) {
+    return new NextResponse(
+      "tip-photo requires the deployment-protection bypass secret. " +
+        "Pass ?secret=<value> as documented in bot/README.md.",
+      { status: 401, headers: { "Content-Type": "text/plain; charset=utf-8" } },
+    );
+  }
+
   const { id } = await ctx.params;
   if (!SAFE_ID.test(id)) {
     return new NextResponse("invalid id", { status: 400 });

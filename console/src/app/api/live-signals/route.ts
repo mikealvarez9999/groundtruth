@@ -16,6 +16,7 @@ import { NextResponse } from "next/server";
 import {
   REDIS_SIGNALS_KEY,
   getRedis,
+  hasValidSsoBypass,
   redisConfigured,
 } from "@/lib/liveStore";
 
@@ -64,7 +65,22 @@ async function fromFile(): Promise<Signal[]> {
   }
 }
 
-export async function GET() {
+export async function GET(request: Request) {
+  // Vercel Authentication (Deployment Protection) gates every request behind an
+  // SSO redirect, including /api/*. The console browser cannot follow the SSO
+  // cookie flow on a JSON poll, so we accept a `?secret=...` query string
+  // (or the bypass header) that matches the user-configured shared secret in
+  // Vercel's dashboard. The route still works unauthenticated on a local
+  // dev server where no SSO gate exists.
+  const url = new URL(request.url);
+  if (!hasValidSsoBypass(url, request.headers)) {
+    return new NextResponse(
+      "live-signals requires the deployment-protection bypass secret. " +
+        "Pass ?secret=<value> as documented in bot/README.md.",
+      { status: 401, headers: { "Content-Type": "text/plain; charset=utf-8" } },
+    );
+  }
+
   const upstash = await fromUpstash();
   const signals = upstash ?? (await fromFile());
   return NextResponse.json(signals, {
