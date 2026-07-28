@@ -234,17 +234,20 @@ export default function Console() {
   }, [scores]);
 
   // ---- live Telegram tips: poll and merge --------------------------------
-  // The tip-line bot (bot/tipline.py) appends verified tips to
-  // /data/live_signals.json. We poll it and merge by signal_id, so a texted
-  // report appears on the map and re-ranks the queue within a few seconds.
-  // Live tips carry replay_offset_s: null, so arrivedAt() surfaces them at once
-  // rather than waiting on the replay clock. A missing file (bot not running) is
-  // a no-op, never an error -- the seeded replay stands alone.
+  // The tip-line bot (bot/tipline.py) appends verified tips to the shared
+  // store -- Upstash Redis when UPSTASH_REDIS_REST_URL/_TOKEN are set (the
+  // deployed scenario), or console/public/data/live_signals.json on a local
+  // demo. The /api/live-signals route hides the difference; we poll it and
+  // merge by signal_id, so a texted report appears on the map and re-ranks
+  // the queue within a few seconds. Live tips carry replay_offset_s: null,
+  // so arrivedAt() surfaces them at once rather than waiting on the replay
+  // clock. A no-op response (bot not running) is fine -- the seeded replay
+  // stands alone.
   useEffect(() => {
     let cancelled = false;
     const poll = async () => {
       try {
-        const res = await fetch("/data/live_signals.json", { cache: "no-store" });
+        const res = await fetch("/api/live-signals", { cache: "no-store" });
         if (!res.ok) return;
         const live = (await res.json()) as Signal[];
         if (cancelled || !Array.isArray(live) || live.length === 0) return;
@@ -254,7 +257,7 @@ export default function Console() {
           return Array.from(byId.values());
         });
       } catch {
-        /* bot not running / file absent -> ignore */
+        /* bot not running -> ignore */
       }
     };
     void poll();

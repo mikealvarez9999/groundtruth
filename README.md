@@ -191,16 +191,25 @@ per-event gazetteer is added.)
 ## Live Telegram tip-line
 
 ```bash
+# Long-polling bot. Run on any always-on host (laptop, $5 VPS, Railway, Fly).
+# Vercel cannot host it -- serverless has no always-on process.
 export TELEGRAM_BOT_TOKEN=<from @BotFather>
-python bot/tipline.py          # long-polling — no webhook or tunnel needed
+# For a deployed console, set both so tips land in shared storage:
+export UPSTASH_REDIS_REST_URL=<from console.upstash.com>
+export UPSTASH_REDIS_REST_TOKEN=<from console.upstash.com>
+python run_bot.py
 ```
 
 Each tip runs through the *same* extract → geocode → verify path as seeded data,
 is verified against the committed damage layer, and appears on the map within
 seconds, re-ranking the queue. Reporter identities are never stored — `source_id`
 and `author_ref` are salted hashes, so a person's reports still corroborate
-without us keeping anything that identifies them. The seeded replay is the safe
-backdrop; a live tip is the bonus that proves the pipeline is real.
+without us keeping anything that identifies them. With the Upstash env vars set,
+the bot writes signals and photos to Redis; the deployed console's
+`/api/live-signals` and `/api/tip-photo/<id>` routes read from the same place.
+Without them, the bot writes local files — fine for a same-machine demo, invisible
+to any deployed console. The seeded replay is the safe backdrop; a live tip is the
+bonus that proves the pipeline is real.
 
 ## Repository layout
 

@@ -177,3 +177,56 @@
 [tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
 [tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
 [tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] heartbeat offset=336920156 pending=0 live=12 seed=50
+[tipline] recv chat=6479096434 user=6479096434 text='More jacchiii' location=False photo=False
+[tipline] heartbeat offset=336920157 pending=1 live=13 seed=50
+[tipline] recv chat=6479096434 user=6479096434 text='' location=True photo=False
+[tipline] recv chat=6479096434 user=6479096434 text='Place is wrong' location=False photo=False
+[tipline] heartbeat offset=336920159 pending=1 live=15 seed=50
+[tipline] recv chat=6479096434 user=6479096434 text='We’re dying in the flood here!' location=False photo=False
+[tipline] recv chat=6479096434 user=6479096434 text='Jaflong is sinking!' location=False photo=False
+[tipline] heartbeat offset=336920161 pending=0 live=17 seed=50
+[tipline] heartbeat offset=336920161 pending=0 live=17 seed=50
+[tipline] heartbeat offset=336920161 pending=0 live=17 seed=50
+[tipline] heartbeat offset=336920161 pending=0 live=17 seed=50
+[tipline] recv chat=7025012563 user=7025012563 text='Test test' location=False photo=False
+[tipline] heartbeat offset=336920162 pending=0 live=18 seed=50
+[tipline] heartbeat offset=336920162 pending=0 live=18 seed=50
+[tipline] heartbeat offset=336920163 pending=0 live=18 seed=50
+[tipline] heartbeat offset=336920163 pending=0 live=18 seed=50
+[tipline] heartbeat offset=336920163 pending=0 live=18 seed=50
+[tipline] recv chat=1689254838 user=1689254838 text="It's totally flooded in Syllhet" location=False photo=False
+[tipline] heartbeat offset=336920164 pending=1 live=19 seed=50
+[tipline] recv chat=1689254838 user=1689254838 text='' location=True photo=False
+[tipline] recv chat=1689254838 user=1689254838 text='please send help' location=False photo=False
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50
+[tipline] poll HTTP 409: Conflict
+[tipline] 409 Conflict — another bot instance is already polling. Kill any duplicate python bot\tipline.py and retry.
+[tipline] poll HTTP 409: Conflict
+[tipline] 409 Conflict — another bot instance is already polling. Kill any duplicate python bot\tipline.py and retry.
+[tipline] poll HTTP 409: Conflict
+[tipline] 409 Conflict — another bot instance is already polling. Kill any duplicate python bot\tipline.py and retry.
+[tipline] heartbeat offset=336920166 pending=0 live=21 seed=50

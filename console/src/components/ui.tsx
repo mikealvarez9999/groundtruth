@@ -176,7 +176,16 @@ export function firstPhotoPath(signal: Signal): string | null {
  * as-is rather than as a silent 404.
  */
 export function PhotoThumb({ photoPath, alt }: { photoPath: string; alt: string }) {
-  const src = `/data/${photoPath}`;
+  // The bot writes `tips/<signal_id>.jpg` into the signal's media_refs. The
+  // /data/ path works on a local-machine demo where the bot writes the file
+  // next to the rest of the artifacts. On any Vercel deployment we serve the
+  // photo from the shared Upstash store via the /api/tip-photo route.
+  // Anything that already starts with '/' or 'http' is used verbatim.
+  const src = photoPath.startsWith("tips/")
+    ? `/api/tip-photo/${photoPath.slice("tips/".length).replace(/\.jpg$/i, "")}.jpg`
+    : photoPath.startsWith("/") || photoPath.startsWith("http")
+      ? photoPath
+      : `/data/${photoPath}`;
   return (
     <a
       href={src}

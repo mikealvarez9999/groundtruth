@@ -1,11 +1,24 @@
 """Live Telegram tip-line for GroundTruth citizen reports.
 
 Long-polling (getUpdates), so it needs NO public webhook, NO tunnel, NO ngrok --
-you run it on the demo laptop, text the bot, the tip lands. It reuses the REAL
-pipeline: extract -> geocode -> verify_all, the identical code path the seed
-loader uses. Each tip is verified against the committed damage layer + valid-area
-(so it can be corroborated by, or contradicted by, everything already known) and
-appended to console/public/data/live_signals.json, which the console polls.
+run it on any always-on host (laptop, $5 VPS, Railway, Fly) and the tip lands.
+It reuses the REAL pipeline: extract -> geocode -> verify_all, the identical
+code path the seed loader uses. Each tip is verified against the committed
+damage layer + valid-area (so it can be corroborated by, or contradicted by,
+everything already known) and appended to the shared store, which the deployed
+console reads from.
+
+PERSISTENCE OPTIONS (PERSIST=signed by PERSIST env var, default 'auto'):
+  - 'auto'       Upstash Redis if UPSTASH_REST_URL+UPSTASH_REST_TOKEN are set,
+                 otherwise local files at console/public/data/. Demo-safe.
+  - 'upstash'    Force Upstash Redis (REST API via stdlib urllib; no deps).
+                 Photos as base64 in a separate key; signal index as a sorted
+                 set scored by received_at epoch ms.
+  - 'local'      Force local files (legacy default; only works when the console
+                 dev server runs on the same machine).
+
+A deployed console needs PERSIST=upstash (or 'auto' with both env vars set).
+The local-machine demo still works with no env at all.
 
 Phase 2 upgrades (ship-night scope):
   - Shared GPS (D-028): when message.location is present we use the lat/lon
@@ -37,6 +50,7 @@ Run (from repo root):
 
 from __future__ import annotations
 
+import base64
 import json
 import mimetypes
 import os
@@ -74,6 +88,80 @@ PENDING_TTL_S = 600  # 10 minutes, per Phase 2 brief
 # for a real deployment; the default is fine for a local demo.
 SALT = os.environ.get("GT_TIPLINE_SALT", "groundtruth-tipline")
 
+# --- Shared-store adapter (Upstash Redis via REST). ----------------------------
+# Stdlib urllib only -- no `redis` client, no `requests`, no async. The Upstash
+# REST endpoint is plain JSON over HTTPS and stays dependency-free for the demo.
+# Redis keys we touch (kept in one place so the console route mirrors them):
+#   gt:signals:live    ZSET, score=received_at epoch ms, member=JSON signal
+#   gt:tip:photo:<id>  STRING, base64-encoded JPEG bytes (no other photo refs)
+REDIS_SIGNALS_KEY = "gt:signals:live"
+REDIS_PHOTO_PREFIX = "gt:tip:photo:"
+
+
+class _Upstash:
+    """Thin Upstash Redis REST adapter. No client deps; stdlib only.
+
+    Why this shape: the bot must run on a $5 VPS with `python -m pip install`
+    already done, so adding `redis` or `requests` is more friction than the
+    50 lines below. The console side uses the official `@upstash/redis` SDK
+    (it runs on Node anyway and pulls deps from npm).
+    """
+
+    def __init__(self, url: str, token: str) -> None:
+        # Upstash URLs look like https://xxx.upstash.io -- no trailing slash.
+        self._base = url.rstrip("/")
+        self._token = token
+
+    def _cmd(self, *parts: str):
+        body = json.dumps(parts).encode()
+        req = urllib.request.Request(
+            self._base,
+            data=body,
+            method="POST",
+            headers={
+                "Authorization": f"Bearer {self._token}",
+                "Content-Type": "application/json",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            return json.load(resp)
+
+    def zadd(self, key: str, score: float, member: str) -> None:
+        # ZADD returns the count of new elements; we don't care, but the field
+        # shape is {"key":..., "score":..., "member":...}.
+        self._cmd("ZADD", key, str(score), member)
+
+    def zrange(self, key: str, start: int, stop: int) -> list[str]:
+        # WITHSCORES off -- members are the full JSON signals, in arrival order.
+        # -1 stop means "to the end".
+        return self._cmd("ZRANGE", key, str(start), str(stop))
+
+    def set(self, key: str, value: str) -> None:
+        self._cmd("SET", key, value)
+
+    def get(self, key: str) -> str | None:
+        return self._cmd("GET", key)
+
+
+def _make_store():
+    """Pick a store by PERSIST env ('auto'|'upstash'|'local'). See module docstring."""
+    mode = (os.environ.get("PERSIST") or "auto").lower()
+    upstash_url = os.environ.get("UPSTASH_REDIS_REST_URL") or os.environ.get("UPSTASH_REST_URL")
+    upstash_token = os.environ.get("UPSTASH_REDIS_REST_TOKEN") or os.environ.get("UPSTASH_REST_TOKEN")
+    if mode == "upstash" or (mode == "auto" and upstash_url and upstash_token):
+        if not (upstash_url and upstash_token):
+            raise SystemExit(
+                "PERSIST=upstash but UPSTASH_REDIS_REST_URL/_TOKEN are not set. "
+                "Get the REST URL + token from the Upstash console."
+            )
+        sys.stderr.write("[tipline] store=upstash (shared; deploy-safe)\n")
+        return _Upstash(upstash_url, upstash_token), "upstash"
+    sys.stderr.write(
+        f"[tipline] store=local -> {LIVE_OUT} (same-machine only; "
+        "set UPSTASH_REDIS_REST_URL+_TOKEN for a deployed console to see tips)\n"
+    )
+    return None, "local"
+
 _API = "https://api.telegram.org/bot{token}/{method}"
 _FILE_API = "https://api.telegram.org/file/bot{token}/{file_path}"
 
@@ -88,6 +176,24 @@ def _now_iso() -> str:
         .isoformat()
         .replace("+00:00", "Z")
     )
+
+
+def _epoch_ms(iso_or_none: str | None) -> float:
+    """ISO-8601 -> epoch ms float. Tolerates the trailing 'Z' our _now_iso emits.
+
+    Used as the ZSET score in Upstash so the console gets the live tips in
+    arrival order regardless of when the bot happened to start.
+    """
+    if not iso_or_none:
+        return time.time() * 1000.0
+    s = iso_or_none.rstrip("Z")
+    try:
+        dt = datetime.fromisoformat(s)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.timestamp() * 1000.0
+    except Exception:
+        return time.time() * 1000.0
 
 
 def _load(path: Path, default):
@@ -282,11 +388,43 @@ class Tipline:
         for s in seed:
             s.pop("eval", None)  # never let ground-truth labels touch verification
         self.seed = seed
-        self.live = _load(LIVE_OUT, [])
+        # Pick persistence mode once at startup so a single tip always lands in
+        # the same place. The PERSIST env var lets a deployed bot skip local
+        # files entirely.
+        self._store, self._store_kind = _make_store()
+        if self._store_kind == "local":
+            self.live = _load(LIVE_OUT, [])
+        else:
+            # In Upstash mode the seed loader is the only writer of `live`;
+            # we still keep `self.live` so the next verify_all has a universe.
+            self.live = self._load_live_from_store()
         # chat_id -> {text, user_id, expires_at, signal_id_pending?}
         self._pending: dict[int, dict] = {}
         # chat_id -> last tip's signal_id, for /start suppression etc.
         self._last_tip_id: dict[int, str] = {}
+
+    def _load_live_from_store(self) -> list[dict]:
+        """Hydrate self.live from the shared store at startup, so a verify_all
+        for the first incoming tip sees prior tips. De-dup by signal_id (ZRANGE
+        is in arrival order, last write wins)."""
+        if self._store_kind != "upstash":
+            return []
+        try:
+            raw = self._store.zrange(REDIS_SIGNALS_KEY, 0, -1)
+        except Exception as exc:
+            sys.stderr.write(f"[tipline] load_live upstash failed: {exc!r}\n")
+            sys.stderr.flush()
+            return []
+        seen: dict[str, dict] = {}
+        for member in raw:
+            try:
+                sig = json.loads(member)
+            except Exception:
+                continue
+            if isinstance(sig, dict) and sig.get("signal_id"):
+                seen[sig["signal_id"]] = sig
+        # Preserve arrival order for the verify_universe
+        return list(seen.values())
 
     # ---------- core ingestion ---------------------------------------------
 
@@ -425,12 +563,19 @@ class Tipline:
         return max(photos, key=lambda p: p.get("file_size") or p.get("width", 0) * p.get("height", 0))
 
     def _store_photo(self, signal_id: str, photo: dict, _message: dict, token: str | None) -> str | None:
-        """Download the photo via getFile and save as <signal_id>.jpg.
+        """Download the photo via getFile and persist it.
 
-        We avoid touching EXIF: the bytes are written as-is through Python's
-        file API (which copies verbatim). No pil, no imaging libs, no metadata
-        extraction, no GPS strip -- because the file is freshly downloaded and
-        Telegram's getFile response is the binary blob itself.
+        Local mode:  write <signal_id>.jpg under console/public/data/tips/.
+                    The path returned is `tips/<id>.jpg` (relative to /data/).
+        Upstash mode: write the raw JPEG bytes (base64) into the store and
+                    return the API route the console uses to fetch them
+                    (`/api/tip-photo/<id>.jpg`). The signal schema still sees
+                    `photo_path` as a relative path -- the route maps it.
+
+        We avoid touching EXIF: the bytes are written as-is. No pil, no imaging
+        libs, no metadata extraction, no GPS strip -- because the file is
+        freshly downloaded and Telegram's getFile response is the binary blob
+        itself.
         """
         file_id = photo.get("file_id")
         if not file_id:
@@ -450,21 +595,46 @@ class Tipline:
                 blob = resp.read()
             ext = mimetypes.guess_extension(meta.get("result", {}).get("mime_type") or "") or ".jpg"
             if ext.lower() not in {".jpg", ".jpeg"}:
-                # We declared the schema pattern locks to .jpg. Anything else
-                # is stored as .jpg for simplicity; the schema validator only
-                # runs over signal.media_refs, not the file on disk.
                 ext = ".jpg"
+            if self._store_kind == "upstash":
+                # Base64 so the REST API can carry binary safely. Telegram's
+                # largest photo is typically a few hundred KB after the server
+                # resize, so well under Upstash's 1 MB single-value cap.
+                self._store.set(
+                    REDIS_PHOTO_PREFIX + signal_id,
+                    base64.b64encode(blob).decode("ascii"),
+                )
+                return f"tips/{signal_id}{ext}"
+            # Local mode: same as before.
             TIPS_DIR.mkdir(parents=True, exist_ok=True)
             target = TIPS_DIR / f"{signal_id}{ext}"
             with target.open("wb") as fh:
                 fh.write(blob)
-            # Public-relative path is what lives in media_refs.
             return f"tips/{signal_id}{ext}"
         except Exception:
             # Any failure -> no photo; the rest of the tip still proceeds.
             return None
 
     def _persist(self) -> None:
+        """Write the head of the live queue to the shared store.
+
+        Local mode: full array as JSON (legacy, same-machine demo).
+        Upstash: one ZADD per signal, scored by received_at epoch ms. The
+        console route (console/src/app/api/live-signals/route.ts) reads the
+        full ZRANGE 0 -1 and de-duplicates by signal_id, so out-of-order
+        retries from a polling hiccup don't double-publish.
+        """
+        if self._store_kind == "upstash":
+            store = self._store
+            sig = self.live[-1]
+            score = _epoch_ms(sig["source"]["received_at"])
+            try:
+                store.zadd(REDIS_SIGNALS_KEY, score, json.dumps(sig, ensure_ascii=False))
+            except Exception as exc:
+                sys.stderr.write(f"[tipline] persist upstash failed: {exc!r}\n")
+                sys.stderr.flush()
+            return
+        # Local file mode.
         LIVE_OUT.parent.mkdir(parents=True, exist_ok=True)
         tmp = LIVE_OUT.with_suffix(".json.tmp")
         with tmp.open("w", encoding="utf-8") as fh:
@@ -560,8 +730,13 @@ def main() -> int:
 
     print("GroundTruth tip-line running (long-polling). Text your bot on Telegram. Ctrl+C to stop.")
     print(f"  seed reports loaded : {len(tip.seed)}")
-    print(f"  writing live tips  -> {LIVE_OUT}")
-    print(f"  photos -> {TIPS_DIR}  pending TTL = {PENDING_TTL_S}s")
+    if tip._store_kind == "upstash":
+        print(f"  writing live tips  -> Upstash Redis ({REDIS_SIGNALS_KEY})")
+        print(f"  photos             -> Upstash Redis ({REDIS_PHOTO_PREFIX}<id>)")
+    else:
+        print(f"  writing live tips  -> {LIVE_OUT}")
+        print(f"  photos -> {TIPS_DIR}")
+    print(f"  pending TTL = {PENDING_TTL_S}s")
 
     offset = None
     last_heartbeat = time.time()

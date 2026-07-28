@@ -121,6 +121,15 @@ OS pick a Bengali-capable font.
 
 ## Deploying
 
-Vercel free tier. `/api/brief` is the only dynamic route; everything else is static. Set
-`GEMINI_API_KEY` in the Vercel project to switch the brief from the offline generator to the
-live model — the panel header says which one ran.
+Vercel free tier. Three dynamic routes exist now:
+
+| Route | Purpose | Needs env |
+|---|---|---|
+| `/api/brief` | Streaming allocation brief (Gemini if keyed, else offline) | `GEMINI_API_KEY` (optional) |
+| `/api/live-signals` | Live Telegram tips the bot wrote to the shared store | `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN` (set these or live tips stay empty) |
+| `/api/tip-photo/<id>` | The JPEG for a specific tip photo | same as above |
+
+Everything else is static. Set `GEMINI_API_KEY` to switch the brief from the offline
+generator to the live model — the panel header says which one ran. To see live Telegram
+tips on the deployed console, set both Upstash env vars on the Vercel project *and* on the
+host where the bot runs; both must point to the same database.

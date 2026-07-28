@@ -11,3 +11,6 @@ GroundTruth tip-line running (long-polling). Text your bot on Telegram. Ctrl+C t
   tip [tg_9ff78a]: other @  -> plausible_unverified  photos=1
   tip [tg_9ff78a]: other @  -> plausible_unverified  photos=0
   tip [tg_9ff78a]: other @  -> plausible_unverified  photos=1
+  tip [tg_a96042]: other @  -> plausible_unverified  photos=0
+  tip [tg_a96042]: other @ Jaflong -> plausible_unverified  photos=0
+  tip [tg_78457a]: flood_inundation @  -> plausible_unverified  photos=0
