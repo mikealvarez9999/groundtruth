@@ -1,49 +1,71 @@
-# data
+# Data
 
-Flat files are our entire data layer — no databases, by project constraint.
+Two trees: `raw/` for inputs, `processed/` for what the pipeline writes.
 
 ```
-data/raw/         gitignored. Anything downloaded or exported by hand.
-data/processed/   committed. Contract-conforming artifacts the app reads.
+data/
+├── raw/
+│   └── sentinel1/         # Real SAR inputs (optional; if absent, demo runs)
+└── processed/
+    ├── damage_layer.geojson
+    ├── valid_area.geojson
+    ├── signals.seed.json
+    ├── sector_scores.json
+    └── epochs/
+        ├── index.json
+        └── <slug>/
+            ├── damage_layer.geojson
+            ├── valid_area.geojson
+            ├── signals.seed.json
+            ├── sector_scores.json
+            ├── flood.png            # if flood_overlay.py was run
+            └── flood_bounds.json
 ```
 
-## `raw/` — gitignored
+## `raw/sentinel1/`
 
-Large, regenerable, or provenance-heavy inputs. Nothing here is committed, so **if it took a
-human action to produce it, record how in a runbook**. Expected contents:
+Optional. If `damage_layer.geojson` and `valid_area.geojson` are both
+present, `build_all.load_real_damage()` uses them and overrides the
+synthetic demo. **Both files are required** — a damage layer without its
+imagery footprint would let the verifier miscall coverage (D-005).
 
-- `raw/haste/` — the HASTE exports: `building_predictions_<modelId>.gpkg`, the building
-  footprints, and the valid-area mask GeoJSON. See `runbooks/haste-local-setup.md` §8a.
-- `raw/imagery/` — Maxar Open Data scenes or crops, if downloaded locally.
-- `raw/gazetteer/` — the GeoNames Bangladesh dump used for offline fuzzy geocoding.
-- `raw/seed/` — the archived-post source material before extraction.
+Typical sources for these two files:
 
-## `processed/` — committed
+- `damage_layer.geojson` — output of
+  `python -m groundtruth.sentinel1_to_damage_layer` run against your SAR
+  assessment.
+- `valid_area.geojson` — the imagery footprint (any polygon in EPSG:4326;
+  the verifier uses a point-in-polygon test).
 
-Small, contract-validated artifacts the console and pipeline actually read. Every file here
-must validate:
+## `processed/`
 
-```bash
-cd pipeline
-PYTHONPATH=src ./.venv/bin/python -m groundtruth.validate_contracts
+The four artefacts the console reads. Refreshed every time `build_all` (or
+`build_epoch.py`) runs. The root snapshot mirrors the most recent epoch
+build — `epochs/index.json` records which slug is current.
+
+## `processed/epochs/`
+
+One directory per dated epoch. Each holds its own complete set of artefacts
+plus an optional `flood.png` + `flood_bounds.json` from `flood_overlay.py`.
+
+The console's before/after toggle iterates over the entries in
+`epochs/index.json`. To add a new epoch:
+
+```powershell
+python -m groundtruth.build_epoch --slug <slug> --label "<label>" `
+    --damage <path-to-damage.geojson> `
+    --valid-area <path-to-valid_area.geojson>
 ```
 
-Expected filenames, matched by the validator's globs:
+Date-like slugs (`YYYY-MM-DD`) sort naturally in the toggle.
 
-| File | Contract |
-|---|---|
-| `damage_layer.geojson` | `contracts/damage_layer.schema.json` |
-| `valid_area.geojson` | plain GeoJSON polygon; the imagery AOI, needed for spatial checks |
-| `signals.seed.json` | array of `contracts/signal.schema.json` |
-| `sector_scores.json` | `contracts/sector_score.schema.json` |
+## `console/public/data/`
 
-`.pmtiles`, `.gpkg`, and `.tif` are gitignored even under `processed/` — they are binary and
-regenerable. The PMTiles basemap is built once and hosted, not committed.
+A **copy** of `processed/`, kept in sync by `console/scripts/sync-data.mjs`.
+The console cannot read `data/processed/` directly — it serves everything
+from its own `public/` tree. After every pipeline run:
 
-## Two rules
-
-1. **Never commit a raw file to dodge the gitignore.** If the console needs it, it belongs in
-   `processed/` and it needs a contract.
-2. **Provenance travels with the data.** `damage_layer.geojson` carries the HASTE commit,
-   backbone, and measured accuracy in its `groundtruth` block. A processed file whose origin
-   nobody can reconstruct gets deleted, not debugged.
+```powershell
+cd console
+npm run sync-data
+```

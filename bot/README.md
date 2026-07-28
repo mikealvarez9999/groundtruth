@@ -1,32 +1,69 @@
-# bot
+# Bot
 
-Live Telegram intake for citizen reports. Anyone can send a text or photo report; it flows
-through the same pipeline as the seeded dataset and appears on the map.
+The Telegram tipline and the VLM photo check. Lives at the repo root as
+`run_bot.py` (long-poll entry point) and in this folder as two modules:
+`tipline.py` and `vlm_check.py`.
 
-**Not yet implemented** — waiting on Phase 1 go-ahead and contract sign-off.
+```powershell
+$env:TELEGRAM_BOT_TOKEN = "..."
+$env:GEMINI_API_KEY    = "..."   # optional: enables photo VLM via Gemini
+$env:GROQ_API_KEY      = "..."   # optional: enables photo VLM via Groq
+python run_bot.py
+```
 
-## Planned shape
+Long-poll, not webhook. No public URL needed; runs from a laptop.
 
-- **Telegram Bot API** (free), **webhook** mode — not long polling. The webhook is one of the
-  only dynamic routes we deploy (`console/src/app/api/telegram/route.ts`), because Vercel's free
-  tier has no always-on process to poll from.
-- On receipt: normalise to the same `signal.schema.json` shape as seeded data, with
-  `channel: "citizen_telegram"`, then run extraction → geocoding → verification → fusion
-  re-score. Identical code path to the seed loader; only the ingress differs.
-- `source.author_ref` must be **pseudonymous**. Never store a Telegram user id, phone number,
-  or display name — the contract requires this and a disaster-reporting tool leaking reporter
-  identities is a real harm, not a hypothetical one.
-- Reply to the sender with what we understood (extracted location, event type, urgency) so a
-  bad geocode is visible to the person best placed to correct it.
+## `tipline.py` — what it accepts
 
-## Secrets
+| Input | What we record |
+|---|---|
+| Text in Bangla or English | The claim (rule-extracted), location, event type |
+| Shared GPS pin (D-028) | `geo.method = "gps_shared"`, score 1.0, no gazetteer ambiguity |
+| Photo | A media ref + a VLM assessment via `vlm_check.py` (D-029) |
 
-`TELEGRAM_BOT_TOKEN` via environment variable, never committed. See `.env.example` at the repo
-root. Set a webhook secret token as well so the endpoint cannot be spoofed by anyone who
-guesses the URL.
+A tip with no GPS and no recognisable place name produces `geo: null` and
+never reaches `corroborated` — the audit drawer will show it as "unmappable",
+not as a fake.
 
-## Note for the demo
+## Privacy invariant (D-030)
 
-A live bot on stage is a real failure risk: no signal, a rate limit, or a spam message all land
-in front of the judges. Have the seeded replay running regardless, so the Telegram path is
-a bonus rather than a dependency.
+- Raw Telegram user IDs are **never** persisted.
+- Every tip is pseudonymised at ingestion via a salted digest. The same
+  person always produces the same `src_tg_*` and `tg_*` short refs, but the
+  link back to their Telegram account does not exist anywhere on disk.
+- The salt lives in `tipline.py` as a constant. Rotate it to invalidate every
+  existing pseudonym.
+
+## VLM moderation (D-029)
+
+When a tip carries a photo, `vlm_check.py` asks the configured VLM for a
+3-way verdict: `corroborating` / `contradicting` / `inconclusive`. The
+verdict **modulates** the signal's tier — it cannot promote or demote across
+more than one step on the ladder, and it never overrides a SAR observation.
+An `inconclusive` answer is the safe default and is treated as no evidence.
+
+Two providers, tried in order, first success wins:
+
+1. **Gemini 2.5 Flash** — via `GEMINI_API_KEY`.
+2. **Groq `qwen/qwen3.6-27b`** — via `GROQ_API_KEY`. Replaces the previous
+   `llama-3.2-11b-vision-preview`, which Groq decommissioned (D-033). The
+   prompt also strips `<think>…</think>` blocks Qwen emits in plain text on
+   the wire.
+
+If neither key is set, photos are accepted but get `status: "inconclusive"`
+and `model: null`. The tip still lands on the map — it just has no photo
+corroboration.
+
+## Diagnostics (D-031, D-032)
+
+If `run_bot.py` exits silently, send the bot the `/diag` command (or check
+`bot/diag.log` if configured). It reports: long-poll health, last `getUpdates`
+timestamp, last signal written, VLM provider + last call status. The most
+common failure mode is a stale `offset` — delete `bot/.offset` and restart.
+
+## Files written
+
+- `data/processed/signals.seed.json` — the live seed the pipeline reads.
+  Append-only on a per-tip basis.
+- `bot/.offset` — the long-poll cursor. Don't edit by hand.
+- `bot/diag.log` — diagnostic ring buffer (optional, configured at startup).

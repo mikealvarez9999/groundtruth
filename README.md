@@ -1,105 +1,133 @@
-# GroundTruth — Disaster Triage Command Console
+# GroundTruth
 
-A first-72-hours triage console for floods in Bangladesh. It fuses three signal channels into
-one ranked "go here first" map, then generates an AI-written resource-allocation brief.
+A disaster-triage command console for **rapid-onset floods**. Three independent
+signal channels — satellite damage assessment, vision-language photo check, and
+citizen reports — are fused into a single ranked "go here first" map and an
+AI-written brief. The default reference event is the **2022 Sylhet floods**
+(`bangladesh-flooding22`).
 
-Demo scenario: the **2022 Sylhet floods** (`bangladesh-flooding22`).
+> Decisions that shaped this codebase live in [`DECISIONS.md`](DECISIONS.md).
+> Every load-bearing claim below cites a `D-NNN` entry.
 
-> **Status: working end to end on SYNTHETIC data.** The pipeline runs, the console runs, the
-> brief streams. What is missing is real data (no Maxar imagery, no HASTE run, no GeoNames
-> dump, no real archived posts), Channel 2 (VLM), and the Telegram bot. Every screen says so.
->
-> Two decisions still need the project lead: **D-012** (grid size + fusion weights) and
-> **D-013** (Bangla display — currently implemented as "show both").
+## What it produces
 
-## Layout
-
-```
-console/     Next.js app (MapLibre GL JS + deck.gl, no Mapbox tokens)
-pipeline/    Python: extraction, geocoding, verification, fusion, VLM batch
-bot/         Telegram bot (Bot API)
-contracts/   JSON Schemas — the interface between the above. Plus fixtures.
-data/        raw/ gitignored, processed/ committed
-runbooks/    operational runbooks (HASTE local setup)
-vendor/      read-only reference clones, gitignored (see DECISIONS.md D-001)
-DECISIONS.md every scope and design choice, with reasons
-```
+- A ranked sector map (grid cells of ~500 m, see D-019) coloured by the
+  posterior "go here first" score.
+- An `eval_report` printed at the end of every build: how many planted fakes
+  were flagged, how many genuine reports survived.
+- A Next.js console for humans — clicking a cell opens its audit drawer
+  (every signal, every source, every corroboration, every demotion).
+- A Telegram bot that lets people on the ground submit tips in Bangla or
+  English from their phone, with optional GPS and photos.
 
 ## The three channels
 
-1. **Wide-area damage layer** — Microsoft's [HASTE](https://github.com/microsoft/haste) runs
-   locally in Docker on a teammate's laptop against Maxar Open Data imagery. An analyst labels
-   a handful of buildings; HASTE's embedding + logistic-regression method scores every
-   building. The export is converted to `damage_layer.geojson` and committed as a static
-   artifact. Runbook: `runbooks/haste-local-setup.md`.
-2. **Fine-grained VLM findings** — a Python batch sends zoomed imagery crops and citizen photos
-   to Gemini with a structured JSON schema. Outputs cached as JSON.
-3. **Citizen signals** — ~200 real archived posts from past Bangladesh floods (Bangla/Banglish),
-   replayed on a timer, plus a live Telegram bot. Both flow through one pipeline: LLM
-   extraction → local GeoNames gazetteer fuzzy-match → verification → map pin.
+| # | Channel | Status | Module |
+|---|---|---|---|
+| 1 | **Sentinel-1 SAR damage map** | Live, default | `pipeline/src/groundtruth/sentinel1_to_damage_layer.py` |
+| 2 | **VLM photo corroboration** | Live when keyed | `bot/vlm_check.py` |
+| 3 | **Citizen reports (seeded + Telegram)** | Live | `bot/tipline.py` |
 
-Verification is **corroboration + spatial consistency only** — no media forensics, no deepfake
-detection, no credibility classifiers. Signals are tiered CORROBORATED / PLAUSIBLE-UNVERIFIED /
-SUSPECT, each with a stated reason. Suspect items are down-weighted to zero and shown in an
-Audit Drawer, never deleted.
+Channel 1 is the only one that produces a **building-level damage class**.
+Channels 2 and 3 **modulate** that prior; neither ever overrides a SAR
+observation (D-029).
 
-## Getting started
+## Architecture at a glance
 
-Order matters: the console fetches artifacts the pipeline writes.
-
-```bash
-# 1. pipeline — synthesise data, run every stage, validate, write artifacts
-cd pipeline
-python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
-PYTHONPATH=src ./.venv/bin/python -m groundtruth.build_all
-
-# 2. console
-cd ../console
-npm install && npm run dev        # http://localhost:3000
+```
+SAR damage GeoPackage  ─┐
+citizen text + GPS     ─┼─►  fuse.py  ──►  ranked sectors + eval report
+citizen photo (VLM)    ─┘            │
+                                    ▼
+                              Next.js console
+                              (MapLibre + deck.gl)
 ```
 
-Step 1 writes to both `data/processed/` and `console/public/data/`, then validates
-everything against `/contracts` and prints how the verifier scored against the planted
-fakes. Step 2 needs no API keys; the brief falls back to an offline generator.
+The pipeline writes four JSON artefacts under `data/processed/`
+(`damage_layer.geojson`, `valid_area.geojson`, `sector_scores.json`,
+`signals.seed.json`). The console polls for live signals and re-scores on the
+fly; the four artefacts are the snapshot.
 
-In the console: `Space` play/pause, `A` audit drawer, `B` brief, `Esc` close.
+## Quickstart
 
-**HASTE (the teammate with the 16 GB Linux laptop):** follow
-`runbooks/haste-local-setup.md` start to finish. Read its §0 first — that laptop is under
-HASTE's documented 32 GB minimum.
+```powershell
+# 1. Build (synthetic demo if no real damage layer is dropped in).
+pip install -r pipeline/requirements.txt
+python -m groundtruth.build_all
 
-## Hard constraints
+# 2. Sync to the console.
+cd console
+npm install
+npm run sync-data         # copies JSON artefacts into console/public/data
+npm run dev               # http://localhost:3000
 
-- **$0 cloud budget.** Free tiers only: Gemini AI Studio primary, Groq spare. API keys via
-  environment variables, never committed.
-- **Precompute and cache everywhere** except the Telegram→pipeline path, consistency checks,
-  fusion re-scoring, and the brief. Only the brief route and the Telegram webhook are dynamic
-  on Vercel.
-- **No databases.** Flat JSON/GeoJSON files are the data layer.
-- **Not building, even if it seems helpful:** live social-media scraping, media forensics, a
-  mobile app, auth systems, multi-disaster support.
-- **MapLibre GL JS + deck.gl, not Mapbox.** Zero tokens. PMTiles offline basemap of Sylhet.
-- **Contracts in `/contracts` change only with the project lead's explicit approval.**
+# 3. (Optional) Run the Telegram tipline.
+$env:TELEGRAM_BOT_TOKEN = "..."
+python run_bot.py
+```
 
-## Honesty rules this project holds itself to
+To use a real Sentinel-1 assessment instead of the synthetic demo, drop two
+files:
 
-These are not decoration — a triage tool that overstates its confidence sends people to the
-wrong place.
+- `data/raw/sentinel1/damage_layer.geojson`
+- `data/raw/sentinel1/valid_area.geojson`
 
-- **"No damage recorded" ≠ "safe".** Cells outside the imagery valid-area mask are `unassessed`
-  and must render differently from assessed-and-clear ones.
-- **A claim we cannot check is not a false claim.** No imagery coverage means
-  `plausible_unverified` and a recon flag, never `suspect`.
-- **Every displayed number is traceable.** The damage layer carries the HASTE commit, backbone,
-  label count, and measured Damaged-class F1. Fusion output carries the weights that produced
-  it.
-- **Cloud-obscured buildings are excluded from scoring and said so.** Absence of damage there
-  means we could not see.
-- **The fixtures in `contracts/examples/` are fake and labelled fake.** Their invented accuracy
-  numbers must never appear in the demo.
+`build_all.load_real_damage()` auto-detects them and overrides the demo.
+**Both must be present** — a damage layer without its imagery footprint would
+let the verifier miscall coverage (D-005).
 
-## HASTE questions
+For two dated epochs (the before/after toggle in the console), use
+`build_epoch.py`:
 
-HASTE is newer than any model's training data. Answer questions about it **only** from the
-cloned files in `vendor/haste`, and cite the file. If the files do not answer it, say so —
-`runbooks/haste-local-setup.md` §10 tracks the known-unanswered questions.
+```powershell
+python -m groundtruth.build_epoch --slug 2022-06-06 --label "<=06 JUN - PRE-PEAK" `
+    --damage data\raw\sentinel1\damage_pre.geojson `
+    --valid-area data\raw\sentinel1\valid_area.geojson
+
+python -m groundtruth.build_epoch --slug 2022-06-19 --label "19 JUN - PEAK" `
+    --damage data\raw\sentinel1\damage_peak.geojson `
+    --valid-area data\raw\sentinel1\valid_area.geojson
+```
+
+The epoch you build last becomes the root snapshot. Pick a date-like slug so
+the toggle sorts naturally.
+
+## What the verifier catches, and what it doesn't
+
+| Planted fake kind | Outcome |
+|---|---|
+| `contradicts_imagery` | **Flagged SUSPECT** — the case the system is built for |
+| `duplicate_astroturf` | **Contained, not flagged** — three posts from one source never reach `corroborated` |
+| `exaggerated_scale` | **Not detected** — no population model |
+| `impossible_location` | **Not detected as a fake** — it is simply unmappable (`geo: null`) |
+
+The headline number for trust is the **false-positive count**: the seeded eval
+ends with 0 genuine reports wrongly marked suspect. Corroboration confirms
+that *something* is happening at a place; it cannot bound *how bad*.
+
+## Operating notes
+
+- **No live basemap.** The console renders on the OpenStreetMap raster
+  tiles bundled in `console/public/`. There is no Mapbox, no telemetry, no
+  external tile API at runtime.
+- **Privacy invariant (D-030):** the bot never stores raw Telegram user IDs.
+  A salted digest is the only identifier that touches the audit trail.
+- **Eval labels are quarantined (D-010):** the synthetic seed carries
+  ground-truth labels inside an `eval` block that is stripped before
+  corroboration, fusion, or scoring runs. Nothing downstream can read it even
+  by accident.
+- **Contracts are frozen** at v1.0.0. Renaming a field is a breaking change —
+  see `contracts/README.md` for the procedure.
+
+## Repo map
+
+| Path | What's in it |
+|---|---|
+| `pipeline/` | The Python ground-truth package. Module breakdown in [`pipeline/README.md`](pipeline/README.md). |
+| `console/` | The Next.js command console. Run/deploy notes in [`console/README.md`](console/README.md). |
+| `bot/` | Telegram tipline + VLM photo check. Privacy and ops in [`bot/README.md`](bot/README.md). |
+| `contracts/` | Frozen JSON schemas + fixtures. [`contracts/README.md`](contracts/README.md). |
+| `data/` | `raw/` inputs, `processed/` artefacts. [`data/README.md`](data/README.md). |
+| `DECISIONS.md` | The design log. Every non-obvious choice has a `D-NNN` entry. |
+| `run_bot.py` | Entry point for the long-poll Telegram bot. |
+| `maxar_recon.py` | Optional Maxar Open Data recon helper (not on the hot path). |

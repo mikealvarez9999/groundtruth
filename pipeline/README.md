@@ -1,106 +1,97 @@
-# pipeline
+# Pipeline
 
-Python side of GroundTruth: extraction → geocoding → verification → fusion, plus the
-HASTE converter and contract tooling. **Everything here runs and is exercised by
-`build_all`.**
+The Python ground-truth package. Reads SAR damage + citizen reports, writes
+four JSON artefacts the console can consume.
 
-## Setup
-
-```bash
-cd pipeline
-python3 -m venv .venv
-./.venv/bin/pip install -r requirements.txt
+```powershell
+pip install -r requirements.txt
+python -m groundtruth.build_all
 ```
 
-Only dependency is `jsonschema`. Everything else is the standard library — deliberately,
-so this builds fast on three different laptops.
-
-## Run the whole thing
-
-```bash
-PYTHONPATH=src ./.venv/bin/python -m groundtruth.build_all
-```
-
-Synthesises the demo inputs, runs every stage, writes the artifacts to **both**
-`data/processed/` and `console/public/data/`, validates them against the contracts, and
-prints an accuracy report against the planted fakes.
-
-Expected output: 2465 buildings, 50 signals, 49 geocoded, 18 corroborated / 28 recon /
-4 suspect, 175 ranked cells, 7 files validated, 0 genuine reports wrongly marked suspect.
+If `data/raw/sentinel1/` holds a real damage layer + valid-area footprint,
+`build_all` picks it up automatically. Otherwise it runs on the synthetic
+demo (`demo_data.py`) seeded from the 2022 Sylhet reference event.
 
 ## Modules
 
-| Module | What it does |
+| Module | Purpose |
 |---|---|
-| `grid.py` | The 500 m cell scheme. **Mirrored in `console/src/lib/grid` logic inside `fusion.ts`** — change both together. |
-| `gazetteer.py` | ~30 real Sylhet place names with Bangla/Banglish aliases and fuzzy matching. Stand-in for the GeoNames dump. |
-| `extract.py` | Raw report → structured claim. **Rule-based, not an LLM** (see below). |
-| `geocode.py` | `location_ref` → lon/lat/cell, with runner-up candidates for the audit trail. |
-| `verify.py` | Corroboration + spatial consistency → tier, reason, fusion weight. |
-| `fuse.py` | Damage layer + signals → ranked `sector_scores.json`. |
-| `demo_data.py` | **Synthetic** damage layer, imagery footprint, and 50 seeded reports. |
-| `haste_to_damage_layer.py` | HASTE predictions `.gpkg`/`.geojson` → `damage_layer.geojson`. |
-| `build_all.py` | Driver for all of the above. |
-| `validate_contracts.py` | Validates artifacts and fixtures against `/contracts`. |
+| `grid.py` | 500 m grid cells in EPSG:4326. Pure stdlib; no shapely. D-019. |
+| `gazetteer.py` | Place-name lookup for the eight Sylhet upazilas in scope. |
+| `geocode.py` | Gazetteer → `geo` block on every signal. Honest about ambiguity (`candidates` array). |
+| `extract.py` | Rule-based claim extraction (location_ref, event_type, severity). **Not** an LLM — see D-021. |
+| `verify.py` | Corroboration (D-005, D-018), spatial consistency, tier assignment. |
+| `fuse.py` | Combines channel weights into sector scores (D-009, D-020). |
+| `demo_data.py` | Synthetic citizen posts + SAR stand-in for the demo. |
+| `sentinel1_to_damage_layer.py` | Real Sentinel-1 SAR → `damage_layer.geojson`. |
+| `flood_overlay.py` | Flood-mask GeoTIFF → epoch `flood.png` + `flood_bounds.json`. |
+| `build_epoch.py` | Stages a dated epoch (pre-peak / peak / etc.) into the root artefacts. |
+| `build_all.py` | Orchestrator. Runs the full chain, prints `eval_report`. |
+| `validate_contracts.py` | Schema-check every JSON artefact before writing it. |
 
-## Three things to know before trusting the output
+## Outputs
 
-**1. Extraction is rule-based, not Gemini.** There is no API key in this environment, so
-`extract.py` is a deterministic keyword/regex extractor. `LLM_PROMPT` and
-`extract_with_llm()` are the seam for the real thing — and `extract_with_llm()` *raises*
-rather than silently falling back, because a silent fallback would make
-`extraction.model` in the artifact a lie. Costs: unknown phrasings land as
-`event_type: "other"`, `summary_en` is assembled rather than translated, and
-`claimed_time` is always null so corroboration windows run on `received_at`.
+After `build_all`:
 
-**2. All the data is synthetic.** `demo_data.py` fabricates everything. Place names and
-approximate coordinates are real Sylhet; damage labels and reports are invented, and
-`haste_commit` is zeroed to `0000000` so it can never be mistaken for a real run. The
-synthetic layer has **no** `accuracy` block, so the console honestly shows
-"NOT VALIDATED". Do not add invented numbers to fill it.
-
-**3. Eval labels are quarantined.** `build_all.build_signals()` splits `signal.eval` off
-before extract/geocode/verify/fuse ever see a signal, and re-attaches it only in
-`eval_report()` *after* the pipeline has committed to its answers. That ordering is the
-only reason the fake-catch numbers mean anything. It is enforced by structure here, but
-nothing stops a future module from reading the field — see DECISIONS.md D-010.
-
-## What the verifier catches, and what it does not
-
-From the last run's eval report:
-
-| Planted fake kind | Count | Outcome |
-|---|---|---|
-| `contradicts_imagery` | 4 | **All 4 flagged SUSPECT.** This is the kind we are built to catch. |
-| `duplicate_astroturf` | 3 | Contained, not flagged — one source posting three times never reaches `corroborated`. |
-| `exaggerated_scale` | 2 | **Not detected.** We have no population model. |
-| `impossible_location` | 1 | **Not detected** as a fake; it is simply unmappable (`geo: null`). |
-
-**"4 of 10" is not a detection rate to brag about** — only one kind is detectable by
-design. The number that actually matters for trust is the other one: **0 genuine reports
-were wrongly marked suspect.**
-
-## Converting a real HASTE export
-
-```bash
-PYTHONPATH=src ./.venv/bin/python -m groundtruth.haste_to_damage_layer \
-  --predictions ../data/raw/haste/building_predictions_<modelId>.gpkg \
-  --valid-area  ../data/raw/haste/valid_area_mask.geojson \
-  --haste-commit 7d80be7 --backbone mosaiks \
-  --damaged-f1 0.77 --validation-sample-n 200 \
-  --out ../data/processed/damage_layer.geojson
+```
+data/processed/
+├── damage_layer.geojson     # SAR: every building + damage_class
+├── valid_area.geojson       # Imagery footprint: where the SAR saw something
+├── signals.seed.json        # Citizen signals (live: tipline writes here too)
+└── sector_scores.json       # The ranked map
 ```
 
-`.gpkg` input needs `geopandas` (`./.venv/bin/pip install geopandas`). To avoid that,
-dump to GeoJSON first with `ogr2ogr` and pass the `.geojson` — the stdlib path handles it.
-Omit the accuracy flags and the layer is honestly marked unvalidated. Field mapping is
-documented in the module docstring and in `runbooks/haste-local-setup.md` §8.
+For multi-epoch runs:
 
-## Conventions
+```
+data/processed/epochs/<slug>/
+├── damage_layer.geojson
+├── valid_area.geojson
+├── signals.seed.json
+├── sector_scores.json
+├── flood.png                # if flood_overlay was run
+└── flood_bounds.json
+```
 
-- **Deterministic ids.** `signal_id` is a content hash, so re-running does not churn
-  committed JSON.
-- **Null is not zero.** `persons_at_risk: null` means unstated. Never sum it as 0 and
-  present the result as an estimate — the UI labels the total as a floor (`≥N`).
-- **Obscured is not assessed.** Cloud-obscured buildings are excluded from every damage
-  denominator. Absence of damage there means we could not see.
+`epochs/index.json` tracks which slugs exist and which one is the root
+default (last built wins — that's what the root artefacts mirror).
+
+## Design choices worth knowing
+
+- **Rule-based extraction, not LLM.** D-021. A Gemini key was never required
+  for the MVP. The seam is in place — `extract.py` exposes the same interface
+  a model-backed extractor would — but the shipped implementation is regex +
+  keyword scoring.
+- **The eval block is quarantined (D-010).** `build_all.build_signals()`
+  splits the `eval` block off the synthetic posts and hands it back to the
+  caller as a separate dict. Nothing downstream of that function can see it.
+- **Schema validation runs before write.** Every JSON artefact is checked
+  against `contracts/*.schema.json` before it hits disk. A bad build fails
+  loudly, not silently.
+- **No renormalisation across channels (D-020).** If a sector has fewer
+  signals than its neighbours, it does **not** get pulled up by the average.
+  Lower evidence → lower score, full stop.
+
+## CLI cheatsheet
+
+```powershell
+# Build everything from synthetic defaults.
+python -m groundtruth.build_all
+
+# Build from a real Sentinel-1 layer + footprint.
+python -m groundtruth.sentinel1_to_damage_layer `
+    --footprints data\raw\sentinel1\footprints.geojson `
+    --flood-stats data\raw\sentinel1\flood_stats.geojson `
+    --event-id bangladesh-flooding22
+
+# Stage a dated epoch (the last one you build becomes the root snapshot).
+python -m groundtruth.build_epoch --slug 2022-06-19 --label "19 JUN - PEAK" `
+    --damage data\raw\sentinel1\damage_peak.geojson `
+    --valid-area data\raw\sentinel1\valid_area.geojson
+
+# Generate the flood overlay for an epoch (optional, for the map layer).
+python -m groundtruth.flood_overlay --mask data\raw\sentinel1\flood_mask.tif --slug 2022-06-19
+
+# Validate every JSON artefact against its schema.
+python -m groundtruth.validate_contracts
+```
