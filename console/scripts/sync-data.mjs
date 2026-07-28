@@ -23,6 +23,10 @@ const WANTED = [
   "sector_scores.json",
 ];
 
+// Optional single-file artifacts: copied if present, silent if not (never a
+// "DATA UNAVAILABLE" warning). The national flood context overlay lives here.
+const OPTIONAL = ["national_flood.png", "national_flood.json"];
+
 async function main() {
   const src = path.resolve(process.cwd(), "..", "data", "processed");
   const dest = path.join(process.cwd(), "public", "data");
@@ -50,6 +54,15 @@ async function main() {
     await copyFile(path.join(src, file), path.join(dest, file));
     copied.push(file);
   }
+
+  for (const file of OPTIONAL) {
+    if (present.has(file)) {
+      await copyFile(path.join(src, file), path.join(dest, file));
+      console.log(`[sync-data] copied optional ${file}`);
+    }
+  }
+
+  // Dated SAR epochs (data/processed/epochs/<slug>/) power the console's
 
   console.log(`[sync-data] copied ${copied.length}/${WANTED.length} artifacts -> public/data/`);
   if (missing.length) {

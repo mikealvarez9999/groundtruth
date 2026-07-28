@@ -27,6 +27,7 @@ interface Props {
 const LAYERS: { key: keyof LayerVisibility; label: string; hint: string }[] = [
   { key: "satellite", label: "Satellite imagery", hint: "Esri World Imagery + reference place-name labels (Google-Earth style)" },
   { key: "flood", label: "SAR floodwater", hint: "Sentinel-1 detected flood extent" },
+  { key: "national", label: "National flood backdrop", hint: "Wide country-scale flood context (SAR mask, faded)" },
   { key: "damage", label: "Building damage", hint: "Per-building assessment (optical or SAR)" },
   { key: "sectors", label: "Sector scores", hint: "Fused triage grid, 500 m cells" },
   { key: "signals", label: "Citizen signals", hint: "Verified claims, by tier" },

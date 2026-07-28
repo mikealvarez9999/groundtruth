@@ -59,10 +59,15 @@ export default function Console() {
   // an epoch without one just shows no water layer.
   const [floodOverlay, setFloodOverlay] = useState<FloodOverlay | null>(null);
 
+  // Wide national/regional flood context (flood_overlay.py --national). Shown
+  // only when its event_id matches the loaded scores, so a Bangladesh backdrop
+  // can never appear over, say, a Myanmar earthquake console.
+  const [nationalOverlay, setNationalOverlay] = useState<FloodOverlay | null>(null);
+
   const [elapsed, setElapsed] = useState(0);
   const [playing, setPlaying] = useState(false);
   // 120x: the seeded corpus spans ~2.2 hours, so this replays in ~70s --
-// long enough to watch the queue re-rank, short enough to demo twice.
+  // long enough to watch the queue re-rank, short enough to demo twice.
   const [speed, setSpeed] = useState(120);
 
   const [visibility, setVisibility] = useState<LayerVisibility>({
@@ -71,6 +76,7 @@ export default function Console() {
     signals: true,
     flood: true,
     satellite: true,
+    national: true,
   });
   const [selectedCellId, setSelectedCellId] = useState<string | null>(null);
   const [selectedSignal, setSelectedSignal] = useState<Signal | null>(null);
@@ -191,6 +197,41 @@ export default function Console() {
       cancelled = true;
     };
   }, [epochSlug]);
+
+  // ---- national flood context overlay ------------------------------------
+  // Loaded once, but shown only if its event_id matches the loaded scores, so a
+  // country backdrop is never draped over the wrong event's console.
+  useEffect(() => {
+    if (!scores) return;
+    let cancelled = false;
+    const load = async () => {
+      try {
+        const res = await fetch("/data/national_flood.json");
+        if (!res.ok) {
+          if (!cancelled) setNationalOverlay(null);
+          return;
+        }
+        const sidecar = (await res.json()) as {
+          bounds: [number, number, number, number];
+          event_id?: string;
+        };
+        // Honesty gate: wrong event -> no backdrop.
+        if (sidecar.event_id && sidecar.event_id !== scores.event_id) {
+          if (!cancelled) setNationalOverlay(null);
+          return;
+        }
+        if (!cancelled) {
+          setNationalOverlay({ url: "/data/national_flood.png", bounds: sidecar.bounds });
+        }
+      } catch {
+        if (!cancelled) setNationalOverlay(null);
+      }
+    };
+    void load();
+    return () => {
+      cancelled = true;
+    };
+  }, [scores]);
 
   // ---- live Telegram tips: poll and merge --------------------------------
   // The tip-line bot (bot/tipline.py) appends verified tips to
@@ -341,6 +382,7 @@ export default function Console() {
         damage={visibility.damage ? damage : damage}
         validArea={validArea}
         floodOverlay={floodOverlay}
+        nationalOverlay={nationalOverlay}
         cells={liveCells}
         signals={arrived}
         visibility={visibility}
@@ -458,18 +500,15 @@ export default function Console() {
               "C-band SAR (cloud-penetrating) · damage = flood exposure per building " +
               "· footprints: Google Open Buildings v3 · UNVALIDATED — no ground-truth " +
               "sample measured yet · citizen replay reports are synthetic stand-ins; " +
-              "live Telegram tips are real · photo-channel VLM modulates tier (never " +
-              "overrides spatial check)"
+              "live Telegram tips are real · Channel 2 (VLM) not implemented"
             : isSynthetic
               ? "⚠ SYNTHETIC DEMO DATA — place names are real, all damage labels and " +
                 "reports are fabricated · no satellite imagery was assessed · damage " +
-                "layer is UNVALIDATED (no accuracy measured) · photo-channel VLM " +
-                "modulates tier (never overrides spatial check) · replace before any " +
-                "external demo ⚠"
+                "layer is UNVALIDATED (no accuracy measured) · Channel 2 (VLM) not " +
+                "implemented · replace before any external demo ⚠"
               : "HASTE optical assessment — see damage-layer provenance in the side " +
                 "panel · citizen replay reports are synthetic stand-ins; live Telegram " +
-                "tips are real · photo-channel VLM modulates tier (never overrides " +
-                "spatial check)";
+                "tips are real · Channel 2 (VLM) not implemented";
           const frame = isSar
             ? "border-cyan-700/40 bg-cyan-950/40"
             : "border-amber-600/40 bg-amber-950/40";

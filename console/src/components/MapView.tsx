@@ -50,6 +50,7 @@ export interface LayerVisibility {
   signals: boolean;
   flood: boolean;
   satellite: boolean;
+  national: boolean;
 }
 
 /** Georeferenced SAR flood-mask image for the current epoch. */
@@ -63,6 +64,12 @@ interface Props {
   damage: DamageLayer | null;
   validArea: ValidArea | null;
   floodOverlay: FloodOverlay | null;
+  /**
+   * Wide country/regional flood context. Drawn underneath the AOI overlay as
+   * a faded backdrop so reviewers can see the national extent of the event
+   * without it competing with the per-cell flood mask they're scrutinising.
+   */
+  nationalOverlay: FloodOverlay | null;
   cells: LiveCell[];
   signals: Signal[];
   visibility: LayerVisibility;
@@ -278,6 +285,7 @@ export default function MapView({
   damage,
   validArea,
   floodOverlay,
+  nationalOverlay,
   cells,
   signals,
   visibility,
@@ -308,10 +316,10 @@ export default function MapView({
   // to push and was then gone forever, so all three sources stayed empty and the
   // map rendered blank under a fully working HUD. Refs + an idempotent flush
   // removes the ordering question entirely.
-  const dataRef = useRef({ damage, validArea, cells, floodOverlay });
+  const dataRef = useRef({ damage, validArea, cells, floodOverlay, nationalOverlay });
   useEffect(() => {
-    dataRef.current = { damage, validArea, cells, floodOverlay };
-  }, [damage, validArea, cells, floodOverlay]);
+    dataRef.current = { damage, validArea, cells, floodOverlay, nationalOverlay };
+  }, [damage, validArea, cells, floodOverlay, nationalOverlay]);
 
   // Fit the camera to the imagery footprint once, the first time we have it.
   // A hardcoded zoom was wrong for the data: at z8.6 a 500 m cell is ~1.3 px, so
@@ -397,11 +405,55 @@ export default function MapView({
     } else if (map.getLayer("flood-raster")) {
       map.setLayoutProperty("flood-raster", "visibility", "none");
     }
+
+    // National flood backdrop: same source/layout shape as the AOI overlay
+    // but rendered faded and *under* the AOI flood so the eye reads it as
+    // context, not as foreground. Only drawn when the artifact actually
+    // exists -- absence is silently hidden, never an error.
+    const no = dataRef.current.nationalOverlay;
+    const natSrc = map.getSource("national-flood") as ImageSource | undefined;
+    if (no) {
+      const [w3, s3, e3, n3] = no.bounds;
+      const coordsN: [[number, number], [number, number], [number, number], [number, number]] = [
+        [w3, n3],
+        [e3, n3],
+        [e3, s3],
+        [w3, s3],
+      ];
+      if (natSrc) {
+        natSrc.updateImage({ url: no.url, coordinates: coordsN });
+        map.setLayoutProperty(
+          "national-flood-raster",
+          "visibility",
+          stateRef.current.visibility.national ? "visible" : "none",
+        );
+      } else {
+        // Insert before "flood-raster" (and therefore before everything on
+        // top of it) so the national backdrop genuinely sits below.
+        const before = map.getLayer("flood-raster") ? "flood-raster" : "valid-area-fill";
+        map.addSource("national-flood", {
+          type: "image",
+          url: no.url,
+          coordinates: coordsN,
+        });
+        map.addLayer(
+          {
+            id: "national-flood-raster",
+            type: "raster",
+            source: "national-flood",
+            paint: { "raster-opacity": 0.45, "raster-fade-duration": 0 },
+          },
+          before,
+        );
+      }
+    } else if (map.getLayer("national-flood-raster")) {
+      map.setLayoutProperty("national-flood-raster", "visibility", "none");
+    }
   }, []);
 
   useEffect(() => {
     flush();
-  }, [damage, validArea, cells, floodOverlay, flush]);
+  }, [damage, validArea, cells, floodOverlay, nationalOverlay, flush]);
 
   // ---- one-time map construction ----------------------------------------
   useEffect(() => {
@@ -597,6 +649,7 @@ export default function MapView({
     setVis("sectors-line", visibility.sectors);
     // Only when an overlay is loaded; a hidden-because-absent layer stays hidden.
     if (dataRef.current.floodOverlay) setVis("flood-raster", visibility.flood);
+    if (dataRef.current.nationalOverlay) setVis("national-flood-raster", visibility.national);
     // Satellite toggle drives THREE basemap layers together so the operator
     // gets one coherent Google-Earth-style view: satellite imagery on, dark
     // Carto base off, ESRI reference place-name labels on. Toggling satellite
