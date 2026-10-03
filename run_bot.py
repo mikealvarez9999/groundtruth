@@ -54,7 +54,7 @@ def main() -> int:
     # Forward EVERYTHING from .env into the child. Existing process env wins
     # so a $env:TELEGRAM_BOT_TOKEN in PowerShell is honoured even when .env is
     # missing or partial. We do NOT hard-code a list of keys here -- the
-    # bot/vlm pipeline can grow new ones (GEMINI_API_KEY, GROQ_API_KEY, future
+    # bot/vlm pipeline can grow new ones (OPENROUTER_API_KEY, future
     # providers) without this launcher needing to know about them.
     forwarded: list[str] = []
     for k, v in env.items():
@@ -90,15 +90,14 @@ def main() -> int:
     # to miss. Without this banner the bot's reply can say "no VLM provider
     # available" with no indication that .env had one and we just dropped it.
     vlm_keys = {k: ("set" if os.environ.get(k) else "MISSING") for k in
-                ("GEMINI_API_KEY", "GROQ_API_KEY")}
+                ("OPENROUTER_API_KEY",)}
     print(
         f"[run_bot] launching {bot}  (cwd={os.getcwd()}, "
         f"PYTHONPATH={os.environ['PYTHONPATH']})",
         flush=True,
     )
     print(
-        f"[run_bot] VLM providers: GEMINI={vlm_keys['GEMINI_API_KEY']} "
-        f"GROQ={vlm_keys['GROQ_API_KEY']}",
+        f"[run_bot] VLM providers: OPENROUTER={vlm_keys['OPENROUTER_API_KEY']}",
         flush=True,
     )
     print(

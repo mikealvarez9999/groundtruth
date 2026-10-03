@@ -49,9 +49,11 @@ you read for shape and scale.
   population model. Anything resembling a headcount is intentionally
   unspeakable; the system corroborates that *something* is happening at a
   place, not how bad it is.
-- **Per-signal VLM scores** — only the 3-way verdict (`corroborating`,
-  `contradicting`, `inconclusive`) is in-scope. A confidence number invites
-  false calibration (D-021).
+- **Per-signal VLM scores** — only the 3-way verdict (`supports`,
+  `contradicts`, `inconclusive`) is in-scope. A confidence number invites
+  false calibration (D-021). `vlm_assessment.model` is a free string and simply
+  records which model answered — currently `thinkingmachines/inkling:free` on
+  OpenRouter (D-037).
 - **External basemap URLs** — there is no live basemap. A `tiles` field would
   imply a network call that this system does not make.
 - **Raw author identifiers** — the Telegram bot pseudonymises at ingestion

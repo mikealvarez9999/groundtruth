@@ -25,12 +25,18 @@ AI-written brief. The default reference event is the **2022 Sylhet floods**
 | # | Channel | Status | Module |
 |---|---|---|---|
 | 1 | **Sentinel-1 SAR damage map** | Live, default | `pipeline/src/groundtruth/sentinel1_to_damage_layer.py` |
-| 2 | **VLM photo corroboration** | Live when keyed | `bot/vlm_check.py` |
+| 2 | **VLM photo corroboration** | Live when keyed (OpenRouter) | `bot/vlm_check.py` |
 | 3 | **Citizen reports (seeded + Telegram)** | Live | `bot/tipline.py` |
 
 Channel 1 is the only one that produces a **building-level damage class**.
 Channels 2 and 3 **modulate** that prior; neither ever overrides a SAR
 observation (D-029).
+
+**LLM providers (D-037).** Gemini is gone. Text — the allocation brief — runs on
+Groq `openai/gpt-oss-120b` via `GROQ_API_KEY`. Images — the photo VLM — runs on
+OpenRouter `thinkingmachines/inkling:free` via `OPENROUTER_API_KEY`. Extraction
+stays rule-based (D-021). Both model ids were verified against the providers'
+own listings before any code was written.
 
 ## Architecture at a glance
 

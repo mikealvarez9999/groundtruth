@@ -83,7 +83,8 @@ console/  (Next.js; MapLibre GL v6 + deck.gl)
                              # fitBounds to valid_area bbox (works for ANY event location)
     SidePanel.tsx            # layer toggles (flood/damage/sectors/signals); provenance panel narrows on source.tool
     TriageQueue.tsx, SignalFeed.tsx, AuditDrawer.tsx, BriefPanel.tsx, TopBar.tsx
-  src/app/api/brief/route.ts # streaming brief: Gemini if GEMINI_API_KEY else DETERMINISTIC fallback
+  src/app/api/brief/route.ts # streaming brief: Groq openai/gpt-oss-120b if GROQ_API_KEY else
+                             # DETERMINISTIC fallback. Gemini removed in D-037.
                              # (computed from sector_scores at request time — demo-safe offline).
                              # EVENT-AWARE: flood->boats; earthquake->USAR/heavy lifting/trauma medical.
   src/lib/fusion.ts          # client-side re-scoring MIRRORS fuse.py (change both in same commit — D-012)
@@ -93,6 +94,9 @@ bot/
                              # extract->geocode->verify_all. Appends to console/public/data/live_signals.json
                              # (atomic tmp+rename). PRIVACY: never stores Telegram ids — salted hashes only
                              # (GT_TIPLINE_SALT env). Needs TELEGRAM_BOT_TOKEN env.
+  vlm_check.py               # photo VLM. SINGLE provider as of D-037:
+                             # OpenRouter thinkingmachines/inkling:free (OPENROUTER_API_KEY).
+                             # Gemini + Groq-vision removed.
 runbooks/haste-local-setup.md # detailed HASTE setup §0–§10 (Docker, env, ingest, embed/label/predict, export)
 ```
 

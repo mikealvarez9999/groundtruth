@@ -55,7 +55,7 @@
     "verified_at": "2026-07-26T08:31:20Z"
   },
   "extraction": {
-    "model": "gemini-2.5-flash",
+    "model": "thinkingmachines/inkling:free",
     "prompt_version": "extract-v1",
     "extracted_at": "2026-07-26T08:31:08Z",
     "confidence": 0.79,

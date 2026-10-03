@@ -7,11 +7,17 @@
 #    assessed_at: ISO-8601 str}
 #
 # Rules (D-029):
-#   - GEMINI_API_KEY -> Gemini Vision first. Status/text from model.
-#   - Else GROQ_API_KEY -> Groq llama-3.2 vision. Same shape.
-#   - Else: inconclusive, model=None.
+#   - OPENROUTER_API_KEY -> OpenRouter, model thinkingmachines/inkling:free.
+#     Status/text from model.
+#   - No key: inconclusive, model=None.
 #   - 10s timeout per call; any exception -> inconclusive (safe default).
 #   - Never raise. The bot must accept a tip even when no model is callable.
+#
+# Provider history (D-037): Gemini 2.5 Flash and Groq qwen were both removed.
+# Groq remains the TEXT-LLM provider for /api/brief; image VLM is OpenRouter
+# only. inkling:free was verified via OpenRouter's public /api/v1/models to
+# declare `image` among its input modalities, and it costs nothing, which
+# matters for a demo that may be photographed a dozen times.
 #
 # This module does NOT touch the signal schema, the disk layout, or HTTP.
 # It is a pure helper for bot/tipline.py to call. The audit drawer reads the
@@ -24,7 +30,7 @@
 Photo-channel VLM hook. Returns a 3-way verdict the credibility layer can
 modulate trust on, without ever overriding spatial tiering.
 
-Reads GEMINI_API_KEY and GROQ_API_KEY from the environment only.
+Reads OPENROUTER_API_KEY from the environment only.
 """
 from __future__ import annotations
 
@@ -40,8 +46,8 @@ from typing import Any
 # Hard cap so a slow model never blocks the bot. The bot also wraps this in
 # its own shorter timeout at the call site; this is the final backstop.
 # Browser-like User-Agent. Default `Python-urllib/x.y` UA gets a 403-1010 from
-# Cloudflare-fronted hosts (Gemini, Groq) on Windows. A Chrome UA passes the
-# fingerprint check. D-033.
+# Cloudflare-fronted hosts on Windows. A Chrome UA passes the fingerprint check.
+# D-033. OpenRouter sits behind the same kind of edge, so keep it.
 _BROWSER_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/127.0 Safari/537.36"
@@ -49,22 +55,17 @@ _BROWSER_UA = (
 
 TIMEOUT_S = 10.0
 
-# Models we try, in order. Only the first whose API key is set ever runs.
+# The single image-VLM provider. Kept as a list so the call site stays a loop:
+# adding a second provider later must not mean rewriting assess_photo().
 PROVIDERS: tuple[dict[str, str], ...] = (
     {
-        "name": "gemini",
-        "env_key": "GEMINI_API_KEY",
-        # Gemini 2.5 flash: cheap vision, good for a 3-way verdict.
-        "model_id": "gemini-2.5-flash",
-        "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-    },
-    {
-        "name": "groq",
-        "env_key": "GROQ_API_KEY",
-        # Current Groq vision model as of 2026. The previous llama-3.2-11b-vision-preview
-        # was decommissioned on 2026-04-14 (D-033); the bot only cares about the 3-way verdict.
-        "model_id": "qwen/qwen3.6-27b",
-        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+        "name": "openrouter",
+        "env_key": "OPENROUTER_API_KEY",
+        # Verified present in OpenRouter's public /api/v1/models listing, with
+        # `image` among its declared input modalities. Free tier.
+        "model_id": "thinkingmachines/inkling:free",
+        # OpenAI-compatible, same wire format as the Groq endpoint.
+        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
     },
 )
 
@@ -204,52 +205,14 @@ def _build_prompt(claim_text: str, sar_context: dict[str, Any]) -> str:
     )
 
 
-def _call_gemini(prov: dict[str, str], photo_bytes: bytes, mime: str, prompt: str) -> str:
-    """Hit the Gemini generateContent endpoint. Returns the raw model text.
+def _call_openai_compatible(
+    prov: dict[str, str], photo_bytes: bytes, mime: str, prompt: str
+) -> str:
+    """Hit an OpenAI-compatible /chat/completions endpoint with an inline image.
 
-    Raises on any HTTP/JSON error; the caller converts that to inconclusive.
+    Used for OpenRouter. Returns the raw model text; raises on any HTTP/JSON
+    error and lets the caller convert that to inconclusive.
     """
-    api_key = os.environ[prov["env_key"]]
-    url = prov["endpoint"].format(model=prov["model_id"]) + f"?key={api_key}"
-
-    body = {
-        "contents": [
-            {
-                "role": "user",
-                "parts": [
-                    {"text": prompt},
-                    {
-                        "inline_data": {
-                            "mime_type": mime,
-                            "data": base64.b64encode(photo_bytes).decode("ascii"),
-                        }
-                    },
-                ],
-            }
-        ],
-        "generationConfig": {
-            "temperature": 0.0,
-            "maxOutputTokens": 256,
-        },
-    }
-    req = urllib.request.Request(
-        url,
-        data=json.dumps(body).encode("utf-8"),
-        headers={"Content-Type": "application/json", "User-Agent": _BROWSER_UA},
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=TIMEOUT_S) as resp:
-        payload = json.loads(resp.read().decode("utf-8"))
-    # Shape: candidates[0].content.parts[0].text
-    parts = payload.get("candidates", [{}])[0].get("content", {}).get("parts", [])
-    for p in parts:
-        if "text" in p:
-            return p["text"]
-    return ""
-
-
-def _call_groq(prov: dict[str, str], photo_bytes: bytes, mime: str, prompt: str) -> str:
-    """Hit the Groq OpenAI-compatible chat/completions endpoint."""
     api_key = os.environ[prov["env_key"]]
     url = prov["endpoint"]
     data_url = f"data:{mime};base64,{base64.b64encode(photo_bytes).decode('ascii')}"
@@ -312,10 +275,7 @@ def assess_photo(
         if not os.environ.get(prov["env_key"]):
             continue
         try:
-            if prov["name"] == "gemini":
-                raw = _call_gemini(prov, photo_bytes, mime, prompt)
-            else:
-                raw = _call_groq(prov, photo_bytes, mime, prompt)
+            raw = _call_openai_compatible(prov, photo_bytes, mime, prompt)
             status = _classify(raw)
             description = ""
             # Try to extract the description if the model returned JSON.
@@ -344,7 +304,7 @@ def assess_photo(
     # No key, or every configured provider failed.
     return _inconclusive(
         None,
-        "no VLM provider available (set GEMINI_API_KEY or GROQ_API_KEY); "
+        "no VLM provider available (set OPENROUTER_API_KEY); "
         "credibility layer treats this as no-modulation",
     )
 

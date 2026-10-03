@@ -6,10 +6,12 @@ The Telegram tipline and the VLM photo check. Lives at the repo root as
 
 ```powershell
 $env:TELEGRAM_BOT_TOKEN = "..."
-$env:GEMINI_API_KEY    = "..."   # optional: enables photo VLM via Gemini
-$env:GROQ_API_KEY      = "..."   # optional: enables photo VLM via Groq
+$env:OPENROUTER_API_KEY = "..."   # optional: enables the photo VLM
 python run_bot.py
 ```
+
+Keys are read from `.env` at the project root by `run_bot.py`, so you usually
+don't need to set them in the shell at all.
 
 Long-poll, not webhook. No public URL needed; runs from a laptop.
 
@@ -31,8 +33,10 @@ not as a fake.
 - Every tip is pseudonymised at ingestion via a salted digest. The same
   person always produces the same `src_tg_*` and `tg_*` short refs, but the
   link back to their Telegram account does not exist anywhere on disk.
-- The salt lives in `tipline.py` as a constant. Rotate it to invalidate every
-  existing pseudonym.
+- The salt comes from the `GT_TIPLINE_SALT` env var. **Set it.** `tipline.py`
+  falls back to the literal string `"groundtruth-tipline"` when it is absent,
+  which is public knowledge in this repo — every pseudonym would be trivially
+  reversible. Rotating the salt invalidates every existing pseudonym.
 
 ## VLM moderation (D-029)
 
@@ -42,28 +46,46 @@ verdict **modulates** the signal's tier — it cannot promote or demote across
 more than one step on the ladder, and it never overrides a SAR observation.
 An `inconclusive` answer is the safe default and is treated as no evidence.
 
-Two providers, tried in order, first success wins:
+One provider:
 
-1. **Gemini 2.5 Flash** — via `GEMINI_API_KEY`.
-2. **Groq `qwen/qwen3.6-27b`** — via `GROQ_API_KEY`. Replaces the previous
-   `llama-3.2-11b-vision-preview`, which Groq decommissioned (D-033). The
-   prompt also strips `<think>…</think>` blocks Qwen emits in plain text on
-   the wire.
+1. **OpenRouter `thinkingmachines/inkling:free`** — via `OPENROUTER_API_KEY`.
+   Free tier, and verified to accept `image` input. OpenRouter speaks the
+   OpenAI wire format, so the call reuses the same `_call_openai_compatible`
+   helper that Groq used. The prompt still strips `<think>…</think>` blocks,
+   which reasoning models emit in plain text on the wire.
 
-If neither key is set, photos are accepted but get `status: "inconclusive"`
-and `model: null`. The tip still lands on the map — it just has no photo
-corroboration.
+Gemini and Groq-vision were both removed in **D-037**. Groq is still a provider
+for the project — it just moved to the *text* brief, where it runs
+`openai/gpt-oss-120b`. If no key is set, photos are accepted but get
+`status: "inconclusive"` and `model: null`. The tip still lands on the map — it
+just has no photo corroboration.
 
 ## Diagnostics (D-031, D-032)
 
-If `run_bot.py` exits silently, send the bot the `/diag` command (or check
-`bot/diag.log` if configured). It reports: long-poll health, last `getUpdates`
-timestamp, last signal written, VLM provider + last call status. The most
-common failure mode is a stale `offset` — delete `bot/.offset` and restart.
+There is **no `/diag` command and no `bot/diag.log`**. Diagnostics are stderr
+lines, by design — D-032's root cause was "the bot wasn't running", which looks
+identical to "the bot crashed" unless you can see proof of polling. What you get:
+
+- `[run_bot] VLM providers: OPENROUTER=set|MISSING` at startup — tells you
+  whether the key reached the process at all.
+- `[tipline] getMe ok: bot='<name>'` — token is valid. A 401/404 exits with
+  code 2 rather than entering the poll loop.
+- `[tipline] heartbeat offset=… pending=…` every 60 s — **this is the proof that
+  polling is happening.** No heartbeat means no bot.
+- `[tipline] recv chat=… text=…` — a message actually arrived.
+- `[tipline] poll HTTP 409` — a second bot instance holds the lease. Kill it.
+- `[tipline] cwd=… LIVE_OUT=… (absolute? True)` — confirms the write path.
+
+The poll `offset` is **in-memory only**. There is no `bot/.offset` to delete;
+restarting simply re-polls from scratch.
 
 ## Files written
 
-- `data/processed/signals.seed.json` — the live seed the pipeline reads.
-  Append-only on a per-tip basis.
-- `bot/.offset` — the long-poll cursor. Don't edit by hand.
-- `bot/diag.log` — diagnostic ring buffer (optional, configured at startup).
+- `console/public/data/live_signals.json` — the live tip feed the console
+  polls. Written atomically (tmp + rename) so the console never reads a
+  half-written file. With `PERSIST=upstash` this is skipped and tips go to
+  Redis instead.
+- `console/public/data/tips/<signal_id>.jpg` — the photo, named by signal id
+  only (D-030: no file id, no user id, no caption-derived name in the path).
+- `data/processed/signals.seed.json` is **not** written by the bot; it is a
+  pipeline output.

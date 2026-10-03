@@ -149,7 +149,7 @@ export default function BriefPanel({ open, onClose, cellIds, elapsedSeconds }: P
           {!text && !streaming ? (
             <p className="text-[11px] leading-relaxed text-slate-500">
               Generates an operational brief from the current sector ranking. Works
-              offline: without a Gemini key it is composed from the same figures by
+              offline: without a Groq key it is composed from the same figures by
               code, and the header says which generator ran.
             </p>
           ) : (

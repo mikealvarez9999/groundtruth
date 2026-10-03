@@ -58,10 +58,12 @@ default (last built wins — that's what the root artefacts mirror).
 
 ## Design choices worth knowing
 
-- **Rule-based extraction, not LLM.** D-021. A Gemini key was never required
-  for the MVP. The seam is in place — `extract.py` exposes the same interface
-  a model-backed extractor would — but the shipped implementation is regex +
-  keyword scoring.
+- **Rule-based extraction, not LLM.** D-021. Extraction stays deterministic and
+  offline; `extract_with_llm()` raises rather than falling back, because a
+  silent fallback would make `extraction.model` in the artifact a lie. A text
+  model *does* now exist in the project (Groq `openai/gpt-oss-120b`, used by
+  `/api/brief`), but extraction is deliberately not wired to it — the reason is
+  editorial, not a missing key. See D-037.
 - **The eval block is quarantined (D-010).** `build_all.build_signals()`
   splits the `eval` block off the synthetic posts and hands it back to the
   caller as a separate dict. Nothing downstream of that function can see it.

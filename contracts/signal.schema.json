@@ -256,7 +256,7 @@
               "description": "model's three-way verdict; inconclusive is the safe default when no key is set, the call times out, or the photo is unreadable"
             },
             "model": {
-              "description": "model id ('gemini-2.5-flash', 'llama-3.2-11b-vision-preview', ...) or null when no provider was callable",
+              "description": "model id ('thinkingmachines/inkling:free', ...) or null when no provider was callable. Provider changed to OpenRouter in D-037; Gemini is no longer used.",
               "type": ["string", "null"]
             },
             "description": {
@@ -278,7 +278,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "model": { "type": "string", "examples": ["gemini-2.5-flash"] },
+        "model": { "type": "string", "examples": ["thinkingmachines/inkling:free"] },
         "prompt_version": { "type": "string" },
         "extracted_at": { "type": "string", "format": "date-time" },
         "confidence": {

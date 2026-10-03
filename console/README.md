@@ -44,7 +44,11 @@ never rendered. It has been deleted; see D-035.
 
 - **Map** — sectors coloured by score. Click a sector for its drawer.
 - **Brief panel** — the AI-written situation summary (regenerated server-side
-  via `app/api/brief/route.ts`).
+  via `app/api/brief/route.ts`). Streams from **Groq `openai/gpt-oss-120b`**
+  when `GROQ_API_KEY` is set in `console/.env.local`; otherwise it streams a
+  deterministic brief computed from `sector_scores.json` at request time. The
+  response header `X-Brief-Generator` says which ran, and the panel displays
+  it. Gemini was removed as a provider (D-037).
 - **Triage queue** — signals sorted by priority for a human reviewer.
 - **Signal feed** — newest citizen tips, with the VLM verdict inline.
 - **Top bar** — epoch toggle (pre-peak / peak / custom), live re-score button,

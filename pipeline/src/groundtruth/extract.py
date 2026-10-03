@@ -238,14 +238,16 @@ def extract(text: str) -> dict:
 
 
 def extract_with_llm(text: str) -> dict:  # pragma: no cover - no key available
-    """Placeholder for the Gemini path. Intentionally not implemented.
+    """Placeholder for an LLM-backed extractor. Intentionally not implemented.
 
     Raising is the honest behaviour: a silent fallback to rules would make it
     impossible to tell which extractor produced a given artifact, and
     ``extraction.model`` in the contract would be a lie.
     """
     raise NotImplementedError(
-        "LLM extraction is not wired up: no GEMINI_API_KEY in this environment. "
+        "LLM extraction is not wired up (D-021: rule-based is the shipped path). "
+        "Gemini was removed as a provider in D-037; a text model exists for the "
+        "brief (Groq openai/gpt-oss-120b) but extraction is deliberately not on it. "
         "Use extract() (rules) or implement this against LLM_PROMPT."
     )
 

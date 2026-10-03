@@ -270,6 +270,11 @@ The score denominator is the sum of ALL channel weights, not just the available 
 `extract_with_llm()` exists and **raises** `NotImplementedError`.
 
 - Why: there is no `GEMINI_API_KEY` in this environment. `LLM_PROMPT` is written and ready.
+  - **Superseded in part by D-037:** Gemini no longer exists as a provider, and a
+    text model now does (Groq `openai/gpt-oss-120b`, used by `/api/brief`). So
+    "no key available" is no longer the reason extraction stays rule-based —
+    the reason is editorial. The decision itself stands: rules, and raising
+    rather than falling back.
 - Why it raises rather than silently falling back: a silent fallback would make
   `extraction.model` in the artifact a lie, and you could not tell which extractor produced
   a given signal.
@@ -299,6 +304,9 @@ else is invented**. `haste_commit` is deliberately zeroed to `0000000`.
 `/api/brief` streams from Gemini when `GEMINI_API_KEY` is set, and otherwise streams a brief
 composed **from `sector_scores.json` by code in the route**.
 
+- **Updated by D-037:** the live-model key is now `GROQ_API_KEY` (Groq
+  `openai/gpt-oss-120b`), and Gemini is gone. Everything else in this entry
+  still holds.
 - The fallback is not a canned paragraph: it is generated from the same ranked cells at request
   time, so its figures always match the map.
 - The response sets `X-Brief-Generator` and the panel displays "live model" or "offline
@@ -586,4 +594,53 @@ would silently fall back to the synthetic demo.
      must come *after* the negations.
 - Why it matters: this is the same principle as D-004/D-009. An assessment nobody
   can re-run is not evidence, and neither is one nobody can rebuild.
+
+### D-037 — Gemini removed entirely; Groq for text, OpenRouter for images **[settled]**
+
+Provider consolidation. Gemini is gone from the codebase — not deprecated,
+not second-choice, absent.
+
+| Job | Provider | Model | Env key |
+|---|---|---|---|
+| **Text** (the `/api/brief` allocation brief) | Groq | `openai/gpt-oss-120b` | `GROQ_API_KEY` |
+| **Image** (Telegram photo VLM, D-029) | OpenRouter | `thinkingmachines/inkling:free` | `OPENROUTER_API_KEY` |
+
+- **Both model ids were verified against the providers' own listings before any
+  code was written**, per principle §3.6. `openai/gpt-oss-120b` appears in
+  Groq's supported-models table as a *production* model (131,072 ctx,
+  $0.15/$0.60 per 1M, ~500 tok/s). `thinkingmachines/inkling:free` appears in
+  OpenRouter's public `/api/v1/models` with `image` among its declared **input**
+  modalities — which is the thing that actually had to be checked, since a
+  text-only model would have made the VLM quietly useless.
+- **Text LLM.** `/api/brief` moves from `streamGemini` (Google's native
+  `streamGenerateContent` shape) to `streamGroq` (OpenAI-compatible
+  `chat/completions`). The SSE frame parser changes accordingly:
+  `choices[0].delta.content` instead of `candidates[0].content.parts[]`.
+  gpt-oss is a *reasoning* model, so the request sets `reasoning_effort: "low"`
+  and the parser reads **only** `delta.content` — the reasoning trace arrives
+  separately and is deliberately not shown to a responder. `X-Brief-Generator`
+  now reports `groq-attempted`.
+- **Image VLM.** `bot/vlm_check.py` loses both previous providers and the
+  bespoke `_call_gemini` (which used Google's `inline_data` envelope). What
+  remains is a single `_call_openai_compatible` helper, because OpenRouter
+  speaks the same OpenAI wire format Groq did. `PROVIDERS` is still a tuple and
+  `assess_photo` still loops, so adding a second image provider later is a
+  dict entry, not a rewrite.
+- **The Cloudflare UA stays (D-033).** D-033 established that a default
+  `Python-urllib` / `node` User-Agent gets `403-1010` from these edges. OpenRouter
+  is fronted the same way, so `_BROWSER_UA` is retained in Python and a
+  `BROWSER_UA` header was added to the Node fetch for the same reason.
+- **Contract impact:** `signal.schema.json`'s `vlm_assessment.model`
+  description/examples and both committed signal fixtures were updated from
+  `gemini-2.5-flash` to `thinkingmachines/inkling:free`. `model` is a free
+  string, so this is documentation-only — no validation change, no version bump.
+- **D-021 is unaffected and still correct.** Extraction remains rule-based and
+  still raises rather than falling back. Its error message no longer blames a
+  missing `GEMINI_API_KEY`, because a text model *does* now exist (Groq) and
+  pointing at it would invite someone to wire extraction to a brief-writing
+  model. The reason extraction is off is editorial, not a missing credential.
+- Revisit if: OpenRouter retires the `:free` tier (the VLM would go dark and
+  `assess_photo` would return `inconclusive`, which is the safe default), or if
+  `gpt-oss-120b` is superseded on Groq — D-033 is the precedent for how to
+  handle a model deprecation here: verify against the live listing first.
 
