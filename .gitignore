@@ -6,7 +6,7 @@
 # --- Secrets. Never commit an API key. ---
 .env
 .env.*
-!.env.example
+.env.example
 *.pem
 
 # --- Data: processed is committed; only the IRREPLACEABLE raw inputs are ---
@@ -71,3 +71,6 @@ Thumbs.db
 !.vscode/settings.json
 
 .vercel
+
+# Brag output
+brag-output/
