@@ -45,3 +45,6 @@ next-env.d.ts
 
 # Build output: synced from /data/processed by scripts/sync-data.mjs
 /public/data/
+
+# Brag output
+brag-output/
