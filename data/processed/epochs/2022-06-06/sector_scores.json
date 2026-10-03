@@ -1,7 +1,7 @@
 {
  "contract_version": "1.0.0",
  "event_id": "bangladesh-flooding22",
- "generated_at": "2026-07-28T09:56:40Z",
+ "generated_at": "2026-10-03T11:00:59Z",
  "grid": {
   "cell_size_m": 500.0,
   "scheme": "lonlat_floor"
@@ -70,7 +70,7 @@
     "1 single-source report(s) - recon priority"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 1
   },
   {
@@ -123,7 +123,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Kanaighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 2
   },
   {
@@ -174,7 +174,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Companiganj",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 3
   },
   {
@@ -218,7 +218,7 @@
     "85% of 26 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 4
   },
   {
@@ -269,7 +269,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Sylhet Sadar",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 5
   },
   {
@@ -313,7 +313,7 @@
     "72% of 39 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 6
   },
   {
@@ -361,7 +361,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Chhatak",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 7
   },
   {
@@ -405,7 +405,7 @@
     "100% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 8
   },
   {
@@ -449,7 +449,7 @@
     "88% of 17 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 9
   },
   {
@@ -493,7 +493,7 @@
     "100% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 10
   },
   {
@@ -537,7 +537,7 @@
     "100% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 11
   },
   {
@@ -581,7 +581,7 @@
     "100% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 12
   },
   {
@@ -631,7 +631,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Beanibazar",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 13
   },
   {
@@ -675,7 +675,7 @@
     "92% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 14
   },
   {
@@ -719,7 +719,7 @@
     "92% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 15
   },
   {
@@ -763,7 +763,7 @@
     "74% of 19 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 16
   },
   {
@@ -807,7 +807,7 @@
     "68% of 22 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 17
   },
   {
@@ -855,7 +855,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Derai",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 18
   },
   {
@@ -899,7 +899,7 @@
     "70% of 20 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 19
   },
   {
@@ -943,7 +943,7 @@
     "79% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 20
   },
   {
@@ -987,7 +987,7 @@
     "79% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 21
   },
   {
@@ -1031,7 +1031,7 @@
     "83% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 22
   },
   {
@@ -1075,7 +1075,7 @@
     "83% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 23
   },
   {
@@ -1119,7 +1119,7 @@
     "90% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 24
   },
   {
@@ -1163,7 +1163,7 @@
     "90% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 25
   },
   {
@@ -1207,7 +1207,7 @@
     "90% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 26
   },
   {
@@ -1251,7 +1251,7 @@
     "68% of 19 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 27
   },
   {
@@ -1295,7 +1295,7 @@
     "77% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 28
   },
   {
@@ -1339,7 +1339,7 @@
     "65% of 20 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 29
   },
   {
@@ -1383,7 +1383,7 @@
     "82% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 30
   },
   {
@@ -1427,7 +1427,7 @@
     "82% of 11 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 31
   },
   {
@@ -1476,7 +1476,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Bishwanath",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 32
   },
   {
@@ -1520,7 +1520,7 @@
     "54% of 37 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 33
   },
   {
@@ -1564,7 +1564,7 @@
     "71% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 34
   },
   {
@@ -1608,7 +1608,7 @@
     "71% of 14 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 35
   },
   {
@@ -1652,7 +1652,7 @@
     "80% of 10 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 36
   },
   {
@@ -1702,7 +1702,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Gowainghat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 37
   },
   {
@@ -1746,7 +1746,7 @@
     "69% of 13 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 38
   },
   {
@@ -1790,7 +1790,7 @@
     "49% of 43 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 39
   },
   {
@@ -1834,7 +1834,7 @@
     "73% of 11 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 40
   },
   {
@@ -1878,7 +1878,7 @@
     "73% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 41
   },
   {
@@ -1922,7 +1922,7 @@
     "73% of 11 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 42
   },
   {
@@ -1966,7 +1966,7 @@
     "57% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 43
   },
   {
@@ -2010,7 +2010,7 @@
     "57% of 21 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 44
   },
   {
@@ -2054,7 +2054,7 @@
     "58% of 19 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 45
   },
   {
@@ -2098,7 +2098,7 @@
     "67% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 46
   },
   {
@@ -2148,7 +2148,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Zakiganj",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 47
   },
   {
@@ -2192,7 +2192,7 @@
     "70% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 48
   },
   {
@@ -2236,7 +2236,7 @@
     "50% of 26 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 49
   },
   {
@@ -2280,7 +2280,7 @@
     "62% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 50
   },
   {
@@ -2324,7 +2324,7 @@
     "48% of 29 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 51
   },
   {
@@ -2368,7 +2368,7 @@
     "64% of 11 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 52
   },
   {
@@ -2412,7 +2412,7 @@
     "64% of 11 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 53
   },
   {
@@ -2456,7 +2456,7 @@
     "48% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 54
   },
   {
@@ -2500,7 +2500,7 @@
     "57% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 55
   },
   {
@@ -2544,7 +2544,7 @@
     "57% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 56
   },
   {
@@ -2588,7 +2588,7 @@
     "46% of 28 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 57
   },
   {
@@ -2632,7 +2632,7 @@
     "53% of 17 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 58
   },
   {
@@ -2676,7 +2676,7 @@
     "50% of 20 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 59
   },
   {
@@ -2720,7 +2720,7 @@
     "58% of 12 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 60
   },
   {
@@ -2764,7 +2764,7 @@
     "44% of 32 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 61
   },
   {
@@ -2808,7 +2808,7 @@
     "44% of 32 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 62
   },
   {
@@ -2852,7 +2852,7 @@
     "39% of 61 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 63
   },
   {
@@ -2896,7 +2896,7 @@
     "46% of 24 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 64
   },
   {
@@ -2940,7 +2940,7 @@
     "44% of 27 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 65
   },
   {
@@ -2984,7 +2984,7 @@
     "60% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 66
   },
   {
@@ -3028,7 +3028,7 @@
     "60% of 10 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 67
   },
   {
@@ -3072,7 +3072,7 @@
     "54% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 68
   },
   {
@@ -3116,7 +3116,7 @@
     "43% of 28 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 69
   },
   {
@@ -3160,7 +3160,7 @@
     "47% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 70
   },
   {
@@ -3204,7 +3204,7 @@
     "55% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 71
   },
   {
@@ -3248,7 +3248,7 @@
     "43% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 72
   },
   {
@@ -3292,7 +3292,7 @@
     "37% of 43 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 73
   },
   {
@@ -3336,7 +3336,7 @@
     "44% of 18 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 74
   },
   {
@@ -3380,7 +3380,7 @@
     "44% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 75
   },
   {
@@ -3424,7 +3424,7 @@
     "50% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 76
   },
   {
@@ -3468,7 +3468,7 @@
     "39% of 31 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 77
   },
   {
@@ -3512,7 +3512,7 @@
     "44% of 16 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 78
   },
   {
@@ -3556,7 +3556,7 @@
     "44% of 16 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 79
   },
   {
@@ -3600,7 +3600,7 @@
     "38% of 26 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 80
   },
   {
@@ -3644,7 +3644,7 @@
     "46% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 81
   },
   {
@@ -3688,7 +3688,7 @@
     "50% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 82
   },
   {
@@ -3732,7 +3732,7 @@
     "50% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 83
   },
   {
@@ -3776,7 +3776,7 @@
     "50% of 10 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 84
   },
   {
@@ -3820,7 +3820,7 @@
     "40% of 20 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 85
   },
   {
@@ -3864,7 +3864,7 @@
     "40% of 20 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 86
   },
   {
@@ -3908,7 +3908,7 @@
     "38% of 24 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 87
   },
   {
@@ -3952,7 +3952,7 @@
     "38% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 88
   },
   {
@@ -3996,7 +3996,7 @@
     "38% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 89
   },
   {
@@ -4040,7 +4040,7 @@
     "36% of 28 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 90
   },
   {
@@ -4084,7 +4084,7 @@
     "45% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 91
   },
   {
@@ -4128,7 +4128,7 @@
     "39% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 92
   },
   {
@@ -4172,7 +4172,7 @@
     "36% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 93
   },
   {
@@ -4216,7 +4216,7 @@
     "34% of 32 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 94
   },
   {
@@ -4260,7 +4260,7 @@
     "36% of 22 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 95
   },
   {
@@ -4304,7 +4304,7 @@
     "40% of 15 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 96
   },
   {
@@ -4348,7 +4348,7 @@
     "42% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 97
   },
   {
@@ -4392,7 +4392,7 @@
     "42% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 98
   },
   {
@@ -4436,7 +4436,7 @@
     "38% of 16 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 99
   },
   {
@@ -4480,7 +4480,7 @@
     "38% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 100
   },
   {
@@ -4524,7 +4524,7 @@
     "38% of 16 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 101
   },
   {
@@ -4568,7 +4568,7 @@
     "38% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 102
   },
   {
@@ -4612,7 +4612,7 @@
     "35% of 20 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 103
   },
   {
@@ -4656,7 +4656,7 @@
     "35% of 20 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 104
   },
   {
@@ -4700,7 +4700,7 @@
     "35% of 20 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 105
   },
   {
@@ -4748,7 +4748,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Golapganj",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 106
   },
   {
@@ -4792,7 +4792,7 @@
     "35% of 17 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 107
   },
   {
@@ -4836,7 +4836,7 @@
     "30% of 44 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 108
   },
   {
@@ -4880,7 +4880,7 @@
     "40% of 10 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 109
   },
   {
@@ -4924,7 +4924,7 @@
     "40% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 110
   },
   {
@@ -4968,7 +4968,7 @@
     "40% of 10 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 111
   },
   {
@@ -5012,7 +5012,7 @@
     "40% of 10 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 112
   },
   {
@@ -5056,7 +5056,7 @@
     "40% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 113
   },
   {
@@ -5100,7 +5100,7 @@
     "36% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 114
   },
   {
@@ -5144,7 +5144,7 @@
     "33% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 115
   },
   {
@@ -5188,7 +5188,7 @@
     "36% of 11 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 116
   },
   {
@@ -5232,7 +5232,7 @@
     "36% of 11 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 117
   },
   {
@@ -5276,7 +5276,7 @@
     "36% of 11 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 118
   },
   {
@@ -5320,7 +5320,7 @@
     "33% of 15 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 119
   },
   {
@@ -5364,7 +5364,7 @@
     "33% of 15 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 120
   },
   {
@@ -5408,7 +5408,7 @@
     "33% of 15 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 121
   },
   {
@@ -5452,7 +5452,7 @@
     "32% of 19 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 122
   },
   {
@@ -5496,7 +5496,7 @@
     "28% of 36 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 123
   },
   {
@@ -5540,7 +5540,7 @@
     "29% of 24 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 124
   },
   {
@@ -5584,7 +5584,7 @@
     "31% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 125
   },
   {
@@ -5628,7 +5628,7 @@
     "31% of 16 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 126
   },
   {
@@ -5672,7 +5672,7 @@
     "31% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 127
   },
   {
@@ -5716,7 +5716,7 @@
     "31% of 16 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 128
   },
   {
@@ -5760,7 +5760,7 @@
     "33% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 129
   },
   {
@@ -5804,7 +5804,7 @@
     "33% of 12 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 130
   },
   {
@@ -5848,7 +5848,7 @@
     "27% of 37 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 131
   },
   {
@@ -5892,7 +5892,7 @@
     "27% of 33 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 132
   },
   {
@@ -5936,7 +5936,7 @@
     "28% of 29 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 133
   },
   {
@@ -5980,7 +5980,7 @@
     "27% of 30 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 134
   },
   {
@@ -6024,7 +6024,7 @@
     "31% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 135
   },
   {
@@ -6072,7 +6072,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Sunamganj Sadar",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 136
   },
   {
@@ -6116,7 +6116,7 @@
     "26% of 27 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 137
   },
   {
@@ -6160,7 +6160,7 @@
     "29% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 138
   },
   {
@@ -6204,7 +6204,7 @@
     "26% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 139
   },
   {
@@ -6248,7 +6248,7 @@
     "26% of 19 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 140
   },
   {
@@ -6292,7 +6292,7 @@
     "30% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 141
   },
   {
@@ -6336,7 +6336,7 @@
     "24% of 42 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 142
   },
   {
@@ -6380,7 +6380,7 @@
     "25% of 24 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 143
   },
   {
@@ -6424,7 +6424,7 @@
     "23% of 47 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 144
   },
   {
@@ -6468,7 +6468,7 @@
     "27% of 15 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 145
   },
   {
@@ -6512,7 +6512,7 @@
     "23% of 39 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 146
   },
   {
@@ -6556,7 +6556,7 @@
     "27% of 11 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 147
   },
   {
@@ -6600,7 +6600,7 @@
     "27% of 11 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 148
   },
   {
@@ -6644,7 +6644,7 @@
     "23% of 30 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 149
   },
   {
@@ -6688,7 +6688,7 @@
     "23% of 30 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 150
   },
   {
@@ -6732,7 +6732,7 @@
     "25% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 151
   },
   {
@@ -6776,7 +6776,7 @@
     "22% of 59 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 152
   },
   {
@@ -6820,7 +6820,7 @@
     "22% of 40 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 153
   },
   {
@@ -6864,7 +6864,7 @@
     "22% of 40 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 154
   },
   {
@@ -6908,7 +6908,7 @@
     "22% of 64 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 155
   },
   {
@@ -6952,7 +6952,7 @@
     "22% of 45 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 156
   },
   {
@@ -6996,7 +6996,7 @@
     "22% of 93 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 157
   },
   {
@@ -7040,7 +7040,7 @@
     "23% of 26 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 158
   },
   {
@@ -7084,7 +7084,7 @@
     "23% of 26 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 159
   },
   {
@@ -7128,7 +7128,7 @@
     "23% of 31 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 160
   },
   {
@@ -7172,7 +7172,7 @@
     "25% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 161
   },
   {
@@ -7216,7 +7216,7 @@
     "25% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 162
   },
   {
@@ -7260,7 +7260,7 @@
     "25% of 12 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 163
   },
   {
@@ -7304,7 +7304,7 @@
     "24% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 164
   },
   {
@@ -7348,7 +7348,7 @@
     "24% of 17 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 165
   },
   {
@@ -7392,7 +7392,7 @@
     "24% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 166
   },
   {
@@ -7436,7 +7436,7 @@
     "23% of 22 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 167
   },
   {
@@ -7480,7 +7480,7 @@
     "22% of 27 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 168
   },
   {
@@ -7524,7 +7524,7 @@
     "22% of 27 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 169
   },
   {
@@ -7568,7 +7568,7 @@
     "21% of 33 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 170
   },
   {
@@ -7612,7 +7612,7 @@
     "22% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 171
   },
   {
@@ -7656,7 +7656,7 @@
     "22% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 172
   },
   {
@@ -7700,7 +7700,7 @@
     "22% of 18 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 173
   },
   {
@@ -7744,7 +7744,7 @@
     "22% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 174
   },
   {
@@ -7788,7 +7788,7 @@
     "23% of 13 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 175
   },
   {
@@ -7832,7 +7832,7 @@
     "23% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 176
   },
   {
@@ -7876,7 +7876,7 @@
     "23% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 177
   },
   {
@@ -7920,7 +7920,7 @@
     "21% of 29 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 178
   },
   {
@@ -7964,7 +7964,7 @@
     "21% of 24 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 179
   },
   {
@@ -8008,7 +8008,7 @@
     "21% of 19 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 180
   },
   {
@@ -8052,7 +8052,7 @@
     "20% of 40 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 181
   },
   {
@@ -8096,7 +8096,7 @@
     "21% of 14 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 182
   },
   {
@@ -8140,7 +8140,7 @@
     "21% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 183
   },
   {
@@ -8184,7 +8184,7 @@
     "21% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 184
   },
   {
@@ -8228,7 +8228,7 @@
     "21% of 14 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 185
   },
   {
@@ -8272,7 +8272,7 @@
     "21% of 14 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 186
   },
   {
@@ -8319,7 +8319,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Ambarkhana",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 187
   },
   {
@@ -8363,7 +8363,7 @@
     "19% of 77 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 188
   },
   {
@@ -8407,7 +8407,7 @@
     "19% of 77 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 189
   },
   {
@@ -8451,7 +8451,7 @@
     "20% of 30 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 190
   },
   {
@@ -8495,7 +8495,7 @@
     "19% of 125 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 191
   },
   {
@@ -8539,7 +8539,7 @@
     "19% of 36 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 192
   },
   {
@@ -8583,7 +8583,7 @@
     "20% of 15 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 193
   },
   {
@@ -8627,7 +8627,7 @@
     "20% of 15 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 194
   },
   {
@@ -8671,7 +8671,7 @@
     "19% of 26 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 195
   },
   {
@@ -8715,7 +8715,7 @@
     "19% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 196
   },
   {
@@ -8759,7 +8759,7 @@
     "19% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 197
   },
   {
@@ -8803,7 +8803,7 @@
     "19% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 198
   },
   {
@@ -8847,7 +8847,7 @@
     "19% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 199
   },
   {
@@ -8891,7 +8891,7 @@
     "20% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 200
   },
   {
@@ -8935,7 +8935,7 @@
     "19% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 201
   },
   {
@@ -8979,7 +8979,7 @@
     "18% of 33 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 202
   },
   {
@@ -9023,7 +9023,7 @@
     "18% of 50 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 203
   },
   {
@@ -9067,7 +9067,7 @@
     "18% of 28 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 204
   },
   {
@@ -9111,7 +9111,7 @@
     "18% of 11 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 205
   },
   {
@@ -9155,7 +9155,7 @@
     "18% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 206
   },
   {
@@ -9199,7 +9199,7 @@
     "18% of 11 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 207
   },
   {
@@ -9243,7 +9243,7 @@
     "18% of 11 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 208
   },
   {
@@ -9287,7 +9287,7 @@
     "18% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 209
   },
   {
@@ -9331,7 +9331,7 @@
     "18% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 210
   },
   {
@@ -9375,7 +9375,7 @@
     "18% of 17 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 211
   },
   {
@@ -9419,7 +9419,7 @@
     "17% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 212
   },
   {
@@ -9463,7 +9463,7 @@
     "17% of 35 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 213
   },
   {
@@ -9507,7 +9507,7 @@
     "17% of 35 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 214
   },
   {
@@ -9551,7 +9551,7 @@
     "17% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 215
   },
   {
@@ -9595,7 +9595,7 @@
     "17% of 12 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 216
   },
   {
@@ -9639,7 +9639,7 @@
     "17% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 217
   },
   {
@@ -9683,7 +9683,7 @@
     "17% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 218
   },
   {
@@ -9727,7 +9727,7 @@
     "17% of 12 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 219
   },
   {
@@ -9771,7 +9771,7 @@
     "17% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 220
   },
   {
@@ -9815,7 +9815,7 @@
     "17% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 221
   },
   {
@@ -9859,7 +9859,7 @@
     "17% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 222
   },
   {
@@ -9903,7 +9903,7 @@
     "17% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 223
   },
   {
@@ -9947,7 +9947,7 @@
     "17% of 24 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 224
   },
   {
@@ -9991,7 +9991,7 @@
     "17% of 24 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 225
   },
   {
@@ -10035,7 +10035,7 @@
     "17% of 42 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 226
   },
   {
@@ -10079,7 +10079,7 @@
     "16% of 31 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 227
   },
   {
@@ -10123,7 +10123,7 @@
     "16% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 228
   },
   {
@@ -10167,7 +10167,7 @@
     "16% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 229
   },
   {
@@ -10211,7 +10211,7 @@
     "16% of 19 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 230
   },
   {
@@ -10255,7 +10255,7 @@
     "16% of 19 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 231
   },
   {
@@ -10299,7 +10299,7 @@
     "16% of 99 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 232
   },
   {
@@ -10343,7 +10343,7 @@
     "15% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 233
   },
   {
@@ -10387,7 +10387,7 @@
     "15% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 234
   },
   {
@@ -10431,7 +10431,7 @@
     "15% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 235
   },
   {
@@ -10475,7 +10475,7 @@
     "16% of 44 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 236
   },
   {
@@ -10519,7 +10519,7 @@
     "16% of 38 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 237
   },
   {
@@ -10566,7 +10566,7 @@
     "1 single-source report(s) - recon priority"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 238
   },
   {
@@ -10610,7 +10610,7 @@
     "15% of 26 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 239
   },
   {
@@ -10654,7 +10654,7 @@
     "16% of 45 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 240
   },
   {
@@ -10698,7 +10698,7 @@
     "15% of 20 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 241
   },
   {
@@ -10742,7 +10742,7 @@
     "15% of 20 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 242
   },
   {
@@ -10786,7 +10786,7 @@
     "15% of 46 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 243
   },
   {
@@ -10830,7 +10830,7 @@
     "15% of 27 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 244
   },
   {
@@ -10874,7 +10874,7 @@
     "15% of 47 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 245
   },
   {
@@ -10918,7 +10918,7 @@
     "15% of 47 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 246
   },
   {
@@ -10962,7 +10962,7 @@
     "14% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 247
   },
   {
@@ -11006,7 +11006,7 @@
     "15% of 41 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 248
   },
   {
@@ -11050,7 +11050,7 @@
     "15% of 41 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 249
   },
   {
@@ -11094,7 +11094,7 @@
     "14% of 28 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 250
   },
   {
@@ -11138,7 +11138,7 @@
     "13% of 15 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 251
   },
   {
@@ -11182,7 +11182,7 @@
     "13% of 15 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 252
   },
   {
@@ -11226,7 +11226,7 @@
     "14% of 22 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 253
   },
   {
@@ -11270,7 +11270,7 @@
     "14% of 76 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 254
   },
   {
@@ -11314,7 +11314,7 @@
     "14% of 29 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 255
   },
   {
@@ -11358,7 +11358,7 @@
     "14% of 29 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 256
   },
   {
@@ -11405,7 +11405,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Jagannathpur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 257
   },
   {
@@ -11452,7 +11452,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Fenchuganj",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 258
   },
   {
@@ -11496,7 +11496,7 @@
     "14% of 43 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 259
   },
   {
@@ -11540,7 +11540,7 @@
     "12% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 260
   },
   {
@@ -11584,7 +11584,7 @@
     "12% of 16 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 261
   },
   {
@@ -11628,7 +11628,7 @@
     "12% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 262
   },
   {
@@ -11672,7 +11672,7 @@
     "13% of 30 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 263
   },
   {
@@ -11716,7 +11716,7 @@
     "13% of 45 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 264
   },
   {
@@ -11760,7 +11760,7 @@
     "13% of 31 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 265
   },
   {
@@ -11804,7 +11804,7 @@
     "13% of 31 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 266
   },
   {
@@ -11848,7 +11848,7 @@
     "12% of 24 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 267
   },
   {
@@ -11892,7 +11892,7 @@
     "12% of 24 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 268
   },
   {
@@ -11936,7 +11936,7 @@
     "12% of 24 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 269
   },
   {
@@ -11980,7 +11980,7 @@
     "12% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 270
   },
   {
@@ -12024,7 +12024,7 @@
     "12% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 271
   },
   {
@@ -12068,7 +12068,7 @@
     "12% of 17 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 272
   },
   {
@@ -12112,7 +12112,7 @@
     "10% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 273
   },
   {
@@ -12156,7 +12156,7 @@
     "10% of 10 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 274
   },
   {
@@ -12200,7 +12200,7 @@
     "10% of 10 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 275
   },
   {
@@ -12244,7 +12244,7 @@
     "12% of 32 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 276
   },
   {
@@ -12288,7 +12288,7 @@
     "12% of 32 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 277
   },
   {
@@ -12332,7 +12332,7 @@
     "12% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 278
   },
   {
@@ -12376,7 +12376,7 @@
     "11% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 279
   },
   {
@@ -12420,7 +12420,7 @@
     "11% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 280
   },
   {
@@ -12464,7 +12464,7 @@
     "11% of 18 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 281
   },
   {
@@ -12508,7 +12508,7 @@
     "12% of 33 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 282
   },
   {
@@ -12552,7 +12552,7 @@
     "9% of 11 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 283
   },
   {
@@ -12596,7 +12596,7 @@
     "9% of 11 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 284
   },
   {
@@ -12640,7 +12640,7 @@
     "9% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 285
   },
   {
@@ -12684,7 +12684,7 @@
     "9% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 286
   },
   {
@@ -12728,7 +12728,7 @@
     "9% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 287
   },
   {
@@ -12772,7 +12772,7 @@
     "9% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 288
   },
   {
@@ -12816,7 +12816,7 @@
     "12% of 41 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 289
   },
   {
@@ -12860,7 +12860,7 @@
     "12% of 56 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 290
   },
   {
@@ -12904,7 +12904,7 @@
     "12% of 50 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 291
   },
   {
@@ -12948,7 +12948,7 @@
     "8% of 12 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 292
   },
   {
@@ -12992,7 +12992,7 @@
     "8% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 293
   },
   {
@@ -13036,7 +13036,7 @@
     "12% of 43 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 294
   },
   {
@@ -13080,7 +13080,7 @@
     "10% of 20 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 295
   },
   {
@@ -13124,7 +13124,7 @@
     "8% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 296
   },
   {
@@ -13168,7 +13168,7 @@
     "8% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 297
   },
   {
@@ -13212,7 +13212,7 @@
     "8% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 298
   },
   {
@@ -13256,7 +13256,7 @@
     "8% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 299
   },
   {
@@ -13300,7 +13300,7 @@
     "10% of 21 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 300
   },
   {
@@ -13344,7 +13344,7 @@
     "10% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 301
   },
   {
@@ -13388,7 +13388,7 @@
     "10% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 302
   },
   {
@@ -13432,7 +13432,7 @@
     "10% of 21 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 303
   },
   {
@@ -13476,7 +13476,7 @@
     "10% of 21 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 304
   },
   {
@@ -13520,7 +13520,7 @@
     "10% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 305
   },
   {
@@ -13564,7 +13564,7 @@
     "10% of 29 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 306
   },
   {
@@ -13608,7 +13608,7 @@
     "11% of 46 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 307
   },
   {
@@ -13652,7 +13652,7 @@
     "11% of 38 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 308
   },
   {
@@ -13696,7 +13696,7 @@
     "10% of 30 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 309
   },
   {
@@ -13740,7 +13740,7 @@
     "10% of 30 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 310
   },
   {
@@ -13784,7 +13784,7 @@
     "10% of 30 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 311
   },
   {
@@ -13828,7 +13828,7 @@
     "9% of 22 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 312
   },
   {
@@ -13872,7 +13872,7 @@
     "9% of 22 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 313
   },
   {
@@ -13916,7 +13916,7 @@
     "9% of 22 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 314
   },
   {
@@ -13960,7 +13960,7 @@
     "9% of 22 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 315
   },
   {
@@ -14004,7 +14004,7 @@
     "9% of 22 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 316
   },
   {
@@ -14048,7 +14048,7 @@
     "9% of 22 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 317
   },
   {
@@ -14092,7 +14092,7 @@
     "9% of 22 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 318
   },
   {
@@ -14136,7 +14136,7 @@
     "7% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 319
   },
   {
@@ -14180,7 +14180,7 @@
     "7% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 320
   },
   {
@@ -14224,7 +14224,7 @@
     "7% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 321
   },
   {
@@ -14268,7 +14268,7 @@
     "7% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 322
   },
   {
@@ -14312,7 +14312,7 @@
     "7% of 14 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 323
   },
   {
@@ -14356,7 +14356,7 @@
     "10% of 39 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 324
   },
   {
@@ -14400,7 +14400,7 @@
     "10% of 48 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 325
   },
   {
@@ -14444,7 +14444,7 @@
     "9% of 23 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 326
   },
   {
@@ -14488,7 +14488,7 @@
     "9% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 327
   },
   {
@@ -14532,7 +14532,7 @@
     "10% of 40 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 328
   },
   {
@@ -14576,7 +14576,7 @@
     "7% of 15 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 329
   },
   {
@@ -14620,7 +14620,7 @@
     "7% of 15 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 330
   },
   {
@@ -14664,7 +14664,7 @@
     "7% of 15 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 331
   },
   {
@@ -14708,7 +14708,7 @@
     "9% of 32 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 332
   },
   {
@@ -14752,7 +14752,7 @@
     "10% of 41 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 333
   },
   {
@@ -14796,7 +14796,7 @@
     "8% of 24 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 334
   },
   {
@@ -14840,7 +14840,7 @@
     "6% of 16 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 335
   },
   {
@@ -14884,7 +14884,7 @@
     "6% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 336
   },
   {
@@ -14928,7 +14928,7 @@
     "6% of 16 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 337
   },
   {
@@ -14972,7 +14972,7 @@
     "6% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 338
   },
   {
@@ -15016,7 +15016,7 @@
     "8% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 339
   },
   {
@@ -15060,7 +15060,7 @@
     "8% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 340
   },
   {
@@ -15104,7 +15104,7 @@
     "8% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 341
   },
   {
@@ -15148,7 +15148,7 @@
     "9% of 34 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 342
   },
   {
@@ -15192,7 +15192,7 @@
     "11% of 132 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 343
   },
   {
@@ -15236,7 +15236,7 @@
     "10% of 62 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 344
   },
   {
@@ -15280,7 +15280,7 @@
     "9% of 53 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 345
   },
   {
@@ -15324,7 +15324,7 @@
     "8% of 26 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 346
   },
   {
@@ -15368,7 +15368,7 @@
     "8% of 26 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 347
   },
   {
@@ -15412,7 +15412,7 @@
     "8% of 26 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 348
   },
   {
@@ -15456,7 +15456,7 @@
     "6% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 349
   },
   {
@@ -15500,7 +15500,7 @@
     "6% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 350
   },
   {
@@ -15544,7 +15544,7 @@
     "8% of 36 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 351
   },
   {
@@ -15588,7 +15588,7 @@
     "9% of 64 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 352
   },
   {
@@ -15632,7 +15632,7 @@
     "6% of 18 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 353
   },
   {
@@ -15676,7 +15676,7 @@
     "6% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 354
   },
   {
@@ -15720,7 +15720,7 @@
     "6% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 355
   },
   {
@@ -15764,7 +15764,7 @@
     "6% of 18 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 356
   },
   {
@@ -15808,7 +15808,7 @@
     "7% of 28 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 357
   },
   {
@@ -15852,7 +15852,7 @@
     "7% of 28 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 358
   },
   {
@@ -15896,7 +15896,7 @@
     "9% of 57 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 359
   },
   {
@@ -15940,7 +15940,7 @@
     "5% of 19 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 360
   },
   {
@@ -15984,7 +15984,7 @@
     "5% of 19 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 361
   },
   {
@@ -16028,7 +16028,7 @@
     "5% of 19 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 362
   },
   {
@@ -16072,7 +16072,7 @@
     "7% of 29 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 363
   },
   {
@@ -16116,7 +16116,7 @@
     "7% of 29 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 364
   },
   {
@@ -16160,7 +16160,7 @@
     "8% of 39 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 365
   },
   {
@@ -16207,7 +16207,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Dowarabazar",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 366
   },
   {
@@ -16254,7 +16254,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Balaganj",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 367
   },
   {
@@ -16301,7 +16301,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Osmani Nagar",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 368
   },
   {
@@ -16348,7 +16348,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Dakshin Surma",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 369
   },
   {
@@ -16395,7 +16395,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Surma River",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 370
   },
   {
@@ -16442,7 +16442,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 371
   },
   {
@@ -16489,7 +16489,7 @@
     "No imagery coverage here - reports cannot be confirmed or refuted, and this cell's score is capped as a result"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 372
   },
   {
@@ -16533,7 +16533,7 @@
     "0% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 373
   },
   {
@@ -16577,7 +16577,7 @@
     "0% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 374
   },
   {
@@ -16621,7 +16621,7 @@
     "0% of 10 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 375
   },
   {
@@ -16665,7 +16665,7 @@
     "0% of 10 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 376
   },
   {
@@ -16709,7 +16709,7 @@
     "0% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 377
   },
   {
@@ -16753,7 +16753,7 @@
     "0% of 10 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 378
   },
   {
@@ -16797,7 +16797,7 @@
     "0% of 10 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 379
   },
   {
@@ -16841,7 +16841,7 @@
     "5% of 20 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 380
   },
   {
@@ -16885,7 +16885,7 @@
     "5% of 20 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 381
   },
   {
@@ -16929,7 +16929,7 @@
     "7% of 30 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 382
   },
   {
@@ -16973,7 +16973,7 @@
     "7% of 41 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 383
   },
   {
@@ -17017,7 +17017,7 @@
     "6% of 31 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 384
   },
   {
@@ -17061,7 +17061,7 @@
     "6% of 31 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 385
   },
   {
@@ -17105,7 +17105,7 @@
     "5% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 386
   },
   {
@@ -17149,7 +17149,7 @@
     "0% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 387
   },
   {
@@ -17193,7 +17193,7 @@
     "0% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 388
   },
   {
@@ -17237,7 +17237,7 @@
     "0% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 389
   },
   {
@@ -17281,7 +17281,7 @@
     "0% of 11 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 390
   },
   {
@@ -17325,7 +17325,7 @@
     "0% of 11 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 391
   },
   {
@@ -17369,7 +17369,7 @@
     "7% of 42 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 392
   },
   {
@@ -17413,7 +17413,7 @@
     "7% of 42 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 393
   },
   {
@@ -17457,7 +17457,7 @@
     "6% of 32 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 394
   },
   {
@@ -17501,7 +17501,7 @@
     "6% of 32 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 395
   },
   {
@@ -17545,7 +17545,7 @@
     "6% of 32 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 396
   },
   {
@@ -17589,7 +17589,7 @@
     "5% of 22 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 397
   },
   {
@@ -17633,7 +17633,7 @@
     "5% of 22 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 398
   },
   {
@@ -17677,7 +17677,7 @@
     "5% of 22 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 399
   },
   {
@@ -17721,7 +17721,7 @@
     "6% of 33 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 400
   },
   {
@@ -17765,7 +17765,7 @@
     "0% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 401
   },
   {
@@ -17809,7 +17809,7 @@
     "0% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 402
   },
   {
@@ -17853,7 +17853,7 @@
     "0% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 403
   },
   {
@@ -17897,7 +17897,7 @@
     "0% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 404
   },
   {
@@ -17941,7 +17941,7 @@
     "0% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 405
   },
   {
@@ -17985,7 +17985,7 @@
     "0% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 406
   },
   {
@@ -18029,7 +18029,7 @@
     "0% of 12 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 407
   },
   {
@@ -18073,7 +18073,7 @@
     "4% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 408
   },
   {
@@ -18117,7 +18117,7 @@
     "4% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 409
   },
   {
@@ -18161,7 +18161,7 @@
     "4% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 410
   },
   {
@@ -18205,7 +18205,7 @@
     "6% of 34 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 411
   },
   {
@@ -18249,7 +18249,7 @@
     "6% of 34 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 412
   },
   {
@@ -18293,7 +18293,7 @@
     "7% of 46 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 413
   },
   {
@@ -18337,7 +18337,7 @@
     "6% of 35 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 414
   },
   {
@@ -18381,7 +18381,7 @@
     "6% of 35 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 415
   },
   {
@@ -18425,7 +18425,7 @@
     "4% of 24 assessed buildings damaged"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 416
   },
   {
@@ -18469,7 +18469,7 @@
     "4% of 24 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 417
   },
   {
@@ -18513,7 +18513,7 @@
     "4% of 24 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 418
   },
   {
@@ -18557,7 +18557,7 @@
     "4% of 24 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 419
   },
   {
@@ -18601,7 +18601,7 @@
     "0% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 420
   },
   {
@@ -18645,7 +18645,7 @@
     "0% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 421
   },
   {
@@ -18689,7 +18689,7 @@
     "0% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 422
   },
   {
@@ -18733,7 +18733,7 @@
     "0% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 423
   },
   {
@@ -18777,7 +18777,7 @@
     "0% of 13 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 424
   },
   {
@@ -18821,7 +18821,7 @@
     "6% of 36 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 425
   },
   {
@@ -18865,7 +18865,7 @@
     "4% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 426
   },
   {
@@ -18909,7 +18909,7 @@
     "4% of 25 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 427
   },
   {
@@ -18953,7 +18953,7 @@
     "4% of 25 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 428
   },
   {
@@ -18997,7 +18997,7 @@
     "4% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 429
   },
   {
@@ -19041,7 +19041,7 @@
     "6% of 48 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 430
   },
   {
@@ -19085,7 +19085,7 @@
     "0% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 431
   },
   {
@@ -19129,7 +19129,7 @@
     "0% of 14 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 432
   },
   {
@@ -19173,7 +19173,7 @@
     "0% of 14 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 433
   },
   {
@@ -19217,7 +19217,7 @@
     "0% of 14 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 434
   },
   {
@@ -19261,7 +19261,7 @@
     "0% of 14 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 435
   },
   {
@@ -19305,7 +19305,7 @@
     "0% of 14 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 436
   },
   {
@@ -19349,7 +19349,7 @@
     "7% of 83 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 437
   },
   {
@@ -19393,7 +19393,7 @@
     "7% of 83 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 438
   },
   {
@@ -19437,7 +19437,7 @@
     "6% of 49 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 439
   },
   {
@@ -19481,7 +19481,7 @@
     "6% of 49 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 440
   },
   {
@@ -19525,7 +19525,7 @@
     "0% of 15 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 441
   },
   {
@@ -19569,7 +19569,7 @@
     "0% of 15 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 442
   },
   {
@@ -19613,7 +19613,7 @@
     "0% of 15 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 443
   },
   {
@@ -19657,7 +19657,7 @@
     "0% of 15 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 444
   },
   {
@@ -19701,7 +19701,7 @@
     "4% of 27 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 445
   },
   {
@@ -19745,7 +19745,7 @@
     "4% of 27 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 446
   },
   {
@@ -19789,7 +19789,7 @@
     "4% of 27 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 447
   },
   {
@@ -19833,7 +19833,7 @@
     "4% of 27 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 448
   },
   {
@@ -19877,7 +19877,7 @@
     "5% of 40 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 449
   },
   {
@@ -19921,7 +19921,7 @@
     "6% of 77 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 450
   },
   {
@@ -19965,7 +19965,7 @@
     "0% of 16 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 451
   },
   {
@@ -20009,7 +20009,7 @@
     "0% of 16 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 452
   },
   {
@@ -20053,7 +20053,7 @@
     "0% of 16 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 453
   },
   {
@@ -20097,7 +20097,7 @@
     "3% of 29 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 454
   },
   {
@@ -20141,7 +20141,7 @@
     "3% of 29 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 455
   },
   {
@@ -20185,7 +20185,7 @@
     "6% of 54 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 456
   },
   {
@@ -20229,7 +20229,7 @@
     "5% of 42 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 457
   },
   {
@@ -20273,7 +20273,7 @@
     "0% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 458
   },
   {
@@ -20317,7 +20317,7 @@
     "0% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 459
   },
   {
@@ -20361,7 +20361,7 @@
     "0% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 460
   },
   {
@@ -20405,7 +20405,7 @@
     "0% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 461
   },
   {
@@ -20449,7 +20449,7 @@
     "0% of 17 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 462
   },
   {
@@ -20493,7 +20493,7 @@
     "0% of 17 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 463
   },
   {
@@ -20537,7 +20537,7 @@
     "0% of 17 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 464
   },
   {
@@ -20581,7 +20581,7 @@
     "3% of 30 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 465
   },
   {
@@ -20625,7 +20625,7 @@
     "3% of 30 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 466
   },
   {
@@ -20669,7 +20669,7 @@
     "3% of 30 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 467
   },
   {
@@ -20713,7 +20713,7 @@
     "3% of 30 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 468
   },
   {
@@ -20757,7 +20757,7 @@
     "5% of 43 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 469
   },
   {
@@ -20801,7 +20801,7 @@
     "5% of 56 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 470
   },
   {
@@ -20845,7 +20845,7 @@
     "5% of 57 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 471
   },
   {
@@ -20889,7 +20889,7 @@
     "3% of 31 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 472
   },
   {
@@ -20933,7 +20933,7 @@
     "3% of 31 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 473
   },
   {
@@ -20977,7 +20977,7 @@
     "0% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 474
   },
   {
@@ -21021,7 +21021,7 @@
     "0% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 475
   },
   {
@@ -21065,7 +21065,7 @@
     "0% of 18 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 476
   },
   {
@@ -21109,7 +21109,7 @@
     "0% of 18 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 477
   },
   {
@@ -21153,7 +21153,7 @@
     "0% of 18 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 478
   },
   {
@@ -21197,7 +21197,7 @@
     "0% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 479
   },
   {
@@ -21241,7 +21241,7 @@
     "0% of 18 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 480
   },
   {
@@ -21285,7 +21285,7 @@
     "0% of 18 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 481
   },
   {
@@ -21329,7 +21329,7 @@
     "0% of 19 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 482
   },
   {
@@ -21373,7 +21373,7 @@
     "0% of 19 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 483
   },
   {
@@ -21417,7 +21417,7 @@
     "0% of 19 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 484
   },
   {
@@ -21461,7 +21461,7 @@
     "0% of 19 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 485
   },
   {
@@ -21505,7 +21505,7 @@
     "0% of 19 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 486
   },
   {
@@ -21549,7 +21549,7 @@
     "0% of 19 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 487
   },
   {
@@ -21593,7 +21593,7 @@
     "4% of 46 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 488
   },
   {
@@ -21637,7 +21637,7 @@
     "4% of 46 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 489
   },
   {
@@ -21681,7 +21681,7 @@
     "4% of 46 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 490
   },
   {
@@ -21725,7 +21725,7 @@
     "4% of 46 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 491
   },
   {
@@ -21769,7 +21769,7 @@
     "5% of 60 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 492
   },
   {
@@ -21813,7 +21813,7 @@
     "5% of 74 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 493
   },
   {
@@ -21857,7 +21857,7 @@
     "4% of 47 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 494
   },
   {
@@ -21901,7 +21901,7 @@
     "0% of 20 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 495
   },
   {
@@ -21945,7 +21945,7 @@
     "0% of 20 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 496
   },
   {
@@ -21989,7 +21989,7 @@
     "0% of 20 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 497
   },
   {
@@ -22033,7 +22033,7 @@
     "0% of 20 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 498
   },
   {
@@ -22077,7 +22077,7 @@
     "4% of 48 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 499
   },
   {
@@ -22121,7 +22121,7 @@
     "4% of 48 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 500
   },
   {
@@ -22165,7 +22165,7 @@
     "5% of 63 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 501
   },
   {
@@ -22209,7 +22209,7 @@
     "5% of 63 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 502
   },
   {
@@ -22253,7 +22253,7 @@
     "0% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 503
   },
   {
@@ -22297,7 +22297,7 @@
     "0% of 21 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 504
   },
   {
@@ -22341,7 +22341,7 @@
     "0% of 21 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 505
   },
   {
@@ -22385,7 +22385,7 @@
     "5% of 64 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 506
   },
   {
@@ -22429,7 +22429,7 @@
     "3% of 36 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 507
   },
   {
@@ -22473,7 +22473,7 @@
     "0% of 22 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 508
   },
   {
@@ -22517,7 +22517,7 @@
     "0% of 22 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 509
   },
   {
@@ -22561,7 +22561,7 @@
     "3% of 37 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 510
   },
   {
@@ -22605,7 +22605,7 @@
     "5% of 83 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 511
   },
   {
@@ -22649,7 +22649,7 @@
     "4% of 53 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 512
   },
   {
@@ -22693,7 +22693,7 @@
     "3% of 38 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 513
   },
   {
@@ -22737,7 +22737,7 @@
     "0% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 514
   },
   {
@@ -22781,7 +22781,7 @@
     "0% of 23 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 515
   },
   {
@@ -22825,7 +22825,7 @@
     "0% of 23 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 516
   },
   {
@@ -22869,7 +22869,7 @@
     "0% of 23 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 517
   },
   {
@@ -22913,7 +22913,7 @@
     "0% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 518
   },
   {
@@ -22957,7 +22957,7 @@
     "0% of 23 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 519
   },
   {
@@ -23001,7 +23001,7 @@
     "0% of 23 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 520
   },
   {
@@ -23045,7 +23045,7 @@
     "0% of 24 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 521
   },
   {
@@ -23089,7 +23089,7 @@
     "0% of 24 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 522
   },
   {
@@ -23133,7 +23133,7 @@
     "4% of 55 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 523
   },
   {
@@ -23177,7 +23177,7 @@
     "2% of 40 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 524
   },
   {
@@ -23221,7 +23221,7 @@
     "2% of 40 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 525
   },
   {
@@ -23265,7 +23265,7 @@
     "0% of 25 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 526
   },
   {
@@ -23309,7 +23309,7 @@
     "0% of 25 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 527
   },
   {
@@ -23353,7 +23353,7 @@
     "0% of 25 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 528
   },
   {
@@ -23397,7 +23397,7 @@
     "2% of 41 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 529
   },
   {
@@ -23441,7 +23441,7 @@
     "2% of 42 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 530
   },
   {
@@ -23485,7 +23485,7 @@
     "0% of 26 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 531
   },
   {
@@ -23529,7 +23529,7 @@
     "0% of 26 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 532
   },
   {
@@ -23573,7 +23573,7 @@
     "0% of 26 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 533
   },
   {
@@ -23617,7 +23617,7 @@
     "0% of 26 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 534
   },
   {
@@ -23661,7 +23661,7 @@
     "0% of 26 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 535
   },
   {
@@ -23705,7 +23705,7 @@
     "0% of 26 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 536
   },
   {
@@ -23749,7 +23749,7 @@
     "0% of 26 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 537
   },
   {
@@ -23793,7 +23793,7 @@
     "0% of 26 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 538
   },
   {
@@ -23837,7 +23837,7 @@
     "0% of 27 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 539
   },
   {
@@ -23881,7 +23881,7 @@
     "0% of 27 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 540
   },
   {
@@ -23925,7 +23925,7 @@
     "0% of 27 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 541
   },
   {
@@ -23969,7 +23969,7 @@
     "0% of 27 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 542
   },
   {
@@ -24013,7 +24013,7 @@
     "2% of 44 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 543
   },
   {
@@ -24057,7 +24057,7 @@
     "0% of 28 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 544
   },
   {
@@ -24101,7 +24101,7 @@
     "0% of 28 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 545
   },
   {
@@ -24145,7 +24145,7 @@
     "2% of 45 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 546
   },
   {
@@ -24189,7 +24189,7 @@
     "4% of 97 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 547
   },
   {
@@ -24233,7 +24233,7 @@
     "3% of 63 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 548
   },
   {
@@ -24277,7 +24277,7 @@
     "2% of 46 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 549
   },
   {
@@ -24321,7 +24321,7 @@
     "2% of 46 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 550
   },
   {
@@ -24365,7 +24365,7 @@
     "0% of 29 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 551
   },
   {
@@ -24409,7 +24409,7 @@
     "0% of 29 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 552
   },
   {
@@ -24453,7 +24453,7 @@
     "2% of 47 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 553
   },
   {
@@ -24497,7 +24497,7 @@
     "0% of 30 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 554
   },
   {
@@ -24541,7 +24541,7 @@
     "0% of 30 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 555
   },
   {
@@ -24585,7 +24585,7 @@
     "0% of 30 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 556
   },
   {
@@ -24629,7 +24629,7 @@
     "0% of 31 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 557
   },
   {
@@ -24673,7 +24673,7 @@
     "0% of 31 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 558
   },
   {
@@ -24717,7 +24717,7 @@
     "0% of 33 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 559
   },
   {
@@ -24761,7 +24761,7 @@
     "2% of 52 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 560
   },
   {
@@ -24805,7 +24805,7 @@
     "0% of 34 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 561
   },
   {
@@ -24849,7 +24849,7 @@
     "0% of 34 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 562
   },
   {
@@ -24893,7 +24893,7 @@
     "3% of 95 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 563
   },
   {
@@ -24937,7 +24937,7 @@
     "4% of 135 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 564
   },
   {
@@ -24981,7 +24981,7 @@
     "2% of 56 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 565
   },
   {
@@ -25025,7 +25025,7 @@
     "0% of 36 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 566
   },
   {
@@ -25069,7 +25069,7 @@
     "0% of 36 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 567
   },
   {
@@ -25113,7 +25113,7 @@
     "0% of 36 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 568
   },
   {
@@ -25157,7 +25157,7 @@
     "0% of 37 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 569
   },
   {
@@ -25201,7 +25201,7 @@
     "2% of 58 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 570
   },
   {
@@ -25245,7 +25245,7 @@
     "0% of 38 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 571
   },
   {
@@ -25289,7 +25289,7 @@
     "0% of 40 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 572
   },
   {
@@ -25333,7 +25333,7 @@
     "2% of 63 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 573
   },
   {
@@ -25377,7 +25377,7 @@
     "2% of 63 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 574
   },
   {
@@ -25421,7 +25421,7 @@
     "0% of 41 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 575
   },
   {
@@ -25465,7 +25465,7 @@
     "0% of 41 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 576
   },
   {
@@ -25509,7 +25509,7 @@
     "0% of 43 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 577
   },
   {
@@ -25553,7 +25553,7 @@
     "1% of 67 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 578
   },
   {
@@ -25597,7 +25597,7 @@
     "0% of 45 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 579
   },
   {
@@ -25641,7 +25641,7 @@
     "0% of 48 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 580
   },
   {
@@ -25685,7 +25685,7 @@
     "0% of 50 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 581
   },
   {
@@ -25729,7 +25729,7 @@
     "0% of 51 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 582
   },
   {
@@ -25773,7 +25773,7 @@
     "0% of 52 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 583
   },
   {
@@ -25817,7 +25817,7 @@
     "2% of 105 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 584
   },
   {
@@ -25861,7 +25861,7 @@
     "0% of 57 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 585
   },
   {
@@ -25905,7 +25905,7 @@
     "0% of 57 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 586
   },
   {
@@ -25949,7 +25949,7 @@
     "0% of 58 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 587
   },
   {
@@ -25993,7 +25993,7 @@
     "1% of 88 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 588
   },
   {
@@ -26037,7 +26037,7 @@
     "0% of 60 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 589
   },
   {
@@ -26081,7 +26081,7 @@
     "0% of 60 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 590
   },
   {
@@ -26125,7 +26125,7 @@
     "0% of 61 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 591
   },
   {
@@ -26169,7 +26169,7 @@
     "0% of 62 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 592
   },
   {
@@ -26213,7 +26213,7 @@
     "0% of 69 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 593
   },
   {
@@ -26257,7 +26257,7 @@
     "0% of 70 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 594
   },
   {
@@ -26301,7 +26301,7 @@
     "0% of 72 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 595
   },
   {
@@ -26345,7 +26345,7 @@
     "0% of 73 assessed buildings damaged"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 596
   },
   {
@@ -26389,7 +26389,7 @@
     "0% of 81 assessed buildings damaged"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 597
   },
   {
@@ -26433,7 +26433,7 @@
     "1% of 139 assessed buildings damaged"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 598
   },
   {
@@ -26477,7 +26477,7 @@
     "0% of 140 assessed buildings damaged"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 599
   },
   {
@@ -26521,7 +26521,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 600
   },
   {
@@ -26565,7 +26565,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 601
   },
   {
@@ -26609,7 +26609,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 602
   },
   {
@@ -26653,7 +26653,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 603
   },
   {
@@ -26697,7 +26697,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 604
   },
   {
@@ -26741,7 +26741,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 605
   },
   {
@@ -26785,7 +26785,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 606
   },
   {
@@ -26829,7 +26829,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 607
   },
   {
@@ -26873,7 +26873,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 608
   },
   {
@@ -26917,7 +26917,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 609
   },
   {
@@ -26961,7 +26961,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 610
   },
   {
@@ -27005,7 +27005,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 611
   },
   {
@@ -27049,7 +27049,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 612
   },
   {
@@ -27093,7 +27093,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 613
   },
   {
@@ -27137,7 +27137,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 614
   },
   {
@@ -27181,7 +27181,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 615
   },
   {
@@ -27225,7 +27225,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 616
   },
   {
@@ -27269,7 +27269,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 617
   },
   {
@@ -27313,7 +27313,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 618
   },
   {
@@ -27357,7 +27357,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 619
   },
   {
@@ -27401,7 +27401,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 620
   },
   {
@@ -27445,7 +27445,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 621
   },
   {
@@ -27489,7 +27489,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 622
   },
   {
@@ -27533,7 +27533,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 623
   },
   {
@@ -27577,7 +27577,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 624
   },
   {
@@ -27621,7 +27621,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 625
   },
   {
@@ -27665,7 +27665,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 626
   },
   {
@@ -27709,7 +27709,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 627
   },
   {
@@ -27753,7 +27753,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 628
   },
   {
@@ -27797,7 +27797,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Sarighat",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 629
   },
   {
@@ -27841,7 +27841,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 630
   },
   {
@@ -27885,7 +27885,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 631
   },
   {
@@ -27929,7 +27929,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 632
   },
   {
@@ -27973,7 +27973,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 633
   },
   {
@@ -28017,7 +28017,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 634
   },
   {
@@ -28061,7 +28061,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 635
   },
   {
@@ -28105,7 +28105,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 636
   },
   {
@@ -28149,7 +28149,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 637
   },
   {
@@ -28193,7 +28193,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 638
   },
   {
@@ -28237,7 +28237,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 639
   },
   {
@@ -28281,7 +28281,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 640
   },
   {
@@ -28325,7 +28325,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 641
   },
   {
@@ -28369,7 +28369,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 642
   },
   {
@@ -28413,7 +28413,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 643
   },
   {
@@ -28457,7 +28457,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 644
   },
   {
@@ -28501,7 +28501,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 645
   },
   {
@@ -28545,7 +28545,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 646
   },
   {
@@ -28589,7 +28589,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 647
   },
   {
@@ -28633,7 +28633,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 648
   },
   {
@@ -28677,7 +28677,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 649
   },
   {
@@ -28721,7 +28721,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 650
   },
   {
@@ -28765,7 +28765,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 651
   },
   {
@@ -28809,7 +28809,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 652
   },
   {
@@ -28853,7 +28853,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 653
   },
   {
@@ -28897,7 +28897,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 654
   },
   {
@@ -28941,7 +28941,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 655
   },
   {
@@ -28985,7 +28985,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 656
   },
   {
@@ -29029,7 +29029,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 657
   },
   {
@@ -29073,7 +29073,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 658
   },
   {
@@ -29117,7 +29117,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 659
   },
   {
@@ -29161,7 +29161,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 660
   },
   {
@@ -29205,7 +29205,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 661
   },
   {
@@ -29249,7 +29249,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 662
   },
   {
@@ -29293,7 +29293,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 663
   },
   {
@@ -29337,7 +29337,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 664
   },
   {
@@ -29381,7 +29381,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 665
   },
   {
@@ -29425,7 +29425,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 666
   },
   {
@@ -29469,7 +29469,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 667
   },
   {
@@ -29513,7 +29513,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Tamabil",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 668
   },
   {
@@ -29557,7 +29557,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 669
   },
   {
@@ -29601,7 +29601,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 670
   },
   {
@@ -29645,7 +29645,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 671
   },
   {
@@ -29689,7 +29689,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 672
   },
   {
@@ -29733,7 +29733,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 673
   },
   {
@@ -29777,7 +29777,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 674
   },
   {
@@ -29821,7 +29821,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 675
   },
   {
@@ -29865,7 +29865,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 676
   },
   {
@@ -29909,7 +29909,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 677
   },
   {
@@ -29953,7 +29953,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 678
   },
   {
@@ -29997,7 +29997,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 679
   },
   {
@@ -30041,7 +30041,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 680
   },
   {
@@ -30085,7 +30085,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 681
   },
   {
@@ -30129,7 +30129,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 682
   },
   {
@@ -30173,7 +30173,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 683
   },
   {
@@ -30217,7 +30217,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 684
   },
   {
@@ -30261,7 +30261,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 685
   },
   {
@@ -30305,7 +30305,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 686
   },
   {
@@ -30349,7 +30349,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 687
   },
   {
@@ -30393,7 +30393,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 688
   },
   {
@@ -30437,7 +30437,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 689
   },
   {
@@ -30481,7 +30481,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 690
   },
   {
@@ -30525,7 +30525,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 691
   },
   {
@@ -30569,7 +30569,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 692
   },
   {
@@ -30613,7 +30613,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 693
   },
   {
@@ -30657,7 +30657,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 694
   },
   {
@@ -30701,7 +30701,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 695
   },
   {
@@ -30745,7 +30745,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 696
   },
   {
@@ -30789,7 +30789,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 697
   },
   {
@@ -30833,7 +30833,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 698
   },
   {
@@ -30877,7 +30877,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 699
   },
   {
@@ -30921,7 +30921,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 700
   },
   {
@@ -30965,7 +30965,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 701
   },
   {
@@ -31009,7 +31009,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 702
   },
   {
@@ -31053,7 +31053,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 703
   },
   {
@@ -31097,7 +31097,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 704
   },
   {
@@ -31141,7 +31141,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 705
   },
   {
@@ -31185,7 +31185,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 706
   },
   {
@@ -31229,7 +31229,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 707
   },
   {
@@ -31273,7 +31273,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 708
   },
   {
@@ -31317,7 +31317,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 709
   },
   {
@@ -31361,7 +31361,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 710
   },
   {
@@ -31405,7 +31405,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 711
   },
   {
@@ -31449,7 +31449,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 712
   },
   {
@@ -31493,7 +31493,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 713
   },
   {
@@ -31537,7 +31537,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 714
   },
   {
@@ -31581,7 +31581,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 715
   },
   {
@@ -31625,7 +31625,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 716
   },
   {
@@ -31669,7 +31669,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 717
   },
   {
@@ -31713,7 +31713,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 718
   },
   {
@@ -31757,7 +31757,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 719
   },
   {
@@ -31801,7 +31801,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 720
   },
   {
@@ -31845,7 +31845,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 721
   },
   {
@@ -31889,7 +31889,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 722
   },
   {
@@ -31933,7 +31933,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 723
   },
   {
@@ -31977,7 +31977,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 724
   },
   {
@@ -32021,7 +32021,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 725
   },
   {
@@ -32065,7 +32065,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaflong",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 726
   },
   {
@@ -32109,7 +32109,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 727
   },
   {
@@ -32153,7 +32153,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 728
   },
   {
@@ -32197,7 +32197,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 729
   },
   {
@@ -32241,7 +32241,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 730
   },
   {
@@ -32285,7 +32285,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 731
   },
   {
@@ -32329,7 +32329,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 732
   },
   {
@@ -32373,7 +32373,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 733
   },
   {
@@ -32417,7 +32417,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 734
   },
   {
@@ -32461,7 +32461,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 735
   },
   {
@@ -32505,7 +32505,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 736
   },
   {
@@ -32549,7 +32549,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 737
   },
   {
@@ -32593,7 +32593,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 738
   },
   {
@@ -32637,7 +32637,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 739
   },
   {
@@ -32681,7 +32681,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 740
   },
   {
@@ -32725,7 +32725,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 741
   },
   {
@@ -32769,7 +32769,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 742
   },
   {
@@ -32813,7 +32813,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 743
   },
   {
@@ -32857,7 +32857,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 744
   },
   {
@@ -32901,7 +32901,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 745
   },
   {
@@ -32945,7 +32945,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 746
   },
   {
@@ -32989,7 +32989,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 747
   },
   {
@@ -33033,7 +33033,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 748
   },
   {
@@ -33077,7 +33077,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 749
   },
   {
@@ -33121,7 +33121,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 750
   },
   {
@@ -33165,7 +33165,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 751
   },
   {
@@ -33209,7 +33209,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 752
   },
   {
@@ -33253,7 +33253,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 753
   },
   {
@@ -33297,7 +33297,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 754
   },
   {
@@ -33341,7 +33341,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 755
   },
   {
@@ -33385,7 +33385,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 756
   },
   {
@@ -33429,7 +33429,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 757
   },
   {
@@ -33473,7 +33473,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 758
   },
   {
@@ -33517,7 +33517,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 759
   },
   {
@@ -33561,7 +33561,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 760
   },
   {
@@ -33605,7 +33605,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 761
   },
   {
@@ -33649,7 +33649,7 @@
     "Only 9 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 762
   },
   {
@@ -33693,7 +33693,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 763
   },
   {
@@ -33737,7 +33737,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 764
   },
   {
@@ -33781,7 +33781,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 765
   },
   {
@@ -33825,7 +33825,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 766
   },
   {
@@ -33869,7 +33869,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 767
   },
   {
@@ -33913,7 +33913,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 768
   },
   {
@@ -33957,7 +33957,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 769
   },
   {
@@ -34001,7 +34001,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 770
   },
   {
@@ -34045,7 +34045,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 771
   },
   {
@@ -34089,7 +34089,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 772
   },
   {
@@ -34133,7 +34133,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 773
   },
   {
@@ -34177,7 +34177,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 774
   },
   {
@@ -34221,7 +34221,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 775
   },
   {
@@ -34265,7 +34265,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 776
   },
   {
@@ -34309,7 +34309,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 777
   },
   {
@@ -34353,7 +34353,7 @@
     "Only 6 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 778
   },
   {
@@ -34397,7 +34397,7 @@
     "Only 8 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 779
   },
   {
@@ -34441,7 +34441,7 @@
     "Only 7 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 780
   },
   {
@@ -34485,7 +34485,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": "Jaintiapur",
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 781
   },
   {
@@ -34529,7 +34529,7 @@
     "Only 5 assessed building(s) here - too few to score damage"
    ],
    "place_label": null,
-   "updated_at": "2026-07-28T09:56:40Z",
+   "updated_at": "2026-10-03T11:00:59Z",
    "rank": 782
   }
  ]

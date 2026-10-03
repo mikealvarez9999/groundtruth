@@ -510,3 +510,80 @@ Model is named (not `null`), status is the schema-correct verdict, description i
 
 **Follow-ups (not blocking ship-night):** Qwen3.6 emits `think` blocks in plain text. Status detection already handles them correctly (default `inconclusive` when no JSON verdict appears), but a future revision could strip the think block before JSON parsing to recover the structured verdict when present.
 
+### D-034 — SAR provenance must name a real pinned commit **[settled]**
+
+The committed Bangladesh damage layer carried
+`classifier_ref: "mitchellthomas1/S1-Flood-Bangladesh@<commit>"` — a literal
+`<commit>` placeholder. It read like provenance and named nothing re-runnable.
+
+- **Why it survived so long:** the schema's `examples` for that field was
+  *itself* `"mitchellthomas1/S1-Flood-Bangladesh @ <commit>"`. The placeholder was
+  the documented example, so copying the documented example produced it. The
+  HASTE branch already required a real `haste_commit`; the SAR branch required
+  nothing. Fixed at three levels:
+  1. `sentinel1_to_damage_layer.py` refuses `--classifier-ref` /`--footprint-source`
+     values matching `<...>`, `commit`, `todo`, `tbd`, `fixme`, `xxx`. It exits
+     non-zero **and writes no file** — a bad ref must not reach an artifact.
+  2. `damage_layer.schema.json` adds `classifier_ref` to the `sentinel1_sar`
+     branch's `required`, plus a negative-lookahead `pattern` so validation
+     rejects a placeholder even if the converter is bypassed.
+  3. The misleading `examples` value was replaced with a real pinned ref.
+- **Contract impact:** adding to `required` is not a rename, so `contract_version`
+  stays **1.0.0**. Per `contracts/README.md` this still gets a D-NNN entry, which
+  is this one. The HASTE example layer is unaffected (it carries `haste_commit`).
+- **Provenance corrected to** `mitchellthomas1/S1-Flood-Bangladesh@416e8db`
+  across `data/raw/sentinel1/` (×3), `data/processed/`, and both epochs.
+- **Verified non-substantive:** re-running the converter changed *only*
+  provenance. 0/18,292 `damage_class` differences, 0 `area_m2`/`grid_cell_id`
+  differences, 0/782 sector-score differences, 0/50 signal-tier differences. The
+  sole other delta was `generated_at` — which is the determinism D-021 promised.
+- Revisit if: we ever cite a classifier by DOI/registry rather than a repo SHA,
+  in which case `pattern` needs widening.
+
+### D-035 — The epoch sync must fail loudly, not silently **[settled]**
+
+`console/scripts/sync-data.mjs` shipped for two commits with its epoch-copy code
+missing — only the first line of the explanatory comment had been pasted across
+from its near-identical twin `syncdata.mjs`, which no npm script ever invoked. The
+console's SAR PASS toggle therefore never rendered, locally or on Vercel.
+
+- **Why nobody noticed:** the twin wrapped the whole block in `try { ... } catch {}`
+  and logged nothing on failure. A sync step that cannot report its own failure
+  is indistinguishable from a sync step that has nothing to do.
+- **Fix:** the working block now lives in the invoked script; `syncdata.mjs` is
+  deleted. The blanket catch is deliberately **not** reproduced —
+  `epochs/` existing in the source is a promise made to the console, so failing to
+  deliver it logs an error and sets `process.exitCode = 1` rather than passing
+  quietly. Absence of `epochs/` (synthetic demo, nothing built yet) stays silent,
+  because that is legitimate.
+- **Root cause was duplication, not omission.** Two files with near-identical
+  names and divergent contents, one wired up and one not. Keeping a single
+  `sync-data.mjs` is the fix; do not reintroduce a second.
+- Note `build_epoch.py` also dual-writes epochs into both trees, so the toggle
+  has two independent paths to it. Keep both.
+
+### D-036 — Irreplaceable SAR inputs are committed; converter outputs are not **[settled]**
+
+`data/raw/` was gitignored wholesale, so the two building-join GeoJSONs and two
+flood-mask GeoTIFFs the damage layer is built from existed only on one machine. A
+fresh clone got `data/processed/` but could not rebuild the layer — `build_all`
+would silently fall back to the synthetic demo.
+
+- **Now committed (18.4 MB):** `sylhet_buildings_flood.geojson`,
+  `sylhet_buildings_flood_pre.geojson`, `flood_mask_2022-06-06.tif`,
+  `flood_mask_2022-06-19.tif`, `valid_area.geojson`.
+- **Still ignored:** the three `data/raw/sentinel1/damage_layer*.geojson` files.
+  They are *outputs* of `sentinel1_to_damage_layer`, byte-reproducible from the
+  inputs above (verified: 0/18,292 `damage_class` differences across both epochs),
+  and the same content is already committed under `data/processed/`. Committing
+  them would add ~36 MB for nothing.
+- **Two gitignore traps, both now documented inline in `.gitignore`:**
+  1. The rule must be `/data/raw/*`, **not** `/data/raw/` — git cannot re-include
+     a file whose parent directory is itself excluded, so the negations would
+     never match.
+  2. `!/data/raw/sentinel1/` re-includes the whole directory, outputs included.
+     Since the last matching pattern wins, an explicit re-ignore of the outputs
+     must come *after* the negations.
+- Why it matters: this is the same principle as D-004/D-009. An assessment nobody
+  can re-run is not evidence, and neither is one nobody can rebuild.
+

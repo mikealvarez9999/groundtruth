@@ -42,7 +42,12 @@ contracts/
 data/
   processed/                 # committed artifacts (single source of truth)
   raw/haste/                 # real HASTE damage layer staging (checked FIRST by build_all)
-  raw/sentinel1/             # real SAR damage layer staging (checked second)
+  raw/sentinel1/             # real SAR damage layer staging (checked second).
+                             # UPDATED (D-036): the 5 irreplaceable inputs (2 building
+                             # joins + 2 flood-mask GeoTIFFs + valid_area) are now
+                             # COMMITTED so the layer can be rebuilt anywhere; the
+                             # damage_layer*.geojson outputs stay ignored as
+                             # byte-reproducible from those inputs.
   seed/posts.json            # raw seeded posts
 pipeline/  (Python, venv at pipeline/.venv on the remote; user runs system python)
   src/groundtruth/
@@ -63,7 +68,12 @@ pipeline/  (Python, venv at pipeline/.venv on the remote; user runs system pytho
                              # LAST epoch built = default; REFUSES --damage pointing at its own staging path
     flood_overlay.py         # SAR flood-mask GeoTIFF -> epochs/<slug>/flood.png + flood_bounds.json (rasterio only)
 console/  (Next.js; MapLibre GL v6 + deck.gl)
-  scripts/sync-data.mjs      # copies data/processed -> public/data (incl. epochs/ recursively)
+  scripts/sync-data.mjs      # copies data/processed -> public/data, INCLUDING epochs/
+                             # recursively. UPDATED (D-035): this now actually does it.
+                             # A near-identical twin (syncdata.mjs) held the only working
+                             # epoch-sync block and was invoked by nothing, so the console's
+                             # SAR PASS toggle never rendered. Twin deleted; a failed epoch
+                             # copy now fails the build instead of logging nothing.
   scripts/sync-maplibre-worker.mjs # MapLibre v6 worker must be served from public/maplibre (setWorkerUrl)
   src/components/
     Console.tsx              # loads 4 artifacts; polls /data/live_signals.json every 4s (merge by signal_id);

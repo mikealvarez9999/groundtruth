@@ -63,7 +63,7 @@
             {
               "title": "Sentinel-1 SAR",
               "description": "Copernicus Sentinel-1 C-band SAR flood analysis. A building is 'damaged' when a threshold fraction of its footprint falls inside the detected flood extent. SAR penetrates cloud and works at night, so `obscured` is always false for this source -- there is no cloud to hide behind.",
-              "required": ["tool", "sensor", "classifier", "footprint_source"],
+              "required": ["tool", "sensor", "classifier", "classifier_ref", "footprint_source"],
               "additionalProperties": false,
               "properties": {
                 "tool": { "const": "sentinel1_sar" },
@@ -78,9 +78,11 @@
                   "examples": ["VV+VH z-score anomaly vs seasonal baseline + raw-VH threshold, spatially smoothed"]
                 },
                 "classifier_ref": {
-                  "description": "Where the classifier came from -- repo + short commit -- so the flood mask is reproducible.",
+                  "description": "Where the classifier came from -- repo + short commit -- so the flood mask is reproducible. REQUIRED, and must be a real pinned identifier: a placeholder names nothing re-runnable, which makes the layer uncitable (D-009).",
                   "type": "string",
-                  "examples": ["mitchellthomas1/S1-Flood-Bangladesh @ <commit>"]
+                  "minLength": 1,
+                  "pattern": "^(?!.*<)(?!.*>)(?!.*(?i:commit|todo|tbd|fixme|xxx)).+$",
+                  "examples": ["mitchellthomas1/S1-Flood-Bangladesh@416e8db"]
                 },
                 "baseline_window": {
                   "description": "[start, end) ISO dates of the SAR baseline period the anomaly is measured against.",

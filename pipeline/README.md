@@ -71,6 +71,23 @@ default (last built wins — that's what the root artefacts mirror).
 - **No renormalisation across channels (D-020).** If a sector has fewer
   signals than its neighbours, it does **not** get pulled up by the average.
   Lower evidence → lower score, full stop.
+- **Provenance must be re-runnable (D-034).** `sentinel1_to_damage_layer`
+  refuses a `--classifier-ref` that is a placeholder (`@<commit>`, `todo`, …) and
+  writes no file when it sees one. `classifier_ref` is `required` for the
+  `sentinel1_sar` branch of the damage-layer schema, so validation catches it
+  too. `--notes` is *not* defaulted: pass it if the run needs a method note, and
+  check the output actually carries it.
+
+## Known gaps
+
+- **The `--notes` default is not enforced.** `sentinel1_to_damage_layer` only
+  writes `notes` when `--notes` is passed, so a rebuild can silently drop the
+  sentence defining what `damage_class` means. The committed layers carry it
+  ("flood exposure", 30 m); re-runs must pass `--notes` to keep it.
+- **`sentinel1_to_damage_layer`'s docstring describes an older method** than the
+  data it produced: it documents a raw flood-mask `reduceRegions` mean, while the
+  shipped layers use `flood.focalMax(radius=30m)` then the fraction of the
+  footprint within, damaged at ≥ 0.5.
 
 ## CLI cheatsheet
 
@@ -78,11 +95,16 @@ default (last built wins — that's what the root artefacts mirror).
 # Build everything from synthetic defaults.
 python -m groundtruth.build_all
 
-# Build from a real Sentinel-1 layer + footprint.
+# Build from a real Sentinel-1 layer + footprint. Note the real flag names:
+# --buildings (not --footprints), and --bbox or --valid-area for the footprint.
 python -m groundtruth.sentinel1_to_damage_layer `
-    --footprints data\raw\sentinel1\footprints.geojson `
-    --flood-stats data\raw\sentinel1\flood_stats.geojson `
-    --event-id bangladesh-flooding22
+    --buildings ..\data\raw\sentinel1\sylhet_buildings_flood.geojson `
+    --bbox 91.9 25.02 92.12 25.17 `
+    --classifier-ref "mitchellthomas1/S1-Flood-Bangladesh@416e8db" `
+    --target-window 2022-06-16 2022-06-23 `
+    --baseline-window 2021-05-01 2021-10-01 `
+    --footprint-confidence-min 0.75 --flood-threshold 0.5 `
+    --out ..\data\raw\sentinel1\damage_layer.geojson
 
 # Stage a dated epoch (the last one you build becomes the root snapshot).
 python -m groundtruth.build_epoch --slug 2022-06-19 --label "19 JUN - PEAK" `

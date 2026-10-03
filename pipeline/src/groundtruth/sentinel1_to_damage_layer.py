@@ -39,6 +39,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -46,6 +47,28 @@ from pathlib import Path
 from . import grid
 
 CONTRACT_VERSION = "1.0.0"
+
+
+# Placeholders that look like a citation but name nothing reproducible. The
+# shipped layer once carried "S1-Flood-Bangladesh@<commit>", which reads like
+# provenance and is not: nobody can rebuild the assessment from it. The HASTE
+# branch of the schema already REQUIRES a real haste_commit for the same reason;
+# this is the SAR-side equivalent, enforced at write time so a placeholder can
+# never reach an artifact again.
+_REF_PLACEHOLDERS = re.compile(r"<[^>]*>|\b(?:commit|todo|tbd|xxx|fixme|unknown)\b", re.I)
+
+
+def _check_ref(value: str | None, flag: str) -> None:
+    """Fail loudly if a provenance reference is a placeholder, not a citation."""
+    if not value:
+        return
+    if _REF_PLACEHOLDERS.search(value):
+        sys.exit(
+            f"--{flag} looks like a placeholder, not a real reference:\n"
+            f"  {value!r}\n"
+            "A damage layer whose classifier cannot be re-run is not evidence (D-009).\n"
+            "Pass the real pinned identifier, e.g. owner/repo@<40-char-sha>."
+        )
 
 
 def _read_geojson(path: Path) -> list[dict]:
@@ -231,6 +254,10 @@ def main() -> int:
 
     if not args.buildings.is_file():
         sys.exit(f"not found: {args.buildings}")
+
+    # Refuse to write provenance that names nothing reproducible.
+    _check_ref(args.classifier_ref, "classifier-ref")
+    _check_ref(args.footprint_source, "footprint-source")
 
     features = _read_geojson(args.buildings)
     print(f"read {len(features)} building feature(s) from {args.buildings.name}")

@@ -6,9 +6,12 @@ The Next.js command console. Reads the pipeline's JSON artefacts from
 ```powershell
 cd console
 npm install
-npm run sync-data      # copies fresh artefacts from ../data/processed/
+npm run sync:data      # copies fresh artefacts from ../data/processed/ (incl. epochs/)
 npm run dev            # http://localhost:3000
 ```
+
+`predev` and `prebuild` run `sync:maplibre` + `sync:data` automatically, so
+`npm run dev` / `npm run build` alone are enough after `npm install`.
 
 ## Stack
 
@@ -17,9 +20,25 @@ npm run dev            # http://localhost:3000
   basemap telemetry.
 - **Static tile basemap** — the OSM raster bundle in `public/data/`. The
   console does **not** fetch tiles at runtime.
-- **MapLibre worker** is checked in under `public/maplibre/` and kept in sync
-  with the installed `maplibre-gl` via `npm run sync-maplibre-worker`. If you
-  bump `maplibre-gl` in `package.json`, re-run that script.
+- **MapLibre worker** is synced from `node_modules` into `public/maplibre/`
+  (gitignored) via `npm run sync:maplibre`. If you bump `maplibre-gl` in
+  `package.json`, re-run that script — a mismatched worker fails silently (D-025).
+
+## Scripts
+
+| Script | What it does |
+|---|---|
+| `npm run sync:data` | Copies `data/processed/` → `public/data/`, **including `epochs/`** |
+| `npm run sync:maplibre` | Copies the MapLibre v6 worker out of `node_modules` |
+| `npm run dev` / `build` | Both trigger the two syncs via `predev` / `prebuild` |
+
+`public/data/` is gitignored — it is a build output, never a source. The
+committed source of truth is `data/processed/`.
+
+There is exactly **one** sync script, `scripts/sync-data.mjs`. A near-identical
+twin named `syncdata.mjs` existed, held the only working copy of the epoch-sync
+block, and was referenced by nothing — so the before/after toggle silently
+never rendered. It has been deleted; see D-035.
 
 ## What you see on screen
 
@@ -37,9 +56,14 @@ npm run dev            # http://localhost:3000
 
 The console does **not** re-run `build_all`. When a new citizen tip lands in
 `public/data/live_signals.json` (written by `bot/tipline.py`), the client
-recomputes sector scores in the browser using the same `fuse.ts` rules the
-Python pipeline applies. The Python build is the canonical snapshot; the
-client re-score is the live overlay.
+recomputes sector scores in the browser using the same rules the Python
+pipeline applies. The Python build is the canonical snapshot; the client
+re-score is the live overlay.
+
+`src/lib/fusion.ts` does not re-declare the channel weights — it reads them out
+of the `weights` block embedded in `sector_scores.json` (D-009), so there is no
+second copy to drift. It does re-implement the score formula and `SATURATION`,
+so change those in `fuse.py` and `fusion.ts` together.
 
 ## Before / after epochs
 
@@ -59,9 +83,16 @@ directory and serve `npm run build` output; the only requirement is that
 ## Common traps
 
 - **Blank map.** Almost always: `public/data/` is empty. Run
-  `npm run sync-data` from the console dir, or `python -m
-  groundtruth.build_all` from the repo root.
-- **Worker crashes.** `maplibre-gl` was bumped without re-syncing the worker.
-  Run `npm run sync-maplibre-worker`.
-- **Epoch toggle shows nothing.** The slug isn't in `public/data/epochs/`.
-  Run `build_epoch.py` for that slug and `npm run sync-data`.
+  `npm run sync:data` from the console dir, or `python -m
+  groundtruth.build_all` from `pipeline/`.
+- **Worker crashes, or a map that renders nothing with a working HUD.**
+  `maplibre-gl` was bumped without re-syncing the worker. Run
+  `npm run sync:maplibre`. D-025 documents this whole silent-failure class.
+- **Epoch toggle shows nothing.** The console hides the toggle until
+  `/data/epochs/index.json` lists **2 or more** epochs (`epochs.length >= 2` in
+  `Console.tsx`). Either fewer than two epochs exist, or `epochs/` was never
+  copied into `public/data/`. Check in this order:
+  1. `data/processed/epochs/index.json` exists and lists 2+ slugs? If not, run
+     `python -m groundtruth.build_epoch` for each pass.
+  2. `public/data/epochs/index.json` exists? If not, `npm run sync:data`.
+  Build the PEAK/POST epoch **last** — the last one built becomes the default.

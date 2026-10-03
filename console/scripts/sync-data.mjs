@@ -13,7 +13,7 @@
  * UNAVAILABLE" panel telling you what to run, which is more useful than a failed build.
  */
 
-import { copyFile, mkdir, readdir } from "node:fs/promises";
+import { copyFile, cp, mkdir, readdir } from "node:fs/promises";
 import path from "node:path";
 
 const WANTED = [
@@ -63,6 +63,29 @@ async function main() {
   }
 
   // Dated SAR epochs (data/processed/epochs/<slug>/) power the console's
+  // before/after toggle. Absent until build_epoch has run, which is fine --
+  // Console.tsx hides the toggle until /data/epochs/index.json lists 2+ epochs.
+  //
+  // A copy failure here is deliberately NOT swallowed. The previous version of
+  // this script wrapped the whole block in try/catch and logged nothing, which
+  // is how the epoch sync went missing in the first place: the comment arrived
+  // without the code, the toggle silently stopped rendering, and nobody saw a
+  // warning. `epochs` existing in the source is a promise we made to the
+  // console, so failing to deliver it must break the build, not hide.
+  if (present.has("epochs")) {
+    try {
+      await cp(path.join(src, "epochs"), path.join(dest, "epochs"), {
+        recursive: true,
+      });
+      console.log("[sync-data] copied epochs/ -> public/data/epochs/");
+    } catch (err) {
+      console.error(
+        `[sync-data] epochs/ exists in ${src} but the copy FAILED: ${err.message}\n` +
+          "  The console's before/after toggle will not render. Fix the copy, do not ignore.",
+      );
+      process.exitCode = 1;
+    }
+  }
 
   console.log(`[sync-data] copied ${copied.length}/${WANTED.length} artifacts -> public/data/`);
   if (missing.length) {

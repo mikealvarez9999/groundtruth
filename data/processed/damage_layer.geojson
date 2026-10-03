@@ -3,7 +3,7 @@
  "groundtruth": {
   "contract_version": "1.0.0",
   "event_id": "bangladesh-flooding22",
-  "generated_at": "2026-07-28T10:00:35Z",
+  "generated_at": "2026-10-03T10:58:58Z",
   "crs": "EPSG:4326",
   "source": {
    "tool": "sentinel1_sar",
@@ -11,7 +11,7 @@
    "classifier": "VV+VH z-score anomaly vs seasonal baseline + raw-VH threshold, spatially smoothed",
    "footprint_source": "google_open_buildings_v3",
    "flood_fraction_threshold": 0.5,
-   "classifier_ref": "mitchellthomas1/S1-Flood-Bangladesh@<commit>",
+   "classifier_ref": "mitchellthomas1/S1-Flood-Bangladesh@416e8db",
    "baseline_window": [
     "2021-05-01",
     "2021-10-01"

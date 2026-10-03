@@ -9,8 +9,35 @@
 !.env.example
 *.pem
 
-# --- Data: raw is gitignored, processed is committed ---
-/data/raw/
+# --- Data: processed is committed; only the IRREPLACEABLE raw inputs are ---
+#
+# The two sylhet_buildings_flood*.geojson files (~18 MB) and the two flood-mask
+# GeoTIFFs (~0.2 MB) are the only inputs the SAR damage layer can be rebuilt
+# from, so they are committed. Without them a fresh clone cannot re-run
+#   PYTHONPATH=src python -m groundtruth.sentinel1_to_damage_layer
+# and build_all silently falls back to the synthetic demo instead.
+#
+# The damage_layer*.geojson files under raw/ stay ignored: they are OUTPUTS of
+# that converter, byte-reproducible from the inputs above, and already committed
+# under data/processed/ -- committing them here would triple the blob cost for
+# nothing.
+#
+# Pattern must be `/data/raw/*`, NOT `/data/raw/`: git cannot re-include a file
+# whose parent directory is itself excluded, so the negations below would never
+# match and the inputs would stay untracked.
+/data/raw/*
+!/data/raw/sentinel1/
+!/data/raw/sentinel1/sylhet_buildings_flood.geojson
+!/data/raw/sentinel1/sylhet_buildings_flood_pre.geojson
+!/data/raw/sentinel1/flood_mask_2022-06-06.tif
+!/data/raw/sentinel1/flood_mask_2022-06-19.tif
+!/data/raw/sentinel1/valid_area.geojson
+
+# Re-ignore the converter's OUTPUTS. This must come AFTER the negations above:
+# `!/data/raw/sentinel1/` re-includes the whole directory, and in .gitignore the
+# last matching pattern wins, so these lines have to be the final word.
+/data/raw/sentinel1/damage_layer*.geojson
+
 # Large intermediates that are regenerable from raw + pipeline
 /data/processed/*.pmtiles
 /data/processed/*.gpkg

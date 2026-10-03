@@ -58,8 +58,8 @@ python -m groundtruth.build_all
 # 2. Sync to the console.
 cd console
 npm install
-npm run sync-data         # copies JSON artefacts into console/public/data
-npm run dev               # http://localhost:3000
+npm run sync:data         # copies JSON artefacts + epochs/ into console/public/data
+npm run dev               # http://localhost:3000  (predev re-syncs automatically)
 
 # 3. (Optional) Run the Telegram tipline.
 $env:TELEGRAM_BOT_TOKEN = "..."
@@ -110,6 +110,17 @@ that *something* is happening at a place; it cannot bound *how bad*.
 - **No live basemap.** The console renders on the OpenStreetMap raster
   tiles bundled in `console/public/`. There is no Mapbox, no telemetry, no
   external tile API at runtime.
+- **Nothing runs Python at deploy time.** The pipeline is run once on a
+  machine, and its output is committed under `data/processed/`. Vercel runs
+  `npm run sync:data` + `next build` and serves those committed artefacts, so
+  the console works from committed data with no Python present (D-035).
+- **The SAR inputs are committed; their outputs are not.** The five irreplaceable
+  files in `data/raw/sentinel1/` are in git so the damage layer can be rebuilt
+  on any machine; the converter's own output stays ignored because it is
+  byte-reproducible from them (D-036).
+- **Provenance has to be re-runnable.** `--classifier-ref` rejects placeholders
+  and writes nothing if given one; `classifier_ref` is required by the schema
+  for the SAR branch (D-034). An assessment nobody can re-run is not evidence.
 - **Privacy invariant (D-030):** the bot never stores raw Telegram user IDs.
   A salted digest is the only identifier that touches the audit trail.
 - **Eval labels are quarantined (D-010):** the synthetic seed carries

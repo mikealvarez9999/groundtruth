@@ -6,9 +6,24 @@ approval (D-017).
 
 | Schema | What it describes |
 |---|---|
-| `damage_layer.schema.json` | The SAR damage assessment: one Feature per building, with `damage_class`, `obscured`, `area_m2`, `grid_cell_id`. |
+| `damage_layer.schema.json` | The damage assessment: one Feature per building, with `damage_class`, `obscured`, `area_m2`, `grid_cell_id`. Sensor-agnostic — `groundtruth.source` is a `oneOf` union discriminated on `tool`. |
 | `signal.schema.json` | A single tip from any citizen channel. Carries `source`, `raw`, `claim`, `geo`, `extraction`, and an optional `vlm_assessment`. |
 | `sector_score.schema.json` | One ranked cell: `grid_cell_id`, `score`, contributing signal ids, event-type breakdown. |
+
+## Provenance must be re-runnable
+
+Both `damage_layer` branches require a real pinned identifier for the tool that
+produced them, and both reject placeholders:
+
+| Branch | Required ref | Enforced by |
+|---|---|---|
+| `haste` | `haste_commit` + `backbone` | schema `required` |
+| `sentinel1_sar` | `classifier_ref` | schema `required` + `pattern`, **and** `sentinel1_to_damage_layer.py` exits non-zero without writing a file |
+
+A shipped layer once carried `S1-Flood-Bangladesh@<commit>` — and the schema's
+own `examples` value was the placeholder, so copying the documented example
+produced it. Both are fixed (D-034). **`examples` in these schemas is not
+decoration:** it is the value a reader is most likely to copy.
 
 Every JSON artefact under `data/processed/` is checked against its schema by
 `pipeline/src/groundtruth/validate_contracts.py` before it is written. A bad
@@ -46,9 +61,12 @@ you read for shape and scale.
 
 1. Open a `D-NNN` entry in `DECISIONS.md` describing the field and the
    downstream change.
-2. Bump the schema's `contract_version` only after project-lead review.
-3. Add an example in `examples/`.
-4. Update every reader (`fuse.ts`, `verify.py`, etc.) in the same PR.
+2. Bump the schema's `contract_version` only after project-lead review. Adding a
+   field to `required` is **not** a rename and stays at 1.0.0 — but it still gets
+   a D-NNN entry (D-034 is the precedent).
+3. Add an example in `examples/` — and make sure the example value is a real
+   pinned reference, not a placeholder (see above).
+4. Update every reader (`fusion.ts`, `verify.py`, etc.) in the same PR.
 
 Renaming a field is a breaking change and is not allowed without bumping the
 major version.
